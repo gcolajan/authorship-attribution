@@ -1,17 +1,18 @@
 #! /usr/bin/php
 <?php
-define('PATH', '../../Reuters50_50');
-define('TMP_FILE', 'analyze');
+define('DATA', '../data');
+define('ANALYZE', '../analyze');
+define('TMP_FILE', 'tmpAnalyze');
 
 if (count($argv) != 2)
 	exit("USAGE: ".$argv[0]." <file_to_compare>\n");
 	
 $file = $argv[1];
 
-$frequency = getCorpusFrequency(PATH.'/frequency');
+$frequency = getCorpusFrequency(ANALYZE.'/posfreq');
 
 // Analyse du fichier soumis
-exec("cat $file | tree-tagger-english | cut -f 2 | grep [A-Z] > ".TMP_FILE);
+exec("cat $file | tree-tagger-english | cut -f 2 > ".TMP_FILE);
 $analyse = getFrequency(TMP_FILE);
 unlink(TMP_FILE);
 
