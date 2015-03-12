@@ -1,6 +1,5 @@
 NP
 NP
-,
 JJ
 NN
 IN
@@ -10,7 +9,6 @@ NN
 NN
 NP
 NP
-,
 VBD
 DT
 NN
@@ -38,7 +36,6 @@ DT
 JJ
 CD
 NNS
-,
 PP
 VBD
 VBN
@@ -60,7 +57,6 @@ DT
 NN
 JJ
 NN
-,
 JJ
 TO
 RB
@@ -73,7 +69,6 @@ NN
 IN
 NP
 SENT
-``
 RB
 RB
 IN
@@ -88,8 +83,6 @@ JJ
 NN
 VBD
 VBG
-,
-''
 PP
 VBD
 NP
@@ -97,7 +90,6 @@ IN
 DT
 NN
 SENT
-''
 IN
 DT
 NN
@@ -141,8 +133,6 @@ NN
 IN
 NN
 NN
-,
-''
 PP
 VBD
 SENT
@@ -166,7 +156,6 @@ DT
 NNS
 NN
 SENT
-''
 DT
 NN
 NN
@@ -196,20 +185,16 @@ VBZ
 RB
 JJR
 NN
-,
 JJR
 NN
-,
 RBR
 VBN
 NNS
-,
 JJR
 JJ
 VBN
 NNS
 SENT
-''
 NP
 VBD
 NN
@@ -241,7 +226,6 @@ CD
 JJ
 NP
 SENT
-``
 PP
 VBP
 VBG
@@ -280,12 +264,9 @@ VBG
 RP
 IN
 NP
-,
-''
 PP
 VBD
 SENT
-''
 DT
 NN
 IN
@@ -314,7 +295,6 @@ VBN
 TO
 NP
 SENT
-''
 NP
 VBD
 RB
@@ -345,7 +325,6 @@ VBD
 VBG
 RB
 SENT
-''
 DT
 NN
 NNS
@@ -371,8 +350,6 @@ RP
 IN
 DT
 NN
-,
-''
 NP
 VBD
 SENT
@@ -389,13 +366,11 @@ DT
 NNS
 IN
 NP
-,
 RB
 IN
 NN
 NNS
 SENT
-``
 IN
 PP
 VBD
@@ -403,7 +378,6 @@ CD
 CD
 IN
 NP
-,
 CC
 PP
 MD
@@ -411,7 +385,6 @@ VB
 RP
 DT
 NN
-,
 PP
 VBP
 VBG
@@ -438,12 +411,9 @@ PP
 VBP
 VBN
 NP
-,
-''
 PP
 VBD
 SENT
-''
 JJ
 NN
 NP
@@ -464,8 +434,6 @@ MD
 VB
 RB
 RB
-,
-''
 PP
 VBD
 SENT
@@ -489,7 +457,6 @@ NP
 IN
 NP
 SENT
-``
 DT
 NN
 IN
@@ -516,8 +483,6 @@ PP
 VBP
 IN
 NN
-,
-''
 NP
 VBD
 SENT
@@ -533,7 +498,6 @@ CD
 NN
 IN
 CD
-,
 DT
 NN
 IN
@@ -544,7 +508,6 @@ IN
 DT
 JJ
 NN
-,
 CC
 RB
 CD
@@ -563,12 +526,10 @@ NNS
 CC
 NNS
 NN
-,
 WDT
 VBZ
 NP
 NNS
-,
 VBD
 NN
 NN
@@ -609,7 +570,6 @@ NN
 NNS
 IN
 NP
-,
 VBG
 NNS
 IN
@@ -630,7 +590,6 @@ NN
 VBD
 JJ
 SENT
-``
 DT
 NP
 VBZ
@@ -659,8 +618,6 @@ TO
 NN
 NN
 NNS
-,
-''
 PP
 VBD
 SENT
@@ -671,17 +628,14 @@ TO
 CD
 CD
 NNS
-(
 NN
 CD
-)
 IN
 DT
 NN
 VBN
 NP
 CD
-,
 CD
 IN
 CD
@@ -690,7 +644,6 @@ SENT
 IN
 NN
 NNS
-,
 NNS
 VBD
 JJ
@@ -698,7 +651,6 @@ IN
 CD
 CD
 NNS
-,
 IN
 DT
 NN
@@ -732,7 +684,6 @@ VBD
 IN
 CD
 NN
-,
 IN
 DT
 NN
@@ -744,7 +695,6 @@ DT
 NP
 CD
 NN
-,
 IN
 NNS
 IN
@@ -756,7 +706,6 @@ IN
 CD
 NN
 SENT
-``
 DT
 NNS
 VBP
@@ -765,7 +714,6 @@ NN
 NP
 VBZ
 VBN
-:
 DT
 NN
 PP
@@ -793,8 +741,6 @@ TO
 VB
 RB
 JJ
-,
-''
 VBD
 NP
 NN
@@ -808,7 +754,6 @@ CC
 NP
 IN
 NN
-,
 WDT
 VBZ
 CD
@@ -817,7 +762,6 @@ IN
 DT
 NN
 NN
-,
 DT
 NP
 NP
@@ -831,7 +775,6 @@ CD
 NN
 SENT
 RB
-,
 NNS
 IN
 DT
@@ -886,18 +829,15 @@ NP
 VBD
 CD
 NN
-,
 IN
 JJ
 NNS
 IN
 NP
-,
 NP
 CC
 DT
 NPS
-,
 IN
 NNS
 VBD
@@ -922,7 +862,6 @@ NP
 POS
 JJ
 NNS
-,
 NP
 NP
 IN
@@ -931,7 +870,6 @@ CC
 NP
 IN
 NN
-,
 RB
 CD
 NN
@@ -945,7 +883,6 @@ IN
 NN
 NP
 NN
-:
 NP
 VBD
 CD
@@ -1021,13 +958,11 @@ SENT
 NP
 CC
 NP
-,
 NP
 POS
 VBG
 NN
 NN
-,
 RB
 VBN
 CD
@@ -1091,10 +1026,8 @@ NN
 NN
 NNS
 SENT
-(
 NP
 NP
-)
 NP
 POS
 NP
@@ -1129,7 +1062,6 @@ NN
 NP
 NP
 SENT
-``
 WP
 PP
 MD
@@ -1147,8 +1079,6 @@ VB
 NP
 POS
 NNS
-,
-``
 NN
 NN
 NP
@@ -1195,7 +1125,6 @@ IN
 NN
 NNS
 SENT
-``
 PP
 VBP
 DT
@@ -1232,12 +1161,9 @@ WP
 NNS
 TO
 VB
-,
-''
 NP
 VBD
 SENT
-``
 PP
 MD
 VB
@@ -1251,7 +1177,6 @@ JJ
 JJ
 NNS
 SENT
-''
 NN
 IN
 NP
@@ -1267,13 +1192,11 @@ NN
 JJ
 IN
 NN
-,
 IN
 VBG
 RB
 TO
 NN
-,
 RB
 JJ
 IN
@@ -1301,7 +1224,6 @@ CD
 NNS
 SENT
 NP
-,
 WP$
 JJ
 NN
@@ -1316,7 +1238,6 @@ CD
 NNS
 IN
 NN
-,
 VBD
 PP
 VBD
@@ -1328,7 +1249,6 @@ DT
 NN
 SENT
 NP
-,
 WDT
 RB
 VBZ
@@ -1336,7 +1256,6 @@ CD
 NN
 IN
 NP
-,
 VBZ
 VBG
 CD
@@ -1361,10 +1280,8 @@ IN
 CD
 CD
 NNS
-(
 NN
 CD
-)
 SENT
 NP
 RB
@@ -1377,9 +1294,7 @@ NNS
 CC
 NN
 NNS
-``
 RB
-''
 VBN
 IN
 JJR
@@ -1430,7 +1345,6 @@ IN
 CD
 NNS
 SENT
-``
 PP
 VBP
 IN
@@ -1438,7 +1352,6 @@ PP$
 JJ
 JJ
 NN
-,
 RB
 IN
 PP$
@@ -1447,18 +1360,14 @@ JJ
 JJ
 NN
 NNS
-,
 MD
 RB
 VB
 DT
 NNS
-,
-''
 VBD
 NP
 NP
-,
 JJ
 NN
 IN
@@ -1477,9 +1386,7 @@ IN
 NP
 CC
 NP
-(
 NP
-)
 VBD
 DT
 NN
@@ -1488,7 +1395,6 @@ DT
 NN
 IN
 NP
-,
 VBG
 NP
 CC
@@ -1503,7 +1409,6 @@ NNS
 IN
 NP
 SENT
-``
 NP
 CC
 NP
@@ -1532,8 +1437,6 @@ VBN
 IN
 DT
 NN
-,
-''
 VBD
 DT
 NP
@@ -1548,7 +1451,6 @@ JJ
 IN
 VBG
 NP
-,
 PP
 MD
 VB
@@ -1565,14 +1467,12 @@ IN
 DT
 VBN
 NN
-,
 DT
 NN
 VBD
 SENT
 NP
 NP
-,
 VBZ
 DT
 JJ
@@ -1614,13 +1514,11 @@ JJ
 NNS
 SENT
 NP
-,
 NP
 POS
 JJS
 NN
 NN
-,
 VBZ
 JJ
 TO
@@ -1643,10 +1541,8 @@ NP
 IN
 NP
 SENT
-(
 NP
 NP
-)
 NP
 NN
 VBD
@@ -1657,7 +1553,6 @@ IN
 NP
 DT
 NN
-,
 VBG
 JJ
 NN
@@ -1677,7 +1572,6 @@ IN
 DT
 NN
 SENT
-``
 PP
 VBP
 IN
@@ -1687,10 +1581,8 @@ VBN
 CD
 CD
 NNS
-(
 NN
 CD
-)
 IN
 VBN
 NNS
@@ -1706,12 +1598,9 @@ NN
 NNS
 IN
 NN
-,
-''
 VBD
 NP
 NP
-,
 NN
 IN
 NP
@@ -1730,7 +1619,6 @@ VBZ
 JJS
 IN
 DT
-,
 DT
 NN
 NN
@@ -1747,7 +1635,6 @@ NN
 NNS
 SENT
 NP
-,
 RB
 VBN
 IN
@@ -1757,7 +1644,6 @@ IN
 NN
 NN
 NN
-,
 VBD
 DT
 CD
@@ -1768,7 +1654,6 @@ NN
 NNS
 IN
 NP
-,
 CD
 NN
 RB
@@ -1819,11 +1704,9 @@ NP
 NP
 NP
 POS
-,
 VBN
 IN
 NP
-,
 VBD
 PP
 VBZ
@@ -1834,7 +1717,6 @@ NNS
 IN
 PP$
 NN
-,
 JJ
 CC
 JJ
@@ -1878,13 +1760,11 @@ IN
 NP
 CC
 NP
-,
 WRB
 DT
 NN
 VBZ
 JJR
-,
 MD
 VB
 RB
@@ -1895,7 +1775,6 @@ NN
 IN
 IN
 NP
-,
 RB
 EX
 VBZ
@@ -1904,7 +1783,6 @@ TO
 VB
 VBN
 SENT
-''
 DT
 NN
 VBZ
@@ -1926,7 +1804,6 @@ RB
 IN
 PP$
 JJS
-,
 NNS
 RB
 VBP
@@ -1938,12 +1815,9 @@ NN
 NN
 IN
 NN
-,
-''
 VBD
 NP
 NP
-,
 DT
 NN
 IN
@@ -1956,7 +1830,6 @@ VBP
 RP
 IN
 NNS
-,
 WP
 VBP
 IN
@@ -1967,7 +1840,6 @@ DT
 NN
 NN
 NNS
-,
 VB
 PP$
 JJS
@@ -1978,7 +1850,6 @@ NN
 SENT
 NP
 POS
-,
 DT
 JJS
 NN
@@ -2053,17 +1924,14 @@ CD
 NN
 IN
 NP
-,
 NP
 NP
 NP
 CD
 NN
-,
 NP
 CD
 NN
-,
 JJ
 NN
 CD
@@ -2147,7 +2015,6 @@ JJS
 CC
 JJS
 RB
-:
 IN
 JJ
 NNS
@@ -2157,7 +2024,6 @@ IN
 CD
 NNS
 JJ
-,
 IN
 WDT
 NN
@@ -2196,13 +2062,11 @@ NNS
 IN
 DT
 NP
-,
 NP
 POS
 JJ
 NN
 NN
-,
 VBP
 DT
 JJ
@@ -2234,7 +2098,6 @@ DT
 NN
 SENT
 NP
-,
 WP
 VBD
 DT
@@ -2250,7 +2113,6 @@ DT
 NP
 NP
 NN
-,
 VBZ
 JJ
 NNS
@@ -2269,7 +2131,6 @@ TO
 DT
 JJ
 NN
-,
 IN
 DT
 NN
@@ -2302,12 +2163,10 @@ NN
 IN
 DT
 JJ
-,
 JJ
 NN
 IN
 CD
-:
 DT
 NN
 WRB
@@ -2342,10 +2201,8 @@ VB
 DT
 NN
 SENT
-(
 NP
 NP
-)
 JJ
 NN
 CC
@@ -2386,7 +2243,6 @@ NN
 VBP
 VBN
 SENT
-``
 PP
 MD
 VB
@@ -2414,12 +2270,9 @@ POS
 JJ
 NN
 NNS
-,
-''
 VBD
 NP
 NP
-,
 NN
 IN
 NP
@@ -2453,9 +2306,7 @@ NN
 NN
 NP
 NN
-:
 NP
-,
 CC
 DT
 NP
@@ -2463,7 +2314,6 @@ NP
 NN
 IN
 JJ
-,
 RB
 VBN
 NN
@@ -2471,7 +2321,6 @@ NN
 NN
 NP
 NN
-:
 NP
 VBZ
 TO
@@ -2486,7 +2335,6 @@ TO
 JJ
 SENT
 RB
-,
 NNS
 VBP
 NP
@@ -2505,7 +2353,6 @@ TO
 CD
 CD
 NN
-,
 RB
 JJR
 IN
@@ -2536,7 +2383,6 @@ JJ
 NN
 SENT
 RB
-,
 VBG
 NN
 CC
@@ -2565,7 +2411,6 @@ NN
 NNS
 NP
 NP
-,
 NP
 NP
 NN
@@ -2575,7 +2420,6 @@ MD
 VB
 JJR
 NNS
-,
 NP
 NP
 POS
@@ -2607,7 +2451,6 @@ NNS
 TO
 VB
 JJ
-,
 IN
 JJ
 NN
@@ -2621,7 +2464,6 @@ DT
 CD
 NN
 NN
-,
 VBN
 TO
 VB
@@ -2630,7 +2472,6 @@ CD
 CD
 NN
 NN
-,
 MD
 VB
 CD
@@ -2651,7 +2492,6 @@ NN
 SENT
 RBR
 RB
-,
 DT
 NN
 NN
@@ -2663,7 +2503,6 @@ IN
 NN
 VBZ
 JJ
-,
 VBG
 TO
 NP
@@ -2671,7 +2510,6 @@ IN
 CD
 SENT
 RB
-,
 IN
 DT
 NN
@@ -2695,7 +2533,6 @@ NNS
 IN
 JJ
 NN
-,
 NP
 NP
 NN
@@ -2719,7 +2556,6 @@ TO
 JJ
 IN
 NP
-,
 VBG
 RB
 CD
@@ -2808,7 +2644,6 @@ DT
 NN
 IN
 NN
-,
 IN
 DT
 NN
@@ -2822,7 +2657,6 @@ IN
 NN
 NNS
 SENT
-``
 PP
 VBP
 RB
@@ -2866,12 +2700,9 @@ NP
 NP
 NN
 NN
-,
-''
 VBD
 NP
 NP
-,
 NN
 IN
 NP
@@ -2882,16 +2713,13 @@ NNS
 RB
 VBP
 NNS
-,
 VBG
 PP
 MD
 VB
 TO
-``
 JJ
 NN
-''
 IN
 DT
 NN
@@ -2912,12 +2740,10 @@ NN
 NN
 SENT
 NNS
-,
 IN
 DT
 JJ
 NN
-,
 VBP
 DT
 NN
@@ -2962,7 +2788,6 @@ NN
 TO
 PP$
 NN
-,
 RB
 IN
 NP
@@ -2983,7 +2808,6 @@ NN
 JJ
 NN
 SENT
-:
 NP
 NP
 NN
@@ -2999,9 +2823,7 @@ VBD
 IN
 NP
 JJ
-``
 NN
-''
 NNS
 VBD
 VBN
@@ -3016,14 +2838,11 @@ IN
 PP$
 NN
 NNS
-:
 NP
 NP
-,
 NP
 CC
 NP
-:
 IN
 DT
 JJ
@@ -3049,12 +2868,10 @@ NN
 IN
 JJ
 NNS
-:
 JJ
 NNS
 CC
 NNS
-:
 WDT
 VBP
 VBN
@@ -3097,15 +2914,12 @@ IN
 CD
 CD
 NNS
-(
 NN
 CD
-)
 IN
 PP$
 NN
 NN
-,
 NNS
 VBP
 VBN
@@ -3125,7 +2939,6 @@ IN
 DT
 JJ
 NN
-,
 NP
 NP
 VBD
@@ -3144,7 +2957,6 @@ IN
 NP
 CC
 NP
-,
 VBD
 CD
 NN
@@ -3179,7 +2991,6 @@ IN
 DT
 JJ
 NN
-:
 IN
 JJ
 NN
@@ -3189,7 +3000,6 @@ VBD
 RB
 VBN
 SENT
-``
 PP
 VBP
 DT
@@ -3204,8 +3014,6 @@ DT
 NN
 TO
 VB
-,
-''
 DT
 NN
 VBD
@@ -3246,7 +3054,6 @@ JJR
 IN
 CD
 NNS
-,
 IN
 RB
 JJ
@@ -3258,7 +3065,6 @@ IN
 CD
 NNS
 SENT
-''
 DT
 NN
 WDT
@@ -3294,8 +3100,6 @@ TO
 VBG
 NN
 NNS
-,
-''
 VBD
 CD
 NN
@@ -3313,7 +3117,6 @@ NN
 IN
 VBN
 NNS
-,
 RB
 NP
 NP
@@ -3339,7 +3142,6 @@ SENT
 IN
 DT
 NN
-,
 DT
 NN
 VBD
@@ -3352,12 +3154,10 @@ NN
 IN
 NN
 NN
-,
 DT
 JJ
 NN
 NN
-,
 CC
 VB
 IN
@@ -3381,7 +3181,6 @@ JJ
 IN
 JJ
 NNS
-,
 VBG
 JJ
 NNS
@@ -3393,7 +3192,6 @@ NN
 SENT
 IN
 NP
-,
 NN
 NN
 NN
@@ -3422,15 +3220,12 @@ NN
 NP
 POS
 NP
-,
 VBN
 IN
 NP
-,
 CC
 CD
 NNS
-,
 VBN
 IN
 NP
@@ -3473,7 +3268,6 @@ IN
 PP$
 JJ
 NN
-,
 DT
 NN
 VBD
@@ -3504,7 +3298,6 @@ NP
 NP
 NN
 NP
-,
 VBG
 DT
 CD
@@ -3513,7 +3306,6 @@ NN
 IN
 JJ
 NNS
-,
 IN
 NP
 VBD
@@ -3567,7 +3359,6 @@ DT
 NN
 NN
 VBD
-``
 EX
 VBD
 DT
@@ -3582,8 +3373,6 @@ VBN
 IN
 DT
 NN
-,
-''
 PP
 VBD
 NP
@@ -3598,10 +3387,8 @@ TO
 CD
 CD
 NNS
-(
 NN
 CD
-)
 IN
 CD
 CD
@@ -3631,7 +3418,6 @@ VBD
 IN
 CD
 NN
-,
 CC
 NNS
 IN
@@ -3648,7 +3434,6 @@ VBD
 IN
 CD
 NN
-,
 IN
 NNS
 VBD
@@ -3657,7 +3442,6 @@ IN
 DT
 NP
 NPS
-,
 DT
 NN
 WRB
@@ -3666,7 +3450,6 @@ NN
 NNS
 VBD
 JJ
-,
 DT
 NN
 VBD
@@ -3687,14 +3470,9 @@ NN
 NN
 NP
 NN
-:
 NP
-(
 NP
-:
 NP
-)
-,
 CC
 DT
 NP
@@ -3702,7 +3480,6 @@ NP
 NN
 IN
 NN
-,
 VBZ
 TO
 VB
@@ -3735,7 +3512,6 @@ TO
 RB
 CD
 NNS
-,
 VBG
 RB
 CD
@@ -3758,25 +3534,19 @@ NN
 IN
 NP
 NNS
-:
 NP
 MD
 VB
-``
 RB
 JJ
-''
 IN
 NN
 NN
-,
 VBG
 EX
 VBD
-``
 DT
 NN
-''
 IN
 DT
 NN
@@ -3810,7 +3580,6 @@ IN
 JJ
 VBP
 VBN
-,
 CC
 DT
 NN
@@ -3825,7 +3594,6 @@ DT
 JJ
 NP
 NN
-,
 NP
 VBD
 DT
@@ -3840,13 +3608,10 @@ NN
 IN
 NP
 NP
-,
 IN
 NP
 NP
-,
 NP
-,
 DT
 NN
 IN
@@ -3856,7 +3621,6 @@ IN
 NP
 IN
 NP
-:
 NP
 VBD
 JJ
@@ -3904,7 +3668,6 @@ SENT
 NP
 NP
 NP
-,
 WP
 VBD
 IN
@@ -3913,7 +3676,6 @@ IN
 DT
 NP
 NN
-,
 VBD
 VBN
 TO
@@ -3922,7 +3684,6 @@ CD
 NN
 DT
 NN
-,
 CC
 CD
 VBP
@@ -3934,7 +3695,6 @@ NN
 CC
 PP
 VBD
-,
 NP
 NP
 NN
@@ -3967,7 +3727,6 @@ IN
 NNS
 CC
 NNS
-,
 VBD
 NP
 SENT
@@ -3977,16 +3736,13 @@ NP
 NNS
 VBP
 NN
-,
 NNS
 MD
 VB
 VBN
 IN
-``
 JJ
 NNS
-''
 CC
 MD
 VB
@@ -4022,7 +3778,6 @@ NN
 IN
 NN
 NN
-,
 NP
 VBD
 NP
@@ -4044,12 +3799,10 @@ NN
 VBD
 JJ
 SENT
-``
 PP
 VBP
 RB
 VBN
-,
 PP
 VBP
 RB
@@ -4059,8 +3812,6 @@ PP
 MD
 RB
 VB
-,
-''
 PP
 VBD
 SENT
@@ -4079,7 +3830,6 @@ NNS
 VBN
 TO
 NN
-,
 PP
 VBD
 SENT
@@ -4088,7 +3838,6 @@ TO
 DT
 NN
 NNS
-,
 NP
 NP
 NN
@@ -4118,7 +3867,6 @@ NP
 CC
 DT
 NP
-,
 NP
 NP
 CC
@@ -4129,7 +3877,6 @@ SENT
 IN
 JJ
 NNS
-,
 NP
 NP
 NN
@@ -4148,7 +3895,6 @@ NN
 SENT
 IN
 NP
-,
 DT
 NP
 NP
@@ -4213,7 +3959,6 @@ VBD
 IN
 DT
 NNS
-,
 CC
 RBR
 VBD
@@ -4223,14 +3968,11 @@ VB
 IN
 JJ
 NNS
-,
 RB
 JJ
 SENT
-(
 NP
 NP
-)
 JJ
 NN
 CC
@@ -4275,10 +4017,8 @@ TO
 CD
 CD
 NNS
-(
 NN
 CD
-)
 IN
 CD
 CD
@@ -4308,7 +4048,6 @@ VBD
 IN
 CD
 NN
-,
 CC
 NNS
 IN
@@ -4325,7 +4064,6 @@ VBD
 IN
 CD
 NN
-,
 IN
 NNS
 VBD
@@ -4334,7 +4072,6 @@ IN
 DT
 NP
 NPS
-,
 DT
 NN
 WRB
@@ -4343,7 +4080,6 @@ NN
 NNS
 VBD
 JJ
-,
 DT
 NN
 VBD
@@ -4358,9 +4094,6 @@ NN
 NP
 NN
 NNS
-,
-``
-:
 DT
 JJ
 NN
@@ -4378,13 +4111,11 @@ VBZ
 NP
 NP
 NN
-,
 NN
 CC
 RB
 NN
 SENT
-''
 DT
 VBG
 NN
@@ -4401,9 +4132,7 @@ NN
 NN
 NP
 NN
-:
 NP
-,
 CC
 DT
 NP
@@ -4411,7 +4140,6 @@ NP
 NN
 IN
 NN
-,
 VBZ
 TO
 VB
@@ -4444,7 +4172,6 @@ TO
 RB
 CD
 NNS
-,
 VBG
 RB
 CD
@@ -4490,7 +4217,6 @@ JJ
 NN
 NN
 VBD
-``
 EX
 VBD
 DT
@@ -4506,7 +4232,6 @@ IN
 DT
 NN
 SENT
-''
 NP
 NP
 NP
@@ -4533,7 +4258,6 @@ NNS
 NNS
 SENT
 NP
-,
 VBG
 TO
 DT
@@ -4559,7 +4283,6 @@ NN
 IN
 NN
 NN
-,
 VBD
 NNS
 DT
@@ -4575,7 +4298,6 @@ NN
 VBD
 NN
 NN
-,
 CC
 IN
 NN
@@ -4605,7 +4327,6 @@ TO
 DT
 NN
 NNS
-,
 NP
 NP
 NN
@@ -4634,7 +4355,6 @@ NP
 NP
 CC
 NP
-,
 NP
 NP
 CC
@@ -4645,7 +4365,6 @@ SENT
 IN
 JJ
 NNS
-,
 NP
 NP
 NN
@@ -4664,7 +4383,6 @@ NN
 SENT
 IN
 NP
-,
 PP$
 NP
 NP
@@ -4708,7 +4426,6 @@ VBD
 IN
 DT
 NNS
-,
 CC
 RBR
 VBD
@@ -4724,7 +4441,6 @@ IN
 CD
 NN
 SENT
-``
 DT
 NNS
 VBP
@@ -4734,7 +4450,6 @@ IN
 NN
 IN
 NNS
-,
 IN
 NN
 IN
@@ -4746,18 +4461,14 @@ NN
 IN
 DT
 NN
-,
-''
 VBD
 NP
 NN
 NP
 NP
 SENT
-(
 NP
 NP
-)
 DT
 JJ
 NN
@@ -4789,14 +4500,12 @@ NP
 POS
 NN
 NNS
-,
 JJ
 NNS
 VBD
 IN
 NP
 SENT
-``
 PP
 VBP
 PP
@@ -4832,18 +4541,14 @@ NN
 NN
 IN
 NN
-,
-''
 VBD
 NP
 NP
-,
 NN
 NN
 IN
 NP
 NNS
-:
 NP
 NPS
 SENT
@@ -4860,7 +4565,6 @@ TO
 VB
 IN
 NP
-,
 VBG
 JJ
 NN
@@ -4890,7 +4594,6 @@ NNS
 IN
 DT
 NN
-,
 IN
 NP
 MD
@@ -4904,7 +4607,6 @@ NN
 IN
 CD
 NNS
-,
 NP
 VBZ
 DT
@@ -4931,7 +4633,6 @@ TO
 NP
 NP
 SENT
-``
 IN
 PP
 VBZ
@@ -4957,8 +4658,6 @@ MD
 VB
 NN
 NN
-,
-''
 NP
 VBD
 SENT
@@ -4978,20 +4677,15 @@ NN
 WRB
 JJ
 NNS
-:
 NP
-(
 NP
-:
 NP
-)
 VBD
 NN
 IN
 JJ
 NN
 NP
-,
 VBG
 PP
 DT
@@ -5043,7 +4737,6 @@ VB
 NP
 CC
 NP
-:
 NP
 RB
 JJ
@@ -5064,16 +4757,12 @@ NP
 SENT
 NP
 NP
-,
 JJ
 NN
 IN
 NP
 NP
-,
 VBD
-:
-``
 IN
 JJ
 IN
@@ -5110,15 +4799,12 @@ IN
 DT
 NN
 SENT
-''
 NNS
-,
 NNS
 IN
 DT
 CD
 NNS
-,
 VBD
 NN
 IN
@@ -5128,7 +4814,6 @@ IN
 NP
 CD
 SENT
-``
 IN
 PP
 VBZ
@@ -5145,13 +4830,10 @@ NN
 NN
 NNS
 IN
-:
 NP
 RB
 VBZ
 RP
-,
-''
 PP
 VBD
 NP
@@ -5171,7 +4853,6 @@ IN
 NP
 CC
 NP
-:
 NP
 NNS
 IN
@@ -5188,7 +4869,6 @@ NNS
 IN
 NNS
 SENT
-``
 PP
 VBP
 DT
@@ -5210,8 +4890,6 @@ VBN
 IN
 RB
 RB
-,
-''
 VBD
 CD
 JJ
@@ -5220,7 +4898,6 @@ IN
 JJ
 NN
 SENT
-''
 IN
 NP
 CC
@@ -5239,8 +4916,6 @@ NP
 NP
 NP
 SENT
-''
-``
 IN
 DT
 NNS
@@ -5271,7 +4946,6 @@ RB
 VBN
 RB
 SENT
-''
 DT
 NN
 IN
@@ -5315,7 +4989,6 @@ NNS
 VBP
 IN
 NN
-:
 NP
 POS
 NN
@@ -5343,7 +5016,6 @@ PP
 RP
 SENT
 NN
-:
 NP
 VBD
 VBN
@@ -5368,11 +5040,9 @@ JJ
 NN
 IN
 NP
-(
 NP
 NP
 NP
-)
 NN
 NNS
 IN
@@ -5418,7 +5088,6 @@ NN
 NNS
 IN
 NP
-,
 IN
 PP$
 JJ
@@ -5434,7 +5103,6 @@ JJ
 NN
 NN
 SENT
-''
 DT
 CD
 NNS
@@ -5458,12 +5126,9 @@ IN
 DT
 JJ
 NN
-,
-''
 VBD
 NP
 NP
-,
 NN
 IN
 NP
@@ -5496,7 +5161,6 @@ IN
 JJ
 SENT
 NP
-,
 DT
 NN
 NN
@@ -5504,13 +5168,11 @@ CC
 NN
 IN
 NP
-,
 NP
 CC
 DT
 NP
 NPS
-,
 RB
 RB
 IN
@@ -5523,7 +5185,6 @@ IN
 NP
 CC
 NP
-,
 VBZ
 RB
 RB
@@ -5537,7 +5198,6 @@ IN
 NP
 NP
 SENT
-``
 DT
 NN
 IN
@@ -5574,7 +5234,6 @@ PP
 VB
 PP
 SENT
-''
 VBD
 NP
 NN
@@ -5599,7 +5258,6 @@ DT
 JJ
 NN
 NN
-,
 NNS
 POS
 NN
@@ -5608,7 +5266,6 @@ IN
 NP
 CC
 NP
-,
 RB
 RB
 IN
@@ -5616,7 +5273,6 @@ DT
 JJ
 NN
 NNS
-:
 NPS
 NNS
 IN
@@ -5627,7 +5283,6 @@ NP
 NP
 CC
 NP
-:
 VBP
 VBN
 TO
@@ -5642,7 +5297,6 @@ NN
 IN
 DT
 NN
-,
 NP
 NP
 WDT
@@ -5652,7 +5306,6 @@ CD
 NN
 IN
 NNS
-,
 VBZ
 JJ
 TO
@@ -5691,18 +5344,15 @@ RB
 IN
 JJ
 NN
-,
 NNS
 VBP
 DT
 NN
 NN
-,
 IN
 VBG
 CC
 VBG
-,
 NP
 CC
 NP
@@ -5719,11 +5369,9 @@ NN
 NN
 IN
 NNS
-,
 VBG
 NP
 NP
-,
 TO
 VB
 IN
@@ -5788,7 +5436,6 @@ NN
 SENT
 NN
 NNS
-,
 VBN
 IN
 DT
@@ -5797,12 +5444,10 @@ NN
 IN
 CD
 NNS
-,
 IN
 CD
 VBZ
 CD
-,
 VBG
 TO
 CD
@@ -5819,7 +5464,6 @@ NN
 IN
 CD
 NN
-,
 VBG
 PP
 IN
@@ -5836,7 +5480,6 @@ IN
 CD
 NNS
 SENT
-:
 NP
 NP
 NN
@@ -5848,14 +5491,12 @@ NN
 NN
 NP
 NP
-,
 VBG
 JJ
 NN
 NNS
 JJ
 NP
-,
 VBZ
 JJ
 TO
@@ -5883,12 +5524,10 @@ DT
 JJ
 JJ
 NN
-,
 NNS
 VBD
 SENT
 NP
-,
 VBN
 IN
 NP
@@ -5898,7 +5537,6 @@ IN
 CD
 CD
 NN
-,
 VBD
 VBN
 IN
@@ -5942,7 +5580,6 @@ CD
 TO
 CD
 CD
-,
 IN
 CD
 CD
@@ -5977,7 +5614,6 @@ IN
 CD
 CD
 NN
-,
 IN
 DT
 JJR
@@ -5994,13 +5630,11 @@ CC
 DT
 NN
 NN
-,
 VBN
 IN
 DT
 JJ
 NN
-,
 VBZ
 VBN
 TO
@@ -6089,7 +5723,6 @@ CD
 CD
 NNS
 SENT
-''
 JJ
 NN
 NN
@@ -6108,23 +5741,18 @@ IN
 CD
 CC
 CD
-,
-''
 VBD
 NP
 NP
-,
 NN
 IN
 NP
 SENT
-''
 JJ
 NNS
 VBP
 RB
 JJ
-,
 CC
 JJ
 NN
@@ -6138,8 +5766,6 @@ JJ
 JJ
 NN
 RB
-,
-''
 PP
 VBD
 SENT
@@ -6155,7 +5781,6 @@ IN
 DT
 NN
 SENT
-``
 DT
 JJ
 NN
@@ -6164,7 +5789,6 @@ VB
 DT
 NN
 RBR
-,
 RB
 IN
 CD
@@ -6176,7 +5800,6 @@ CD
 DT
 NN
 RB
-,
 CC
 NN
 NN
@@ -6196,8 +5819,6 @@ DT
 NN
 NN
 SENT
-''
-``
 JJ
 CC
 RB
@@ -6206,7 +5827,6 @@ VBZ
 DT
 NN
 NN
-,
 IN
 DT
 NN
@@ -6228,14 +5848,12 @@ VBG
 DT
 NN
 SENT
-''
 DT
 NN
 VBN
 NP
 IN
 CD
-,
 VBN
 IN
 CD
@@ -6243,10 +5861,8 @@ NNS
 VBN
 IN
 NP
-,
 VBZ
 JJ
-,
 VBG
 TO
 NN
@@ -6274,13 +5890,11 @@ VBG
 IN
 CD
 NN
-,
 IN
 CD
 NN
 IN
 NP
-,
 DT
 JJS
 IN
@@ -6314,7 +5928,6 @@ CD
 IN
 NP
 SENT
-:
 NP
 NP
 NN
@@ -6339,7 +5952,6 @@ NN
 NNS
 IN
 NP
-,
 VBG
 RP
 DT
@@ -6381,7 +5993,6 @@ NN
 IN
 CD
 CD
-,
 IN
 CD
 CD
@@ -6395,12 +6006,10 @@ IN
 CD
 TO
 JJ
-,
 RB
 IN
 NN
 SENT
-``
 PP
 VBZ
 VBN
@@ -6421,7 +6030,6 @@ IN
 DT
 NN
 NN
-,
 PP
 VBD
 TO
@@ -6439,12 +6047,9 @@ NNS
 VBG
 DT
 NN
-,
-''
 VBD
 NP
 NP
-,
 NN
 IN
 NP
@@ -6480,13 +6085,11 @@ IN
 NP
 CD
 SENT
-``
 IN
 EX
 VBZ
 DT
 NN
-,
 PP
 VBZ
 RB
@@ -6502,7 +6105,6 @@ TO
 VB
 IN
 RB
-,
 PP
 MD
 VB
@@ -6510,12 +6112,9 @@ IN
 DT
 NNS
 NN
-,
-''
 VBD
 NP
 NP
-,
 NN
 IN
 NP
@@ -6531,7 +6130,6 @@ CD
 NN
 NP
 NPS
-,
 WRB
 JJ
 NNS
@@ -6546,12 +6144,10 @@ CD
 DT
 CD
 NNS
-,
 CC
 NP
 NNS
 SENT
-``
 DT
 JJ
 NN
@@ -6572,8 +6168,6 @@ PP$
 VBN
 NN
 NN
-,
-''
 VBD
 NP
 SENT
@@ -6596,26 +6190,21 @@ NN
 VBZ
 NP
 NP
-,
 NP
 NP
-,
 CD
 NN
 VBN
 IN
 NP
-,
 NP
 NP
-,
 NP
 CC
 NP
 SENT
 NP
 NPS
-,
 DT
 JJ
 NNS
@@ -6623,7 +6212,6 @@ NN
 IN
 DT
 NN
-,
 VBZ
 NP
 NP
@@ -6650,17 +6238,14 @@ IN
 NNS
 IN
 NP
-:
 VBG
 NP
 NP
 CC
 NP
 JJ
-,
 JJ
 NNS
-:
 WDT
 DT
 NN
@@ -6674,7 +6259,6 @@ DT
 JJ
 NN
 SENT
-``
 CD
 IN
 DT
@@ -6699,12 +6283,9 @@ NN
 CC
 NN
 NN
-,
-''
 VBD
 NP
 SENT
-''
 CC
 VBD
 DT
@@ -6721,7 +6302,6 @@ NN
 IN
 DT
 NNS
-,
 DT
 NN
 VBZ
@@ -6731,7 +6311,6 @@ NN
 IN
 NN
 SENT
-``
 DT
 NNS
 VBP
@@ -6757,7 +6336,6 @@ NN
 IN
 PP$
 NNS
-:
 DT
 NN
 NP
@@ -6790,7 +6368,6 @@ IN
 JJ
 NN
 NP
-,
 IN
 JJ
 NNS
@@ -6824,7 +6401,6 @@ NN
 NN
 IN
 NP
-,
 VBN
 IN
 CD
@@ -6832,12 +6408,10 @@ NNS
 VBN
 IN
 NP
-,
 VBZ
 CD
 IN
 CD
-,
 VBG
 TO
 CD
@@ -6854,7 +6428,6 @@ NN
 NN
 IN
 NN
-,
 IN
 DT
 NN
@@ -6883,7 +6456,6 @@ IN
 CD
 NN
 SENT
-:
 NP
 NP
 NN
@@ -6911,7 +6483,6 @@ NN
 NNS
 IN
 NP
-,
 CC
 NN
 NP
@@ -6927,7 +6498,6 @@ DT
 NN
 RB
 SENT
-``
 PP
 RB
 VBP
@@ -6940,15 +6510,12 @@ VBP
 RB
 VBN
 JJ
-,
-''
 VBD
 NP
 IN
 DT
 NN
 SENT
-``
 PP
 VBZ
 DT
@@ -6963,7 +6530,6 @@ CD
 NNS
 VBG
 RP
-:
 IN
 DT
 NP
@@ -6982,7 +6548,6 @@ VB
 IN
 PP
 SENT
-''
 NP
 VBD
 JJ
@@ -6991,10 +6556,8 @@ IN
 CD
 CD
 NNS
-(
 NN
 CD
-)
 IN
 DT
 NN
@@ -7048,7 +6611,6 @@ NN
 TO
 CD
 CD
-,
 IN
 DT
 NN
@@ -7063,13 +6625,11 @@ NN
 NN
 SENT
 NP
-,
 DT
 NNS
 POS
 NN
 NN
-,
 VBD
 NNS
 IN
@@ -7082,7 +6642,6 @@ NP
 JJ
 NN
 SENT
-''
 PP
 VBD
 DT
@@ -7109,7 +6668,6 @@ DT
 JJ
 NN
 SENT
-''
 IN
 DT
 JJ
@@ -7122,7 +6680,6 @@ NN
 IN
 JJ
 NN
-,
 VBD
 NP
 SENT
@@ -7156,7 +6713,6 @@ CD
 CD
 SENT
 RB
-,
 VBG
 NNS
 IN
@@ -7215,7 +6771,6 @@ CD
 SENT
 NP
 NP
-,
 VBN
 IN
 NP
@@ -7223,7 +6778,6 @@ NPS
 IN
 NP
 CD
-,
 VBN
 IN
 PP$
@@ -7282,10 +6836,8 @@ NP
 NN
 IN
 NNS
-,
 NP
 NP
-,
 NP
 NP
 CC
@@ -7294,7 +6846,6 @@ JJ
 NN
 NN
 SENT
-``
 PP
 VBD
 JJ
@@ -7305,7 +6856,6 @@ RB
 IN
 PP$
 NNS
-,
 CC
 PP
 MD
@@ -7318,18 +6868,14 @@ IN
 DT
 JJ
 NN
-,
-''
 VBD
 NP
 NP
-,
 NN
 IN
 NP
 NP
 SENT
-``
 DT
 JJ
 NN
@@ -7352,8 +6898,6 @@ NNS
 VBZ
 RB
 VBN
-,
-''
 PP
 VBD
 SENT
@@ -7383,7 +6927,6 @@ CD
 IN
 NP
 CD
-,
 IN
 VBG
 CD
@@ -7427,11 +6970,9 @@ PP
 MD
 VB
 NNS
-,
 VBD
 NP
 SENT
-``
 PP
 VBP
 VBN
@@ -7451,8 +6992,6 @@ PP
 MD
 VB
 PP
-,
-''
 PP
 VBD
 SENT
@@ -7466,19 +7005,15 @@ VBN
 NNS
 IN
 NP
-,
 NP
-,
 NP
 CC
 DT
 NP
 NPS
 SENT
-(
 JJ
 NN
-)
 NP
 VBN
 NN
@@ -7500,7 +7035,6 @@ NN
 NNS
 IN
 NP
-,
 CC
 NN
 NP
@@ -7516,7 +7050,6 @@ DT
 NN
 RB
 SENT
-``
 PP
 RB
 VBP
@@ -7529,15 +7062,12 @@ VBP
 RB
 VBN
 JJ
-,
-''
 VBD
 NP
 IN
 DT
 NN
 SENT
-``
 PP
 VBZ
 DT
@@ -7552,7 +7082,6 @@ CD
 NNS
 VBG
 RP
-:
 IN
 DT
 NP
@@ -7571,7 +7100,6 @@ VB
 IN
 PP
 SENT
-''
 NP
 VBD
 JJ
@@ -7580,10 +7108,8 @@ IN
 CD
 CD
 NNS
-(
 NN
 CD
-)
 IN
 DT
 NN
@@ -7637,7 +7163,6 @@ NN
 TO
 CD
 CD
-,
 IN
 DT
 NN
@@ -7652,13 +7177,11 @@ NN
 NN
 SENT
 NP
-,
 DT
 NNS
 POS
 NN
 NN
-,
 VBD
 NNS
 IN
@@ -7671,7 +7194,6 @@ NP
 JJ
 NN
 SENT
-''
 PP
 VBD
 DT
@@ -7698,7 +7220,6 @@ DT
 JJ
 NN
 SENT
-''
 IN
 DT
 JJ
@@ -7711,7 +7232,6 @@ NN
 IN
 JJ
 NN
-,
 VBD
 NP
 SENT
@@ -7745,7 +7265,6 @@ CD
 CD
 SENT
 RB
-,
 VBG
 NNS
 IN
@@ -7804,7 +7323,6 @@ CD
 SENT
 NP
 NP
-,
 VBN
 IN
 NP
@@ -7812,7 +7330,6 @@ NPS
 IN
 NP
 CD
-,
 VBN
 IN
 PP$
@@ -7871,10 +7388,8 @@ NP
 NN
 IN
 NNS
-,
 NP
 NP
-,
 NP
 NP
 CC
@@ -7883,7 +7398,6 @@ JJ
 NN
 NN
 SENT
-``
 PP
 VBD
 JJ
@@ -7894,7 +7408,6 @@ RB
 IN
 PP$
 NNS
-,
 CC
 PP
 MD
@@ -7907,18 +7420,14 @@ IN
 DT
 JJ
 NN
-,
-''
 VBD
 NP
 NP
-,
 NN
 IN
 NP
 NP
 SENT
-``
 DT
 JJ
 NN
@@ -7941,8 +7450,6 @@ NNS
 VBZ
 RB
 VBN
-,
-''
 PP
 VBD
 SENT
@@ -7972,7 +7479,6 @@ CD
 IN
 NP
 CD
-,
 IN
 VBG
 CD
@@ -8016,11 +7522,9 @@ PP
 MD
 VB
 NNS
-,
 VBD
 NP
 SENT
-``
 PP
 VBP
 VBN
@@ -8040,8 +7544,6 @@ PP
 MD
 VB
 PP
-,
-''
 PP
 VBD
 SENT
@@ -8055,32 +7557,26 @@ VBN
 NNS
 IN
 NP
-,
 NP
-,
 NP
 CC
 DT
 NP
 NPS
 SENT
-(
 JJ
 NN
-)
 JJ
 NN
 NN
 NP
 NP
-,
 VBG
 JJ
 NN
 NNS
 JJ
 NP
-,
 VBZ
 JJ
 TO
@@ -8108,12 +7604,10 @@ DT
 JJ
 JJ
 NN
-,
 NNS
 VBD
 SENT
 NP
-,
 VBN
 IN
 NP
@@ -8123,7 +7617,6 @@ IN
 CD
 CD
 NN
-,
 VBD
 VBN
 IN
@@ -8167,7 +7660,6 @@ CD
 TO
 CD
 CD
-,
 IN
 CD
 CD
@@ -8202,7 +7694,6 @@ IN
 CD
 CD
 NN
-,
 IN
 DT
 JJR
@@ -8219,13 +7710,11 @@ CC
 DT
 JJ
 NN
-,
 VBN
 IN
 DT
 JJ
 NN
-,
 VBZ
 VBN
 TO
@@ -8314,7 +7803,6 @@ CD
 CD
 NNS
 SENT
-''
 JJ
 NN
 NN
@@ -8333,23 +7821,18 @@ IN
 CD
 CC
 CD
-,
-''
 VBD
 NP
 NP
-,
 NN
 IN
 NP
 SENT
-''
 JJ
 NNS
 VBP
 RB
 JJ
-,
 CC
 JJ
 NN
@@ -8363,8 +7846,6 @@ JJ
 JJ
 NN
 RB
-,
-''
 PP
 VBD
 SENT
@@ -8380,7 +7861,6 @@ IN
 DT
 NN
 SENT
-``
 DT
 JJ
 NN
@@ -8389,7 +7869,6 @@ VB
 DT
 NN
 RBR
-,
 RB
 IN
 CD
@@ -8401,7 +7880,6 @@ CD
 DT
 NN
 RB
-,
 CC
 NN
 NN
@@ -8421,8 +7899,6 @@ DT
 NN
 NN
 SENT
-''
-``
 JJ
 CC
 RB
@@ -8431,7 +7907,6 @@ VBZ
 DT
 NN
 NN
-,
 IN
 DT
 NN
@@ -8453,14 +7928,12 @@ VBG
 DT
 NN
 SENT
-''
 DT
 NN
 VBN
 NP
 IN
 CD
-,
 VBN
 IN
 CD
@@ -8468,10 +7941,8 @@ NNS
 VBN
 IN
 NP
-,
 VBZ
 JJ
-,
 VBG
 TO
 NN
@@ -8499,13 +7970,11 @@ VBG
 IN
 CD
 NN
-,
 IN
 CD
 NN
 IN
 NP
-,
 DT
 JJS
 IN
@@ -8539,7 +8008,6 @@ CD
 IN
 NP
 SENT
-:
 NP
 NP
 NN
@@ -8569,10 +8037,8 @@ TO
 CD
 CD
 NNS
-(
 NN
 CD
-)
 CC
 NN
 NP
@@ -8598,18 +8064,15 @@ JJ
 NN
 NP
 NP
-,
 IN
 JJ
 NN
-,
 VBD
 JJ
 NNS
 VBD
 VBG
 RBR
-,
 VBG
 RB
 JJR
@@ -8630,7 +8093,6 @@ DT
 CD
 NNS
 SENT
-``
 PP
 VBP
 DT
@@ -8655,7 +8117,6 @@ DT
 NN
 IN
 NN
-,
 DT
 NNS
 IN
@@ -8678,8 +8139,6 @@ CC
 VBG
 NN
 NN
-,
-''
 VBD
 NP
 SENT
@@ -8716,7 +8175,6 @@ NNS
 RB
 JJR
 SENT
-''
 DT
 NN
 IN
@@ -8727,7 +8185,6 @@ NP
 VBZ
 VBG
 RB
-,
 RB
 RB
 SENT
@@ -8746,12 +8203,9 @@ IN
 DT
 IN
 NP
-,
-''
 PP
 VBD
 SENT
-''
 WDT
 VBZ
 VBN
@@ -8768,10 +8222,8 @@ PP$
 NN
 IN
 NP
-(
 NN
 NN
-)
 TO
 VB
 DT
@@ -8783,7 +8235,6 @@ DT
 NN
 NN
 SENT
-''
 NPS
 VBD
 TO
@@ -8811,7 +8262,6 @@ IN
 NP
 IN
 NP
-,
 VBG
 CD
 NN
@@ -8867,7 +8317,6 @@ JJ
 NN
 NP
 NPS
-,
 WDT
 NP
 VBD
@@ -8907,12 +8356,10 @@ NN
 IN
 NP
 NP
-,
 RB
 VBN
 IN
 NP
-,
 CC
 NP
 NP
@@ -8959,7 +8406,6 @@ CD
 SENT
 NP
 NPS
-,
 WDT
 VBZ
 JJ
@@ -8969,7 +8415,6 @@ NN
 NN
 NP
 NP
-,
 VBD
 NNS
 VB
@@ -9000,7 +8445,6 @@ RB
 CD
 NN
 SENT
-``
 DT
 JJ
 NN
@@ -9035,7 +8479,6 @@ VB
 TO
 NNS
 SENT
-''
 NP
 POS
 NN
@@ -9081,21 +8524,18 @@ NNS
 SENT
 RB
 VBG
-:
 DT
 NN
 IN
 NN
 TO
 NN
-:
 JJR
 IN
 VBN
 TO
 CD
 NN
-,
 IN
 DT
 NN
@@ -9114,7 +8554,6 @@ NP
 NP
 CC
 NP
-,
 IN
 CD
 CD
@@ -9130,7 +8569,6 @@ NP
 IN
 DT
 NNS
-,
 WDT
 VBD
 RBS
@@ -9140,7 +8578,6 @@ NNS
 SENT
 NP
 NP
-,
 JJ
 NN
 IN
@@ -9170,7 +8607,6 @@ RP
 IN
 NNS
 SENT
-''
 IN
 JJ
 NNS
@@ -9183,13 +8619,10 @@ VB
 WP
 PP
 VBP
-,
-''
 NP
 VBD
 NP
 SENT
-``
 IN
 PP
 VBP
@@ -9206,7 +8639,6 @@ VBP
 DT
 NN
 SENT
-''
 DT
 NN
 VBZ
@@ -9219,10 +8651,8 @@ IN
 DT
 JJ
 NN
-,
 PP
 VBD
-,
 WRB
 DT
 JJ
@@ -9237,14 +8667,12 @@ VBZ
 VB
 IN
 NN
-,
 NN
 CC
 NN
 SENT
 JJ
 NN
-,
 NP
 VBD
 RP
@@ -9273,14 +8701,12 @@ IN
 NN
 IN
 NP
-,
 NP
 POS
 NP
 NP
 NN
 NN
-,
 IN
 CD
 SENT
@@ -9314,7 +8740,6 @@ NN
 IN
 DT
 NN
-,
 RB
 NP
 MD
@@ -9323,7 +8748,6 @@ TO
 VB
 VBG
 PP
-,
 VBD
 NP
 IN
@@ -9331,7 +8755,6 @@ DT
 NN
 SENT
 CC
-,
 IN
 PP
 VBZ
@@ -9340,10 +8763,8 @@ NN
 CC
 NN
 NN
-,
 IN
 NN
-,
 PP
 MD
 VB
@@ -9357,7 +8778,6 @@ NN
 NN
 IN
 SENT
-``
 PP
 MD
 RB
@@ -9368,7 +8788,6 @@ VBG
 NN
 CC
 NN
-:
 WDT
 VBZ
 DT
@@ -9391,17 +8810,14 @@ VB
 DT
 JJ
 NN
-,
 DT
 JJ
 NN
-,
 DT
 JJ
 NN
 SENT
 CC
-,
 IN
 PP
 VBP
@@ -9412,12 +8828,9 @@ PP
 VBZ
 DT
 NN
-,
-''
 NP
 VBD
 SENT
-``
 DT
 JJS
 NN
@@ -9427,7 +8840,6 @@ WP
 VBP
 NN
 NNS
-,
 NN
 NN
 CC
@@ -9437,7 +8849,6 @@ DT
 NN
 SENT
 CC
-,
 IN
 PP
 VBP
@@ -9453,7 +8864,6 @@ VBP
 DT
 NN
 SENT
-''
 NP
 VBD
 NN
@@ -9462,7 +8872,6 @@ JJ
 NN
 NP
 NP
-,
 WP
 VBD
 RP
@@ -9470,21 +8879,18 @@ IN
 NN
 IN
 NP
-,
 IN
 CD
 NNS
 IN
 DT
 NN
-,
 IN
 VBG
 NP
 IN
 DT
 JJR
-,
 RBR
 VBN
 NN
@@ -9495,7 +8901,6 @@ VBD
 RP
 IN
 CD
-,
 PP
 VBD
 DT
@@ -9512,9 +8917,7 @@ VBD
 RB
 TO
 CD
-:
 NN
-,
 NNS
 CC
 NP
@@ -9522,7 +8925,6 @@ NP
 NN
 SENT
 NP
-,
 VBN
 NN
 CC
@@ -9533,23 +8935,17 @@ NP
 NPS
 CC
 NP
-(
 NP
-)
-,
 NP
 POS
 NNS
 NN
-,
 IN
 NP
 CD
-,
 VBD
 DT
 JJ
-,
 JJ
 NN
 TO
@@ -9560,7 +8956,6 @@ NN
 NN
 SENT
 NP
-,
 WP$
 NN
 NNS
@@ -9573,7 +8968,6 @@ NNS
 RB
 IN
 NN
-,
 VBZ
 PP
 IN
@@ -9583,7 +8977,6 @@ IN
 NP
 POS
 JJ
-,
 NN
 NNS
 IN
@@ -9601,7 +8994,6 @@ IN
 IN
 NNS
 SENT
-''
 DT
 NN
 PP
@@ -9627,8 +9019,6 @@ NN
 RB
 RB
 SENT
-''
-''
 RB
 VBZ
 DT
@@ -9670,12 +9060,9 @@ VB
 DT
 JJ
 NNS
-,
-''
 PP
 VBD
 SENT
-``
 WP
 PP
 VBP
@@ -9702,12 +9089,9 @@ PP$
 NN
 IN
 NN
-,
-''
 VBD
 NP
 SENT
-``
 PP
 VBP
 VBG
@@ -9722,12 +9106,9 @@ IN
 JJ
 NN
 NN
-,
-''
 PP
 VBD
 SENT
-:
 NP
 NP
 NN
@@ -9736,7 +9117,6 @@ CD
 CD
 NP
 NP
-,
 JJ
 NN
 IN
@@ -9746,7 +9126,6 @@ NN
 NN
 NP
 NP
-,
 VBD
 DT
 NN
@@ -9772,7 +9151,6 @@ CD
 NN
 JJR
 SENT
-''
 IN
 JJ
 JJ
@@ -9789,9 +9167,7 @@ TO
 VB
 CD
 CD
-(
 NN
-)
 NN
 CC
 NN
@@ -9836,7 +9212,6 @@ JJ
 JJ
 NN
 SENT
-``
 NN
 NNS
 IN
@@ -9858,7 +9233,6 @@ NN
 TO
 NP
 CD
-,
 CD
 IN
 JJ
@@ -9894,7 +9268,6 @@ CD
 NN
 NN
 SENT
-``
 PP
 VBP
 RB
@@ -9923,15 +9296,12 @@ CD
 NNS
 DT
 NN
-,
 VBG
 DT
 NN
 VBZ
 IN
 CD
-,
-''
 NP
 VBD
 SENT
@@ -9955,7 +9325,6 @@ NN
 NN
 SENT
 NP
-,
 NP
 POS
 NP
@@ -9987,11 +9356,9 @@ NP
 NN
 NNS
 VBP
-``
 VBN
 RB
 RB
-,
 RB
 JJR
 IN
@@ -10017,8 +9384,6 @@ IN
 DT
 NP
 NP
-''
-``
 PP
 VBP
 WP
@@ -10032,12 +9397,9 @@ PP$
 NN
 IN
 NP
-,
-''
 PP
 VBD
 SENT
-:
 NP
 NP
 NN
@@ -10049,14 +9411,12 @@ NNS
 VBP
 VBG
 RBR
-,
 PP
 VBP
 VBG
 RBR
 IN
 NN
-,
 CC
 DT
 JJ
@@ -10071,7 +9431,6 @@ JJS
 DT
 CD
 NNS
-,
 VBD
 NP
 JJ
@@ -10079,7 +9438,6 @@ NN
 NP
 NP
 SENT
-``
 DT
 NNS
 IN
@@ -10106,7 +9464,6 @@ NNS
 VBP
 VBG
 RB
-,
 DT
 NN
 NN
@@ -10121,8 +9478,6 @@ NN
 VBZ
 DT
 NN
-,
-''
 NP
 VBD
 IN
@@ -10144,12 +9499,10 @@ NNS
 TO
 CD
 CD
-,
 VBG
 NNS
 NNS
 SENT
-``
 PP
 VBP
 DT
@@ -10174,7 +9527,6 @@ DT
 NN
 IN
 NN
-,
 DT
 NNS
 IN
@@ -10197,8 +9549,6 @@ CC
 VBG
 NN
 NN
-,
-''
 VBD
 NP
 SENT
@@ -10242,7 +9592,6 @@ JJ
 JJ
 NN
 SENT
-``
 PP
 VBP
 IN
@@ -10271,7 +9620,6 @@ DT
 JJ
 NN
 SENT
-''
 NP
 POS
 NN
@@ -10282,7 +9630,6 @@ CC
 CD
 JJ
 NN
-,
 IN
 JJ
 NN
@@ -10322,7 +9669,6 @@ NNS
 RB
 JJR
 SENT
-''
 DT
 NN
 IN
@@ -10333,7 +9679,6 @@ NP
 VBZ
 VBG
 RB
-,
 RB
 RB
 SENT
@@ -10353,8 +9698,6 @@ DT
 IN
 NP
 SENT
-''
-''
 WDT
 VBZ
 VBN
@@ -10371,10 +9714,8 @@ PP$
 NN
 IN
 NP
-(
 NN
 NN
-)
 TO
 VB
 DT
@@ -10386,7 +9727,6 @@ DT
 NN
 NN
 SENT
-''
 NPS
 VBD
 IN
@@ -10403,7 +9743,6 @@ DT
 JJ
 NN
 SENT
-``
 PP
 RB
 VBD
@@ -10471,7 +9810,6 @@ IN
 NN
 NNS
 SENT
-''
 NP
 VBD
 NN
@@ -10516,7 +9854,6 @@ JJ
 NN
 NP
 NPS
-,
 WDT
 NP
 VBD
@@ -10577,12 +9914,10 @@ NN
 IN
 NP
 NP
-,
 RB
 VBN
 IN
 NP
-,
 CC
 NP
 NP
@@ -10612,7 +9947,6 @@ NN
 SENT
 NP
 NPS
-,
 WDT
 VBZ
 JJ
@@ -10622,7 +9956,6 @@ NN
 NN
 NP
 NP
-,
 VBD
 NNS
 VB
@@ -10639,7 +9972,6 @@ IN
 CD
 NN
 SENT
-``
 DT
 JJ
 NN
@@ -10673,8 +10005,6 @@ RB
 VB
 TO
 NNS
-,
-''
 VBD
 NP
 SENT
@@ -10691,7 +10021,6 @@ NP
 VBZ
 DT
 NN
-:
 DT
 NP
 NP
@@ -10711,7 +10040,6 @@ NP
 CC
 NP
 NP
-:
 VBG
 DT
 NN
@@ -10719,7 +10047,6 @@ TO
 RB
 CD
 SENT
-``
 DT
 RBS
 JJ
@@ -10749,11 +10076,9 @@ RB
 VBN
 RB
 SENT
-''
 NP
 RB
 VBZ
-``
 CD
 TO
 CD
@@ -10773,9 +10098,7 @@ TO
 CD
 NNS
 SENT
-''
 NP
-,
 WDT
 VBD
 JJ
@@ -10793,7 +10116,6 @@ NN
 CC
 NN
 NNS
-,
 VBZ
 TO
 VB
@@ -10801,7 +10123,6 @@ IN
 NNS
 DT
 NN
-,
 VBD
 NP
 SENT
@@ -10816,13 +10137,11 @@ VBG
 IN
 NP
 NP
-,
 NP
 NP
 CC
 NP
 SENT
-:
 NP
 NP
 NN
@@ -10857,7 +10176,6 @@ PP$
 VBG
 NN
 NN
-,
 WDT
 NNS
 VBD
@@ -10869,7 +10187,6 @@ NNS
 SENT
 DT
 NN
-,
 VBN
 IN
 JJ
@@ -10879,7 +10196,6 @@ CC
 JJ
 NN
 NNS
-,
 RB
 VBD
 DT
@@ -10893,11 +10209,8 @@ TO
 CD
 CD
 NNS
-(
 NN
 CD
-)
-,
 IN
 DT
 NN
@@ -10918,10 +10231,8 @@ TO
 CD
 CD
 NNS
-(
 NN
 CD
-)
 IN
 DT
 NN
@@ -10934,7 +10245,6 @@ JJ
 NN
 IN
 JJ
-,
 VBG
 DT
 JJ
@@ -10962,7 +10272,6 @@ CC
 JJ
 NN
 NNS
-,
 WDT
 VBP
 VBN
@@ -11010,11 +10319,9 @@ NNS
 IN
 JJ
 NNS
-,
 VBN
 IN
 NP
-,
 VBD
 DT
 NN
@@ -11083,7 +10390,6 @@ IN
 CD
 NN
 NNS
-,
 RB
 CD
 NN
@@ -11116,7 +10422,6 @@ VB
 IN
 DT
 NNS
-,
 VB
 NN
 IN
@@ -11141,7 +10446,6 @@ VB
 RB
 IN
 NN
-,
 WRB
 PP
 VBD
@@ -11154,7 +10458,6 @@ IN
 DT
 NN
 SENT
-''
 NP
 VBD
 PP
@@ -11167,12 +10470,9 @@ VBP
 VBZ
 NN
 NNS
-,
-''
 NP
 VBD
 SENT
-``
 WP
 PP
 VBD
@@ -11195,7 +10495,6 @@ RB
 VB
 NNS
 SENT
-''
 NP
 VBD
 DT
@@ -11255,7 +10554,6 @@ NN
 IN
 VBN
 NNS
-,
 NN
 CC
 NN
@@ -11279,7 +10577,6 @@ IN
 PP$
 NNS
 SENT
-``
 PP
 VBP
 RB
@@ -11288,12 +10585,9 @@ RB
 IN
 VBG
 NNS
-,
-''
 PP
 VBD
 SENT
-``
 PP
 VBP
 RB
@@ -11305,27 +10599,21 @@ NN
 IN
 NN
 RB
-,
 PP
 VBP
 TO
 VB
 PP
 SENT
-''
 VBG
 DT
 NN
 VBD
-``
 DT
 JJ
 NN
-,
-''
 PP
 VBD
-,
 WDT
 MD
 VB
@@ -11353,10 +10641,8 @@ CC
 NP
 CD
 SENT
-(
 NP
 NP
-)
 JJ
 NN
 NN
@@ -11372,12 +10658,10 @@ JJ
 NN
 NN
 NN
-,
 VBG
 DT
 NN
 NNS
-,
 CC
 VBD
 NNS
@@ -11401,10 +10685,8 @@ TO
 CD
 CD
 NNS
-(
 NN
 CD
-)
 IN
 DT
 NN
@@ -11456,7 +10738,6 @@ IN
 JJ
 NNS
 SENT
-''
 DT
 NN
 VBZ
@@ -11473,8 +10754,6 @@ NN
 IN
 DT
 NN
-,
-''
 PP
 VBD
 IN
@@ -11524,14 +10803,12 @@ JJR
 NN
 IN
 NNS
-,
 IN
 IN
 DT
 JJR
 NN
 SENT
-``
 EX
 VBZ
 RB
@@ -11542,7 +10819,6 @@ NN
 NN
 DT
 NN
-,
 CC
 VB
 PP
@@ -11563,8 +10839,6 @@ VBP
 IN
 DT
 NN
-,
-''
 PP
 VBD
 NP
@@ -11585,7 +10859,6 @@ DT
 JJ
 CD
 VBZ
-,
 IN
 PP
 VBD
@@ -11639,14 +10912,12 @@ NN
 POS
 NN
 NNS
-,
 VBG
 NP
 NP
 CC
 NP
 NP
-,
 VBN
 NNS
 SENT
@@ -11684,7 +10955,6 @@ JJR
 IN
 CD
 SENT
-``
 DT
 NNS
 VBD
@@ -11702,8 +10972,6 @@ JJ
 IN
 DT
 NN
-,
-''
 VBD
 CD
 JJ
@@ -11761,7 +11029,6 @@ IN
 PP$
 NNS
 SENT
-''
 IN
 DT
 NN
@@ -11778,12 +11045,9 @@ DT
 JJ
 NNS
 VBP
-,
-''
 PP
 VBD
 SENT
-``
 NN
 NN
 VBZ
@@ -11801,14 +11065,10 @@ CD
 NNS
 NN
 SENT
-''
-(
 NP
 NP
-)
 NP
 NP
-,
 NN
 NN
 IN
@@ -11820,7 +11080,6 @@ NN
 NN
 NP
 NP
-,
 VBD
 IN
 NP
@@ -11830,7 +11089,6 @@ NN
 IN
 DT
 NN
-,
 VBG
 DT
 NN
@@ -11844,7 +11102,6 @@ IN
 CD
 CD
 NN
-,
 VBD
 DT
 JJS
@@ -11854,7 +11111,6 @@ VB
 PP$
 NN
 SENT
-''
 PP
 VBD
 NNS
@@ -11864,11 +11120,9 @@ NNS
 CC
 PP
 VBD
-,
 IN
 JJ
 NNS
-,
 NNS
 SENT
 PP
@@ -11885,12 +11139,10 @@ DT
 JJ
 NN
 NN
-,
 IN
 RB
 JJR
 NN
-,
 CC
 RB
 IN
@@ -11898,13 +11150,10 @@ NNS
 IN
 VBN
 NN
-,
-''
 PP
 VBD
 NP
 SENT
-''
 CC
 IN
 MD
@@ -11915,7 +11164,6 @@ CD
 CD
 NNS
 SENT
-''
 PP
 VBD
 DT
@@ -11929,7 +11177,6 @@ IN
 CD
 NN
 NNS
-,
 RB
 CD
 NN
@@ -11958,9 +11205,7 @@ TO
 VB
 VBN
 SENT
-``
 UH
-,
 PP
 VBP
 JJ
@@ -11990,8 +11235,6 @@ CC
 NN
 NNS
 SENT
-''
-``
 PP
 VBP
 VBN
@@ -11999,7 +11242,6 @@ IN
 DT
 RB
 RB
-,
 DT
 NNS
 IN
@@ -12036,7 +11278,6 @@ VB
 PP
 RB
 SENT
-''
 PP
 VBD
 SENT
@@ -12059,7 +11300,6 @@ NN
 IN
 VBN
 NNS
-,
 NN
 CC
 NN
@@ -12078,7 +11318,6 @@ JJ
 NN
 NN
 SENT
-``
 PP
 VBP
 VBG
@@ -12089,8 +11328,6 @@ IN
 NN
 IN
 NNS
-,
-''
 PP
 VBD
 SENT
@@ -12109,7 +11346,6 @@ DT
 NN
 CD
 SENT
-``
 PP
 VBP
 RB
@@ -12130,12 +11366,9 @@ MD
 RB
 VB
 PP
-,
-''
 VBD
 NP
 SENT
-``
 PP
 VBP
 RB
@@ -12147,15 +11380,12 @@ NN
 IN
 NN
 RB
-,
 PP
 VBP
 TO
 VB
 PP
 SENT
-''
-``
 NP
 NP
 VBD
@@ -12177,8 +11407,6 @@ VBG
 JJ
 NNS
 RB
-,
-''
 NP
 VBD
 NNS
@@ -12196,11 +11424,9 @@ JJ
 NNS
 NP
 NP
-,
 VBN
 IN
 NP
-,
 VBD
 NNS
 VBD
@@ -12213,7 +11439,6 @@ CC
 JJ
 TO
 VB
-,
 VBD
 NP
 SENT
@@ -12226,7 +11451,6 @@ VB
 RB
 IN
 NN
-,
 WRB
 PP
 VBD
@@ -12238,16 +11462,12 @@ NNS
 IN
 DT
 NN
-,
 VBD
 NP
-,
 RB
 IN
-,
 IN
 NN
-,
 NN
 NNS
 MD
@@ -12311,7 +11531,6 @@ DT
 CD
 CD
 NN
-,
 VBN
 IN
 NN
@@ -12355,7 +11574,6 @@ DT
 NN
 NN
 NN
-,
 CC
 VBD
 TO
@@ -12364,7 +11582,6 @@ DT
 JJ
 NN
 NN
-,
 NP
 VBD
 SENT
@@ -12378,7 +11595,6 @@ DT
 NN
 VBD
 JJ
-,
 VBG
 NNS
 IN
@@ -12396,7 +11612,6 @@ NN
 NN
 IN
 NNS
-,
 CC
 DT
 NN
@@ -12412,7 +11627,6 @@ DT
 NN
 NN
 SENT
-:
 NP
 NP
 NN
@@ -12452,14 +11666,11 @@ TO
 CD
 CD
 NNS
-(
 NN
 CD
-)
 IN
 DT
 NN
-,
 VBG
 DT
 NN
@@ -12480,7 +11691,6 @@ IN
 CD
 NN
 SENT
-''
 PP
 VBD
 PP
@@ -12494,12 +11704,9 @@ VBN
 RP
 RB
 RB
-,
-''
 VBD
 NP
 NP
-,
 DT
 NN
 IN
@@ -12522,7 +11729,6 @@ TO
 CD
 CD
 SENT
-``
 PP
 VBP
 EX
@@ -12547,8 +11753,6 @@ WDT
 VBD
 IN
 NP
-,
-''
 VBD
 NP
 SENT
@@ -12560,19 +11764,16 @@ IN
 CD
 CD
 NNS
-,
 RB
 TO
 VB
 NP
-,
 PP$
 RB
 VBN
 JJ
 NN
 NN
-,
 JJ
 NNS
 VBD
@@ -12583,7 +11784,6 @@ CD
 CD
 NNS
 SENT
-``
 DT
 JJ
 NNS
@@ -12593,12 +11793,9 @@ JJR
 IN
 PP
 VBD
-,
-''
 VBD
 NP
 NP
-,
 DT
 NN
 IN
@@ -12626,7 +11823,6 @@ TO
 NP
 SENT
 NP
-,
 VBN
 IN
 NP
@@ -12638,7 +11834,6 @@ IN
 CD
 CD
 NNS
-,
 VBD
 VBN
 IN
@@ -12680,11 +11875,9 @@ CC
 NP
 NN
 NNS
-,
 NP
 NP
 NN
-,
 NP
 JJ
 NN
@@ -12695,7 +11888,6 @@ NP
 JJ
 NNS
 SENT
-''
 IN
 JJ
 NN
@@ -12706,7 +11898,6 @@ NN
 IN
 NN
 NNS
-,
 JJ
 NNS
 IN
@@ -12716,8 +11907,6 @@ IN
 NP
 VBD
 RB
-,
-''
 VBD
 NP
 NN
@@ -12744,7 +11933,6 @@ NN
 NNS
 CC
 NNS
-,
 NP
 RB
 VBD
@@ -12769,14 +11957,12 @@ VBN
 NNS
 IN
 NNS
-,
 JJ
 NNS
 CC
 JJ
 NNS
 SENT
-``
 DT
 JJ
 NN
@@ -12799,8 +11985,6 @@ NN
 IN
 NP
 NP
-,
-''
 VBD
 NP
 SENT
@@ -12823,7 +12007,6 @@ IN
 DT
 JJ
 NN
-,
 NP
 NP
 VBD
@@ -12834,7 +12017,6 @@ NNS
 IN
 CD
 CD
-,
 IN
 NP
 CC
@@ -12850,7 +12032,6 @@ TO
 CD
 CD
 NNS
-,
 VBG
 NNS
 VBN
@@ -12862,12 +12043,9 @@ PP$
 JJ
 NN
 SENT
-(
 NP
 NP
-)
 NPS
-,
 NNS
 CC
 NP
@@ -12888,7 +12066,6 @@ JJ
 NNS
 IN
 NP
-,
 VBN
 IN
 DT
@@ -12907,15 +12084,12 @@ NN
 IN
 NN
 NP
-(
 NP
-)
 SENT
 IN
 DT
 JJ
 NN
-,
 NNS
 POS
 NNS
@@ -12929,14 +12103,12 @@ TO
 CD
 CD
 NN
-,
 RB
 IN
 CD
 CD
 JJ
 NN
-,
 IN
 JJS
 IN
@@ -12958,7 +12130,6 @@ DT
 JJ
 JJ
 NN
-,
 JJ
 NN
 NNS
@@ -13007,7 +12178,6 @@ IN
 PP$
 NN
 NNS
-,
 VBG
 DT
 NN
@@ -13068,7 +12238,6 @@ NP
 NPS
 CC
 NP
-,
 JJ
 NNS
 VBP
@@ -13103,7 +12272,6 @@ IN
 DT
 JJ
 NN
-,
 RB
 SENT
 IN
@@ -13117,21 +12285,16 @@ IN
 CD
 JJ
 NNS
-:
 NP
-,
 NP
-,
 JJ
 CC
 JJ
 NP
-:
 VBN
 RP
 JJ
 NN
-,
 NP
 VBD
 VBN
@@ -13202,7 +12365,6 @@ IN
 CD
 CD
 SENT
-``
 NNS
 MD
 VB
@@ -13232,12 +12394,9 @@ NN
 IN
 DT
 NN
-,
-''
 VBD
 NP
 NP
-,
 DT
 NN
 IN
@@ -13248,7 +12407,6 @@ NP
 POS
 NN
 NN
-,
 WDT
 VBZ
 JJ
@@ -13261,7 +12419,6 @@ CC
 NP
 POS
 NP
-,
 VBZ
 VBN
 TO
@@ -13280,7 +12437,6 @@ TO
 CD
 CD
 SENT
-``
 IN
 DT
 VBN
@@ -13288,7 +12444,6 @@ NN
 NN
 MD
 VB
-,
 VB
 VBZ
 VB
@@ -13308,7 +12463,6 @@ IN
 DT
 VBG
 NN
-,
 NP
 POS
 NP
@@ -13320,8 +12474,6 @@ VB
 DT
 NN
 RB
-,
-''
 VBD
 CD
 NN
@@ -13333,7 +12485,6 @@ VBN
 SENT
 IN
 VBG
-,
 JJ
 NN
 NN
@@ -13385,7 +12536,6 @@ NNS
 IN
 CD
 CD
-,
 DT
 NN
 IN
@@ -13434,7 +12584,6 @@ JJ
 IN
 NP
 SENT
-``
 RB
 NNS
 VBP
@@ -13447,8 +12596,6 @@ NN
 IN
 DT
 NN
-,
-''
 VBD
 CD
 NN
@@ -13459,7 +12606,6 @@ TO
 VB
 VBN
 SENT
-''
 DT
 NN
 NN
@@ -13491,8 +12637,6 @@ IN
 DT
 NN
 NN
-,
-''
 VBD
 DT
 SENT
@@ -13518,7 +12662,6 @@ CD
 JJ
 NN
 SENT
-:
 NP
 NP
 NN
@@ -13550,7 +12693,6 @@ JJ
 NN
 NNS
 SENT
-''
 PP
 VBD
 PP
@@ -13564,12 +12706,9 @@ VBN
 RP
 RB
 RB
-,
-''
 VBD
 NP
 NP
-,
 DT
 NN
 IN
@@ -13593,10 +12732,8 @@ TO
 CD
 CD
 NNS
-(
 NN
 CD
-)
 IN
 DT
 NN
@@ -13617,7 +12754,6 @@ TO
 CD
 CD
 SENT
-``
 PP
 VBP
 EX
@@ -13642,8 +12778,6 @@ WDT
 VBD
 IN
 NP
-,
-''
 VBD
 NP
 SENT
@@ -13655,7 +12789,6 @@ IN
 CD
 CD
 NNS
-,
 RB
 TO
 VB
@@ -13666,7 +12799,6 @@ JJ
 NN
 NN
 NP
-,
 JJ
 NNS
 VBD
@@ -13676,7 +12808,6 @@ TO
 CD
 CD
 SENT
-``
 DT
 JJ
 NNS
@@ -13686,12 +12817,9 @@ JJR
 IN
 PP
 VBD
-,
-''
 VBD
 NP
 NP
-,
 DT
 NN
 IN
@@ -13716,7 +12844,6 @@ TO
 NP
 SENT
 NP
-,
 VBN
 IN
 NP
@@ -13728,7 +12855,6 @@ IN
 CD
 CD
 NNS
-,
 VBD
 VBN
 IN
@@ -13767,11 +12893,9 @@ VBG
 NN
 NN
 NP
-,
 NP
 NP
 NN
-,
 NP
 JJ
 NN
@@ -13780,7 +12904,6 @@ JJ
 NN
 NNS
 SENT
-''
 IN
 JJ
 NN
@@ -13791,7 +12914,6 @@ NN
 IN
 NN
 NNS
-,
 JJ
 NNS
 IN
@@ -13801,8 +12923,6 @@ IN
 NP
 VBD
 RB
-,
-''
 VBD
 NP
 NN
@@ -13828,7 +12948,6 @@ NN
 NNS
 CC
 NNS
-,
 NP
 RB
 VBD
@@ -13853,14 +12972,12 @@ VBN
 NNS
 IN
 NNS
-,
 JJ
 NNS
 CC
 JJ
 NNS
 SENT
-``
 DT
 JJ
 NN
@@ -13883,8 +13000,6 @@ NN
 IN
 NP
 NP
-,
-''
 VBD
 NP
 SENT
@@ -13907,7 +13022,6 @@ IN
 DT
 JJ
 NN
-,
 NP
 NP
 VBD
@@ -13918,7 +13032,6 @@ NNS
 IN
 CD
 CD
-,
 IN
 NP
 CC
@@ -13934,7 +13047,6 @@ TO
 CD
 CD
 NNS
-,
 VBG
 NNS
 VBN
@@ -13946,10 +13058,8 @@ PP$
 JJ
 NN
 SENT
-(
 NP
 NP
-)
 JJ
 NN
 CC
@@ -13985,7 +13095,6 @@ IN
 JJ
 NP
 SENT
-``
 PP
 VBP
 RB
@@ -14017,7 +13126,6 @@ IN
 DT
 JJ
 NN
-,
 RB
 CD
 NN
@@ -14027,8 +13135,6 @@ VBG
 IN
 VBZ
 NN
-,
-``
 NN
 NP
 NP
@@ -14051,11 +13157,8 @@ IN
 CD
 CD
 NNS
-(
 NN
 CD
-)
-,
 JJR
 IN
 NN
@@ -14076,7 +13179,6 @@ CD
 IN
 NP
 CD
-,
 VBG
 PP
 JJ
@@ -14116,8 +13218,6 @@ VBD
 DT
 NN
 NN
-:
-``
 PP
 VBP
 TO
@@ -14139,7 +13239,6 @@ IN
 DT
 NN
 SENT
-''
 JJ
 NN
 NP
@@ -14162,7 +13261,6 @@ VB
 IN
 NNS
 SENT
-''
 IN
 PP$
 NN
@@ -14180,8 +13278,6 @@ TO
 VB
 PP$
 NN
-,
-''
 PP
 VBD
 SENT
@@ -14191,7 +13287,6 @@ RP
 DT
 JJ
 NN
-,
 VBG
 DT
 NN
@@ -14203,7 +13298,6 @@ NN
 TO
 NNS
 SENT
-``
 PP
 VBP
 VBN
@@ -14215,12 +13309,10 @@ IN
 WDT
 PP
 VBP
-,
 IN
 DT
 NN
 NN
-,
 CC
 IN
 PP
@@ -14235,8 +13327,6 @@ JJ
 CC
 JJ
 NN
-,
-''
 VBD
 NP
 SENT
@@ -14257,7 +13347,6 @@ IN
 DT
 JJ
 NN
-,
 IN
 JJ
 NNS
@@ -14293,14 +13382,12 @@ IN
 NP
 SENT
 NP
-,
 DT
 NN
 CC
 NN
 NN
 NN
-,
 VBZ
 RB
 VBN
@@ -14312,7 +13399,6 @@ IN
 DT
 JJ
 NN
-,
 DT
 NN
 IN
@@ -14322,7 +13408,6 @@ VBD
 VBN
 IN
 NNS
-,
 VBG
 CD
 CD
@@ -14358,13 +13443,11 @@ NP
 POS
 JJ
 NNS
-:
 NP
 CC
 NP
 NP
 SENT
-``
 PP
 VBP
 RB
@@ -14380,8 +13463,6 @@ IN
 DT
 JJ
 NN
-,
-''
 NP
 VBD
 SENT
@@ -14407,7 +13488,6 @@ NN
 CC
 NN
 NNS
-,
 WDT
 NP
 VBD
@@ -14423,7 +13503,6 @@ SENT
 CC
 IN
 NP
-,
 NP
 VBD
 PP
@@ -14438,7 +13517,6 @@ NN
 NNS
 SENT
 NP
-,
 NP
 POS
 NN
@@ -14454,7 +13532,6 @@ CD
 SENT
 IN
 NP
-,
 NP
 VBD
 PP$
@@ -14477,7 +13554,6 @@ NP
 IN
 CD
 CD
-,
 VBG
 DT
 NN
@@ -14541,10 +13617,8 @@ DT
 NN
 NN
 SENT
-(
 NP
 NP
-)
 JJ
 NN
 CC
@@ -14562,14 +13636,12 @@ NN
 NNS
 IN
 NP
-,
 VBD
 NN
 NN
 NP
 NP
 SENT
-``
 PP
 VBP
 RB
@@ -14595,8 +13667,6 @@ NN
 IN
 NP
 NP
-,
-''
 NP
 VBD
 NP
@@ -14606,12 +13676,10 @@ NN
 IN
 NP
 SENT
-``
 PP
 VBP
 RB
 JJ
-,
 JJ
 CC
 JJ
@@ -14637,17 +13705,13 @@ NNS
 IN
 DT
 NN
-,
 NN
 NN
 NN
-,
-''
 PP
 VBD
 SENT
 NP
-,
 WDT
 VBD
 NP
@@ -14664,7 +13728,6 @@ DT
 CD
 CD
 NN
-,
 VBD
 JJ
 NN
@@ -14693,7 +13756,6 @@ CD
 VBN
 IN
 NNS
-,
 JJ
 IN
 NNS
@@ -14882,15 +13944,12 @@ IN
 JJ
 NN
 NNS
-,
 VBD
 NP
 SENT
-''
 IN
 JJ
 NNS
-,
 NN
 VBZ
 RB
@@ -14923,8 +13982,6 @@ NN
 IN
 DT
 NN
-,
-''
 PP
 VBD
 SENT
@@ -14945,7 +14002,6 @@ IN
 DT
 JJ
 NN
-,
 IN
 JJ
 NNS
@@ -14981,14 +14037,12 @@ NNS
 NN
 SENT
 NP
-,
 DT
 NN
 CC
 NN
 NN
 NN
-,
 RB
 VBN
 IN
@@ -15008,7 +14062,6 @@ VBD
 VBN
 IN
 NNS
-,
 VBG
 CD
 CD
@@ -15042,13 +14095,11 @@ NP
 POS
 JJ
 NNS
-:
 NP
 CC
 NP
 NP
 SENT
-:
 NP
 NP
 NN
@@ -15067,7 +14118,6 @@ JJ
 NNS
 IN
 NP
-,
 VBD
 RB
 IN
@@ -15081,7 +14131,6 @@ PP$
 NN
 NNS
 SENT
-''
 DT
 NN
 NN
@@ -15105,8 +14154,6 @@ JJ
 NNS
 JJ
 NN
-,
-''
 VBD
 NN
 NP
@@ -15126,10 +14173,8 @@ TO
 CD
 CD
 NNS
-(
 JJ
 CD
-)
 IN
 DT
 CD
@@ -15146,7 +14191,6 @@ JJ
 TO
 JJ
 SENT
-``
 EX
 VBZ
 DT
@@ -15174,11 +14218,8 @@ NN
 IN
 JJ
 NNS
-,
-''
 NP
 NP
-,
 NN
 IN
 NP
@@ -15217,7 +14258,6 @@ IN
 PP$
 NNS
 SENT
-``
 IN
 EX
 VBZ
@@ -15234,7 +14274,6 @@ PP
 VBZ
 PP
 SENT
-''
 NNS
 IN
 DT
@@ -15243,7 +14282,6 @@ NN
 NNS
 IN
 NN
-,
 VBN
 NN
 CC
@@ -15294,7 +14332,6 @@ NP
 NP
 NP
 NP
-,
 WDT
 VBZ
 NN
@@ -15337,11 +14374,9 @@ IN
 CD
 CD
 NNS
-,
 RB
 CD
 NN
-,
 VBG
 DT
 JJ
@@ -15368,11 +14403,9 @@ NNS
 MD
 VB
 RB
-,
 VBD
 NP
 SENT
-``
 DT
 NN
 IN
@@ -15394,8 +14427,6 @@ NN
 NN
 TO
 VB
-,
-''
 PP
 VBD
 SENT
@@ -15410,7 +14441,6 @@ DT
 NN
 IN
 NNS
-,
 VBG
 VBN
 RB
@@ -15438,7 +14468,6 @@ PP
 VBZ
 RB
 JJ
-,
 JJ
 JJR
 IN
@@ -15467,7 +14496,6 @@ IN
 DT
 JJ
 NN
-,
 IN
 NN
 NNS
@@ -15487,7 +14515,6 @@ NN
 CC
 NN
 NNS
-,
 WDT
 NP
 VBD
@@ -15514,7 +14541,6 @@ NN
 IN
 CD
 CD
-,
 VBN
 JJS
 IN
@@ -15582,7 +14608,6 @@ DT
 JJ
 NN
 SENT
-``
 PP
 VBP
 VBN
@@ -15595,14 +14620,11 @@ NNS
 VBN
 TO
 NN
-:
 NP
-(
 NP
 CC
 NP
 NP
-)
 SENT
 NN
 IN
@@ -15616,8 +14638,6 @@ DT
 NN
 IN
 PP
-,
-''
 NP
 VBD
 SENT
@@ -15644,7 +14664,6 @@ IN
 NN
 NN
 SENT
-``
 PP
 VBP
 VBN
@@ -15656,7 +14675,6 @@ NN
 NN
 IN
 NN
-,
 PP
 MD
 VB
@@ -15664,15 +14682,11 @@ JJ
 IN
 PP
 VBD
-,
-''
 VBD
 NP
 SENT
-(
 NP
 NP
-)
 NP
 POS
 NP
@@ -15707,11 +14721,9 @@ NNS
 IN
 JJ
 NNS
-,
 VBD
 NP
 NP
-,
 VBG
 NN
 IN
@@ -15722,7 +14734,6 @@ JJ
 NN
 NN
 SENT
-``
 EX
 VBZ
 DT
@@ -15750,8 +14761,6 @@ JJ
 JJ
 JJ
 NNS
-,
-''
 NP
 VBD
 IN
@@ -15778,7 +14787,6 @@ NN
 NNS
 IN
 NN
-,
 VBN
 NN
 CC
@@ -15829,7 +14837,6 @@ NP
 NP
 NP
 NP
-,
 WDT
 VBZ
 NNS
@@ -15838,13 +14845,11 @@ NN
 NN
 IN
 NN
-,
 VBD
 NN
 NN
 CC
 NN
-,
 IN
 NN
 NN
@@ -15859,7 +14864,6 @@ POS
 NNS
 SENT
 RB
-,
 RB
 NNS
 VBN
@@ -15892,11 +14896,9 @@ IN
 DT
 JJ
 NN
-,
 NP
 VBD
 SENT
-``
 PP$
 NNS
 VBP
@@ -15911,7 +14913,6 @@ VBN
 JJR
 NN
 NN
-,
 DT
 NN
 PP
@@ -15928,7 +14929,6 @@ PP$
 JJ
 NN
 SENT
-''
 NP
 VBD
 CD
@@ -15943,13 +14943,11 @@ IN
 DT
 JJ
 NN
-,
 VBN
 IN
 CD
 JJ
 NN
-,
 CC
 RB
 RB
@@ -15964,7 +14962,6 @@ IN
 VBG
 PP$
 NN
-,
 VBD
 NP
 SENT
@@ -16017,7 +15014,6 @@ NN
 TO
 CD
 CD
-,
 VBD
 NP
 SENT
@@ -16071,7 +15067,6 @@ DT
 JJ
 NN
 SENT
-''
 DT
 NN
 IN
@@ -16106,7 +15101,6 @@ PP
 RB
 VBP
 NN
-,
 NN
 CC
 NN
@@ -16114,7 +15108,6 @@ IN
 DT
 NN
 SENT
-''
 IN
 DT
 NN
@@ -16167,11 +15160,9 @@ NNS
 MD
 VB
 RB
-,
 VBD
 NP
 SENT
-``
 DT
 NN
 IN
@@ -16193,8 +15184,6 @@ NN
 NN
 TO
 VB
-,
-''
 PP
 VBD
 SENT
@@ -16209,7 +15198,6 @@ DT
 NN
 IN
 NNS
-,
 NNS
 VBD
 RB
@@ -16284,7 +15272,6 @@ NN
 CC
 NN
 NNS
-,
 WDT
 NP
 VBD
@@ -16328,7 +15315,6 @@ NN
 IN
 CD
 CD
-,
 VBN
 JJS
 IN
@@ -16353,7 +15339,6 @@ NP
 NN
 NN
 SENT
-:
 NP
 NP
 NN
@@ -16399,7 +15384,6 @@ RB
 DT
 NN
 NN
-,
 IN
 NP
 POS
@@ -16417,7 +15401,6 @@ JJ
 NN
 IN
 CD
-,
 IN
 VBG
 DT
@@ -16441,14 +15424,12 @@ NN
 IN
 CD
 SENT
-''
 VBG
 JJ
 NN
 IN
 DT
 NN
-:
 VBZ
 RB
 VBN
@@ -16472,8 +15453,6 @@ DT
 JJ
 NN
 NN
-,
-''
 VBD
 DT
 NN
@@ -16505,7 +15484,6 @@ TO
 DT
 JJ
 NN
-,
 VBG
 IN
 DT
@@ -16539,9 +15517,7 @@ CC
 NP
 NP
 NP
-(
 NP
-)
 VBP
 VBG
 IN
@@ -16553,7 +15529,6 @@ IN
 DT
 NN
 NN
-,
 JJ
 TO
 VBG
@@ -16561,11 +15536,9 @@ JJ
 IN
 DT
 NN
-,
 MD
 VB
 NN
-,
 VB
 VB
 NN
@@ -16603,7 +15576,6 @@ MD
 VB
 JJR
 NN
-,
 JJR
 NNS
 CC
@@ -16638,13 +15610,11 @@ NN
 SENT
 IN
 NP
-,
 PP
 VBZ
 RB
 CD
 NNS
-,
 VBG
 NNS
 TO
@@ -16740,7 +15710,6 @@ JJ
 NN
 POS
 NN
-,
 DT
 JJ
 NN
@@ -16750,16 +15719,13 @@ NN
 VBG
 CD
 NNS
-(
 JJ
-)
 IN
 CD
 NN
 VBD
 IN
 NN
-,
 IN
 NN
 IN
@@ -16782,7 +15748,6 @@ POS
 NN
 IN
 NN
-,
 JJ
 NNS
 IN
@@ -16797,7 +15762,6 @@ IN
 NN
 JJ
 NNS
-,
 IN
 DT
 NN
@@ -16831,7 +15795,6 @@ DT
 NN
 IN
 NN
-,
 VBG
 DT
 NN
@@ -16848,13 +15811,11 @@ VBN
 IN
 JJ
 NP
-,
 DT
 NN
 VBZ
 JJ
 SENT
-``
 PP
 MD
 RB
@@ -16886,12 +15847,9 @@ DT
 JJ
 NN
 NN
-,
-''
 VBD
 NP
 NP
-,
 NN
 NNS
 IN
@@ -16899,7 +15857,6 @@ DT
 NP
 NP
 SENT
-``
 DT
 NN
 VBZ
@@ -16914,8 +15871,6 @@ NN
 IN
 JJ
 NN
-,
-''
 PP
 VBD
 SENT
@@ -16979,7 +15934,6 @@ JJ
 NN
 NN
 NP
-,
 VBD
 DT
 NN
@@ -17012,7 +15966,6 @@ IN
 DT
 CD
 NN
-,
 NP
 VBD
 TO
@@ -17050,10 +16003,8 @@ CC
 CD
 NN
 SENT
-(
 NP
 NP
-)
 JJ
 NN
 CC
@@ -17077,7 +16028,6 @@ NN
 NNS
 IN
 NP
-,
 IN
 PP$
 NP
@@ -17094,7 +16044,6 @@ NN
 IN
 NNS
 SENT
-``
 DT
 JJ
 NN
@@ -17117,12 +16066,9 @@ JJ
 NN
 NN
 NN
-,
-''
 VBD
 NP
 NP
-,
 DT
 NN
 IN
@@ -17141,7 +16087,6 @@ TO
 CD
 CD
 NN
-,
 RB
 IN
 CD
@@ -17159,13 +16104,11 @@ IN
 NP
 VBZ
 VBN
-,
 RB
 DT
 NN
 SENT
 NP
-,
 WDT
 VBD
 IN
@@ -17177,7 +16120,6 @@ CD
 NN
 IN
 CD
-,
 VBZ
 VBN
 TO
@@ -17225,7 +16167,6 @@ IN
 VBG
 NNS
 SENT
-``
 DT
 JJ
 NN
@@ -17257,12 +16198,9 @@ JJ
 NN
 IN
 DT
-,
-''
 VBD
 NP
 NP
-,
 DT
 NN
 IN
@@ -17270,7 +16208,6 @@ NP
 NP
 SENT
 NP
-,
 WDT
 VBZ
 JJ
@@ -17286,7 +16223,6 @@ NP
 CC
 NP
 NNS
-,
 VBZ
 NN
 NNS
@@ -17304,16 +16240,13 @@ NN
 SENT
 IN
 NP
-,
 IN
 DT
 JJ
 NN
 NN
-,
 NP
 NNS
-:
 NP
 VBD
 IN
@@ -17338,7 +16271,6 @@ NNS
 VBN
 NP
 CD
-,
 CD
 NNS
 VBD
@@ -17385,12 +16317,10 @@ NN
 IN
 NP
 SENT
-``
 NN
 NNS
 IN
 NP
-,
 DT
 NN
 POS
@@ -17399,7 +16329,6 @@ JJ
 NN
 VBP
 JJ
-,
 VBN
 IN
 NNS
@@ -17418,8 +16347,6 @@ DT
 NN
 IN
 NN
-,
-''
 VBD
 NP
 IN
@@ -17454,7 +16381,6 @@ CC
 DT
 NP
 NN
-:
 NP
 MD
 VB
@@ -17463,7 +16389,6 @@ NN
 IN
 JJ
 NNS
-,
 RB
 IN
 JJ
@@ -17483,7 +16408,6 @@ NNS
 SENT
 IN
 NP
-,
 DT
 NN
 VBD
@@ -17505,7 +16429,6 @@ NNS
 IN
 CD
 CD
-:
 CD
 NNS
 MD
@@ -17525,13 +16448,11 @@ NN
 SENT
 NP
 NP
-,
 DT
 NP
 NP
 NN
 NN
-,
 VBZ
 JJ
 TO
@@ -17564,10 +16485,8 @@ POS
 JJ
 JJ
 NN
-,
 VBG
 NP
-,
 TO
 VB
 RB
@@ -17591,7 +16510,6 @@ NP
 NP
 NN
 NN
-,
 VBN
 TO
 NN
@@ -17602,7 +16520,6 @@ CD
 NN
 SENT
 NN
-,
 DT
 NP
 VBN
@@ -17615,7 +16532,6 @@ NN
 VBN
 IN
 NP
-,
 VBZ
 VBN
 TO
@@ -17661,7 +16577,6 @@ NN
 IN
 DT
 NN
-,
 VBG
 CD
 NN
@@ -17670,7 +16585,6 @@ NP
 NP
 IN
 NP
-,
 MD
 VB
 RB
@@ -17705,7 +16619,6 @@ VB
 DT
 CD
 CD
-,
 RB
 RB
 IN
@@ -17737,7 +16650,6 @@ VBD
 CD
 NN
 CD
-,
 VBG
 TO
 JJ
@@ -17747,10 +16659,8 @@ NN
 SENT
 IN
 NP
-,
 NP
 NNS
-:
 NP
 POS
 NNS
@@ -17790,7 +16700,6 @@ NP
 IN
 JJ
 SENT
-:
 NP
 NP
 NN
@@ -17818,10 +16727,8 @@ TO
 CD
 CD
 NNS
-(
 NN
 CD
-)
 IN
 NP
 IN
@@ -17868,7 +16775,6 @@ IN
 NN
 NN
 NP
-,
 IN
 NN
 NNS
@@ -17882,7 +16788,6 @@ NN
 VBG
 IN
 NN
-,
 WDT
 VBZ
 VBN
@@ -17912,7 +16817,6 @@ IN
 CD
 CD
 NNS
-,
 NP
 JJ
 NN
@@ -17924,7 +16828,6 @@ IN
 DT
 NN
 SENT
-``
 PP
 MD
 VB
@@ -17967,15 +16870,12 @@ SENT
 DT
 VBZ
 JJ
-,
 DT
 JJS
 NN
 IN
 CD
 NNS
-,
-''
 PP
 VBD
 SENT
@@ -17995,7 +16895,6 @@ RB
 JJ
 NN
 NNS
-,
 WDT
 VBD
 IN
@@ -18005,7 +16904,6 @@ NP
 NP
 NN
 NN
-,
 CC
 VBD
 NN
@@ -18033,7 +16931,6 @@ NN
 IN
 NNS
 SENT
-``
 NNS
 VBP
 VBN
@@ -18062,17 +16959,13 @@ DT
 NN
 DT
 NN
-,
-''
 PP
 VBD
 SENT
 NN
-,
 DT
 NN
 NN
-,
 MD
 RB
 VB
@@ -18108,7 +17001,6 @@ RB
 RB
 DT
 NN
-,
 VBG
 DT
 NN
@@ -18116,7 +17008,6 @@ IN
 CD
 IN
 NP
-,
 RB
 IN
 CD
@@ -18126,7 +17017,6 @@ NN
 IN
 CD
 SENT
-``
 PP
 VBP
 IN
@@ -18143,7 +17033,6 @@ JJ
 NNS
 VBZ
 VBG
-,
 DT
 NN
 IN
@@ -18166,13 +17055,10 @@ NP
 VBZ
 RB
 JJ
-,
-''
 VBD
 NP
 SENT
 NP
-,
 WDT
 VBZ
 JJ
@@ -18188,7 +17074,6 @@ NP
 CC
 NP
 NNS
-,
 VBZ
 NN
 NNS
@@ -18219,7 +17104,6 @@ NN
 IN
 NNS
 SENT
-''
 PP
 VBZ
 IN
@@ -18232,8 +17116,6 @@ NN
 IN
 DT
 NN
-,
-''
 VBD
 CD
 NN
@@ -18316,12 +17198,10 @@ NN
 VBN
 NP
 CD
-,
 RB
 IN
 CD
 CD
-,
 IN
 DT
 NN
@@ -18337,7 +17217,6 @@ TO
 CD
 CD
 NNS
-,
 IN
 VBN
 NN
@@ -18358,7 +17237,6 @@ CC
 NN
 IN
 NP
-,
 PP$
 JJ
 NN
@@ -18411,7 +17289,6 @@ NNS
 IN
 DT
 NN
-,
 IN
 DT
 NN
@@ -18420,7 +17297,6 @@ CD
 CD
 JJ
 NN
-,
 JJ
 TO
 NN
@@ -18438,7 +17314,6 @@ JJ
 NN
 IN
 JJ
-,
 VBG
 DT
 NN
@@ -18447,17 +17322,14 @@ DT
 NN
 TO
 NP
-,
 DT
 NN
 IN
 CD
 NN
 SENT
-(
 NP
 NP
-)
 NP
 NNS
 NN
@@ -18481,7 +17353,6 @@ IN
 JJ
 NN
 NNS
-,
 CC
 VBD
 DT
@@ -18496,18 +17367,15 @@ NN
 SENT
 DT
 NN
-,
 WP$
 JJ
 NNS
 VBP
 NP
-,
 NP
 CC
 NP
 NP
-,
 VBD
 JJ
 NNS
@@ -18516,15 +17384,11 @@ TO
 CD
 CD
 NNS
-(
 NN
 CD
-)
 IN
-,
 CD
 CD
-,
 IN
 NNS
 VBD
@@ -18552,7 +17416,6 @@ TO
 DT
 NN
 NN
-,
 DT
 NN
 VBD
@@ -18580,7 +17443,6 @@ DT
 NN
 VBD
 SENT
-''
 DT
 NN
 IN
@@ -18590,10 +17452,8 @@ IN
 DT
 NP
 NP
-,
 PP
 VBP
-,
 VBZ
 DT
 JJ
@@ -18611,15 +17471,12 @@ NN
 IN
 JJ
 NN
-,
-''
 PP
 VBD
 IN
 DT
 NN
 SENT
-''
 DT
 NN
 IN
@@ -18646,7 +17503,6 @@ DT
 NP
 NP
 SENT
-''
 NP
 POS
 NNS
@@ -18680,7 +17536,6 @@ CD
 SENT
 DT
 NN
-,
 CD
 NN
 VBN
@@ -18689,7 +17544,6 @@ NP
 JJ
 NP
 NPS
-,
 VBD
 VBN
 RB
@@ -18713,7 +17567,6 @@ NP
 NP
 NP
 NP
-,
 NP
 NPS
 CC
@@ -18723,7 +17576,6 @@ SENT
 IN
 JJ
 NNS
-,
 JJ
 NNS
 VBD
@@ -18732,10 +17584,8 @@ NN
 TO
 CD
 CD
-(
 NN
 CD
-)
 IN
 DT
 CD
@@ -18763,7 +17613,6 @@ NNS
 IN
 NN
 NNS
-,
 VBP
 RB
 VB
@@ -18774,7 +17623,6 @@ IN
 DT
 NP
 NP
-,
 VBD
 IN
 CD
@@ -18810,7 +17658,6 @@ NN
 IN
 JJ
 NN
-,
 VBG
 DT
 NN
@@ -18827,7 +17674,6 @@ NN
 IN
 JJ
 NN
-,
 CC
 NN
 NNS
@@ -18836,13 +17682,11 @@ RB
 RB
 SENT
 NP
-,
 VBN
 IN
 NP
 IN
 CD
-,
 RB
 VBZ
 CD
@@ -18910,7 +17754,6 @@ NP
 IN
 NN
 NNS
-,
 JJ
 TO
 VB
@@ -18931,25 +17774,19 @@ CC
 JJR
 NNS
 SENT
-(
-NP
-NP
-)
-(
 NP
 NP
 NP
-)
 NP
 NP
-,
+NP
+NP
 JJ
 NN
 IN
 NP
 NP
 NP
-,
 WP$
 NNS
 VBP
@@ -18958,7 +17795,6 @@ JJ
 IN
 JJ
 NNS
-,
 VBD
 PP
 VBZ
@@ -18973,7 +17809,6 @@ CC
 MD
 VB
 SENT
-''
 JJ
 NN
 VBZ
@@ -18997,8 +17832,6 @@ MD
 VB
 IN
 DT
-,
-''
 VBD
 NP
 IN
@@ -19024,7 +17857,6 @@ SENT
 DT
 NP
 CD
-,
 IN
 DT
 NN
@@ -19038,12 +17870,10 @@ NN
 VBG
 NP
 CD
-,
 PP
 VBD
 IN
 CD
-,
 IN
 VBG
 TO
@@ -19055,7 +17885,6 @@ NN
 SENT
 NP
 NP
-,
 JJ
 NN
 IN
@@ -19067,7 +17896,6 @@ NN
 NP
 CC
 NP
-,
 VBD
 IN
 NP
@@ -19088,7 +17916,6 @@ NNS
 DT
 NN
 SENT
-``
 NNS
 VBP
 VBN
@@ -19117,8 +17944,6 @@ DT
 NN
 DT
 NN
-,
-''
 PP
 VBD
 SENT
@@ -19141,7 +17966,6 @@ NN
 IN
 NN
 NNS
-,
 VBG
 RP
 NN
@@ -19176,7 +18000,6 @@ JJ
 NNS
 IN
 NP
-,
 VBN
 IN
 NN
@@ -19190,7 +18013,6 @@ IN
 NP
 NNS
 SENT
-''
 DT
 NN
 MD
@@ -19204,7 +18026,6 @@ PP$
 NN
 IN
 NP
-,
 DT
 JJ
 NN
@@ -19223,8 +18044,6 @@ NN
 IN
 NP
 POS
-,
-''
 VBD
 NP
 NN
@@ -19260,7 +18079,6 @@ TO
 CD
 CD
 NN
-,
 RB
 IN
 CD
@@ -19294,7 +18112,6 @@ NN
 VBN
 IN
 NP
-,
 VBG
 DT
 JJ
@@ -19346,14 +18163,12 @@ DT
 JJ
 NN
 SENT
-''
 DT
 NN
 MD
 VB
 IN
 NNS
-,
 RB
 CD
 NN
@@ -19362,8 +18177,6 @@ NNS
 IN
 CD
 NN
-,
-''
 VBD
 NP
 NP
@@ -19396,11 +18209,9 @@ SENT
 DT
 NNS
 NN
-,
 WDT
 VBZ
 NP
-,
 VBZ
 VBN
 TO
@@ -19417,7 +18228,6 @@ CD
 CD
 SENT
 RB
-,
 NN
 NN
 IN
@@ -19450,7 +18260,6 @@ IN
 NNS
 IN
 NP
-,
 NP
 VBD
 JJ
@@ -19461,7 +18270,6 @@ CC
 VBG
 NNS
 NP
-,
 RB
 NN
 IN
@@ -19470,7 +18278,6 @@ NN
 POS
 NN
 NN
-,
 VBP
 JJ
 TO
@@ -19519,7 +18326,6 @@ NN
 TO
 CD
 CD
-,
 VBN
 IN
 IN
@@ -19544,17 +18350,14 @@ DT
 JJ
 NNS
 NN
-,
 WDT
 VBZ
 JJ
-,
 MD
 RB
 VB
 RB
 JJR
-:
 DT
 NNS
 VBP
@@ -19568,7 +18371,6 @@ RB
 IN
 CD
 CD
-:
 IN
 DT
 NN
@@ -19615,7 +18417,6 @@ VBN
 IN
 NN
 SENT
-:
 NP
 NP
 NN
@@ -19623,7 +18424,6 @@ CD
 CD
 CD
 NP
-,
 NN
 CC
 JJ
@@ -19655,7 +18455,6 @@ JJ
 NNS
 NN
 NP
-,
 CC
 PP
 RB
@@ -19671,7 +18470,6 @@ NN
 IN
 NNS
 SENT
-''
 DT
 NN
 MD
@@ -19680,14 +18478,11 @@ VB
 IN
 IN
 NP
-,
 RB
 IN
 NN
 CC
 NN
-,
-''
 VBD
 NP
 NP
@@ -19707,7 +18502,6 @@ TO
 CD
 CD
 NN
-,
 IN
 DT
 NN
@@ -19731,7 +18525,6 @@ VBP
 VBN
 IN
 JJ
-,
 RB
 IN
 NP
@@ -19759,7 +18552,6 @@ PP$
 NN
 NN
 NP
-,
 DT
 CD
 CD
@@ -19794,7 +18586,6 @@ NN
 NN
 IN
 NP
-,
 TO
 DT
 NP
@@ -19849,12 +18640,9 @@ PP$
 JJ
 JJ
 NNS
-:
-NP
-,
 NP
 NP
-,
+NP
 NP
 CC
 NP
@@ -19898,7 +18686,6 @@ IN
 DT
 JJ
 NN
-,
 NP
 VBD
 IN
@@ -19920,7 +18707,6 @@ CD
 CD
 IN
 NP
-,
 NN
 IN
 NP
@@ -19940,7 +18726,6 @@ DT
 CD
 CD
 NN
-,
 VBZ
 VBN
 TO
@@ -19975,11 +18760,8 @@ NP
 NP
 CC
 NP
-(
 NP
-)
 SENT
-``
 PP
 VBP
 NP
@@ -19995,17 +18777,13 @@ NP
 NP
 CC
 NP
-,
-''
 VBD
 NP
 NP
-,
 NN
 NP
 NP
 SENT
-``
 PP
 VBP
 VBN
@@ -20040,8 +18818,6 @@ PP
 IN
 JJ
 NN
-,
-''
 PP
 VBD
 SENT
@@ -20051,7 +18827,6 @@ JJS
 NN
 JJ
 NN
-:
 NP
 NP
 MD
@@ -20070,7 +18845,6 @@ NNS
 JJ
 IN
 NP
-,
 CC
 PP$
 NN
@@ -20082,11 +18856,9 @@ MD
 VB
 PP
 RB
-,
 NNS
 VBD
 SENT
-''
 DT
 NN
 MD
@@ -20099,7 +18871,6 @@ JJ
 NN
 IN
 NP
-,
 CC
 WP
 VBZ
@@ -20126,8 +18897,6 @@ NN
 IN
 DT
 NN
-,
-''
 VBD
 NP
 NN
@@ -20168,7 +18937,6 @@ DT
 CD
 CD
 NN
-,
 IN
 CD
 CD
@@ -20188,14 +18956,12 @@ NN
 IN
 VBG
 NN
-,
 IN
 NN
 IN
 CD
 CD
 NN
-,
 TO
 JJ
 NN
@@ -20208,7 +18974,6 @@ IN
 CD
 SENT
 NN
-:
 NP
 VBD
 NP
@@ -20219,7 +18984,6 @@ NP
 VBZ
 IN
 NP
-,
 CD
 TO
 VB
@@ -20241,7 +19005,6 @@ SENT
 IN
 RB
 JJ
-:
 NP
 VBZ
 RB
@@ -20258,7 +19021,6 @@ CD
 NNS
 DT
 NN
-,
 RB
 IN
 VBG
@@ -20301,7 +19063,6 @@ NN
 NN
 IN
 NP
-,
 DT
 NPS
 CC
@@ -20322,7 +19083,6 @@ NN
 TO
 NP
 CD
-,
 CD
 IN
 CD
@@ -20334,7 +19094,6 @@ CD
 CD
 SENT
 NN
-:
 NP
 POS
 JJ
@@ -20369,22 +19128,18 @@ VBN
 SENT
 NP
 POS
-,
 NP
-:
 NP
 POS
 JJ
 NN
 NN
-,
 VBD
 NN
 NNS
 IN
 CD
 CD
-,
 RB
 IN
 CD
@@ -20456,7 +19211,6 @@ NN
 IN
 DT
 NN
-,
 VBG
 DT
 NN
@@ -20485,12 +19239,10 @@ NP
 IN
 DT
 NP
-,
 NP
 NP
 CC
 NP
-,
 IN
 DT
 NN
@@ -20502,11 +19254,9 @@ VBZ
 CD
 IN
 NP
-,
 CD
 IN
 NP
-,
 CD
 IN
 NP
@@ -20516,14 +19266,11 @@ IN
 NP
 SENT
 RB
-,
 NP
-:
 NP
 POS
 JJ
 NN
-,
 WDT
 VBZ
 DT
@@ -20533,10 +19280,8 @@ NN
 IN
 NP
 NNS
-:
 NP
 NNS
-,
 MD
 VB
 NN
@@ -20572,7 +19317,6 @@ NNS
 IN
 NP
 NNS
-:
 NP
 CC
 NN
@@ -20597,7 +19341,6 @@ IN
 CD
 CD
 NN
-,
 IN
 DT
 CD
@@ -20627,7 +19370,6 @@ RB
 IN
 NP
 NNS
-:
 NP
 SENT
 DT
@@ -20644,7 +19386,6 @@ CD
 NN
 IN
 NP
-,
 CC
 VBD
 VBG
@@ -20685,7 +19426,6 @@ VBG
 IN
 CD
 NN
-,
 PDT
 PP$
 CD
@@ -20693,7 +19433,6 @@ NN
 NN
 IN
 CD
-,
 IN
 CD
 NN
@@ -20734,7 +19473,6 @@ NN
 VBN
 NP
 CD
-,
 CD
 NN
 TO
@@ -20744,7 +19482,6 @@ NN
 NN
 CD
 SENT
-:
 NP
 NP
 NN
@@ -20771,10 +19508,8 @@ TO
 CD
 CD
 NNS
-(
 NN
 CD
-)
 IN
 NP
 CC
@@ -20819,9 +19554,7 @@ PP$
 NN
 NNS
 SENT
-''
 RB
-,
 PP
 VBP
 PP$
@@ -20829,18 +19562,14 @@ CD
 NN
 NN
 NN
-,
 IN
 DT
 JJ
 NN
 IN
 DT
-(
 NN
-)
 NN
-,
 VBZ
 DT
 NN
@@ -20854,8 +19583,6 @@ NN
 IN
 DT
 NN
-,
-``
 JJ
 NN
 NP
@@ -20887,7 +19614,6 @@ DT
 JJ
 NN
 SENT
-''
 JJ
 NN
 NNS
@@ -20915,8 +19641,6 @@ NN
 IN
 JJ
 NP
-,
-''
 PP
 VBD
 SENT
@@ -20929,7 +19653,6 @@ JJ
 TO
 JJ
 SENT
-``
 DT
 NNS
 VBD
@@ -20956,12 +19679,9 @@ PP
 VBD
 RB
 VBN
-,
-''
 VBD
 NP
 NP
-,
 DT
 NN
 IN
@@ -21009,16 +19729,13 @@ IN
 JJ
 NN
 NN
-,
 VBD
 DT
 NN
 SENT
 IN
 DT
-,
 NP
-:
 NP
 VBD
 NNS
@@ -21026,13 +19743,11 @@ IN
 NP
 NP
 POS
-,
 DT
 NN
 POS
 VBG
 NN
-,
 VBD
 RB
 CD
@@ -21053,9 +19768,7 @@ RB
 NN
 SENT
 NP
-,
 RB
-,
 VBD
 DT
 NN
@@ -21079,7 +19792,6 @@ NNS
 IN
 PP$
 NN
-:
 NP
 POS
 NP
@@ -21126,9 +19838,7 @@ JJS
 NN
 IN
 NP
-,
 NP
-,
 CC
 VBD
 TO
@@ -21145,7 +19855,6 @@ VBD
 DT
 NN
 SENT
-``
 PP
 MD
 VB
@@ -21178,8 +19887,6 @@ VBP
 RB
 RBR
 JJ
-,
-''
 VBD
 NP
 SENT
@@ -21196,7 +19903,6 @@ TO
 CD
 CD
 NNS
-,
 VBN
 IN
 PP$
@@ -21231,7 +19937,6 @@ CD
 JJ
 NP
 NN
-:
 NP
 NN
 NNS
@@ -21246,18 +19951,15 @@ VB
 DT
 NP
 NN
-:
 NP
 NN
 NN
 NN
 RB
 RB
-,
 VBD
 NP
 SENT
-``
 PP
 MD
 RB
@@ -21295,15 +19997,12 @@ JJ
 NN
 IN
 JJ
-,
-''
 PP
 VBD
 SENT
 NNS
 IN
 NP
-:
 NP
 POS
 VBN
@@ -21331,27 +20030,22 @@ IN
 DT
 NN
 NN
-,
 VBN
 IN
 DT
 NN
 IN
 NP
-:
 NP
 POS
 NN
 IN
 NP
 SENT
-(
 NP
 NP
-)
 NP
 NP
-,
 JJ
 NN
 IN
@@ -21363,7 +20057,6 @@ NP
 CC
 NP
 NP
-,
 VBD
 IN
 NP
@@ -21383,7 +20076,6 @@ DT
 JJ
 NN
 SENT
-``
 PP
 MD
 VB
@@ -21416,8 +20108,6 @@ VBP
 RB
 RBR
 JJ
-,
-''
 VBD
 NP
 IN
@@ -21425,7 +20115,6 @@ DT
 NN
 SENT
 NN
-:
 NP
 POS
 NNS
@@ -21472,7 +20161,6 @@ JJS
 NN
 IN
 NP
-,
 NP
 CC
 VBD
@@ -21491,7 +20179,6 @@ VBD
 DT
 NN
 SENT
-``
 EX
 VBD
 CD
@@ -21512,7 +20199,6 @@ NN
 IN
 DT
 NN
-,
 CD
 CD
 IN
@@ -21537,8 +20223,6 @@ VBD
 VBG
 DT
 NN
-,
-''
 VBD
 NP
 SENT
@@ -21560,7 +20244,6 @@ JJ
 NP
 SENT
 RB
-,
 RB
 IN
 DT
@@ -21583,24 +20266,20 @@ IN
 DT
 JJ
 NN
-,
 VBD
 NP
 SENT
 NN
-:
 NP
 POS
 NN
 NN
-,
 WDT
 VBZ
 NP
 POS
 NN
 NNS
-,
 VBD
 DT
 CD
@@ -21609,17 +20288,14 @@ IN
 PP$
 NN
 NNS
-,
 IN
 PP$
 JJ
 CD
 NNS
-,
 NN
 CC
 NNS
-,
 CC
 VBG
 RB
@@ -21628,7 +20304,6 @@ DT
 NN
 IN
 NP
-,
 VBN
 IN
 JJ
@@ -21637,7 +20312,6 @@ NP
 POS
 JJ
 NN
-,
 IN
 PP$
 JJ
@@ -21662,7 +20336,6 @@ VBN
 IN
 NN
 NNS
-,
 CC
 IN
 JJ
@@ -21671,7 +20344,6 @@ IN
 NNS
 CC
 NNS
-,
 CC
 DT
 VBD
@@ -21679,7 +20351,6 @@ VBG
 RP
 JJ
 NNS
-,
 VBG
 IN
 DT
@@ -21690,10 +20361,8 @@ NN
 NN
 IN
 NP
-:
 NP
 NP
-:
 NP
 VBD
 NN
@@ -21709,7 +20378,6 @@ IN
 PP$
 NN
 NN
-,
 VBN
 IN
 PP$
@@ -21732,7 +20400,6 @@ JJR
 NNS
 SENT
 NN
-:
 NP
 MD
 VB
@@ -21759,7 +20426,6 @@ PP$
 JJ
 JJ
 NN
-,
 VBD
 NP
 SENT
@@ -21771,7 +20437,6 @@ CD
 JJ
 NP
 NN
-:
 NP
 NN
 NNS
@@ -21783,18 +20448,15 @@ VB
 DT
 NP
 NN
-:
 NP
 NN
 NN
 NN
 RB
 RB
-,
 PP
 VBD
 SENT
-``
 PP
 MD
 RB
@@ -21832,13 +20494,10 @@ JJ
 NN
 IN
 JJ
-,
-''
 VBD
 NP
 SENT
 RB
-,
 NNS
 IN
 DT
@@ -21864,7 +20523,6 @@ DT
 JJ
 NN
 NN
-,
 VBG
 PP$
 NN
@@ -21894,7 +20552,6 @@ DT
 NNS
 VBP
 NN
-:
 NP
 VBZ
 RB
@@ -21923,9 +20580,7 @@ TO
 VB
 NP
 SENT
-''
 RB
-,
 PP
 VBP
 PP$
@@ -21933,7 +20588,6 @@ CD
 NN
 NN
 NN
-,
 IN
 DT
 JJ
@@ -21941,7 +20595,6 @@ NN
 IN
 DT
 NN
-,
 VBZ
 DT
 NN
@@ -21983,12 +20636,9 @@ NN
 IN
 JJ
 NP
-,
-''
 VBD
 NP
 SENT
-:
 NP
 NP
 NN
@@ -21998,10 +20648,8 @@ CD
 JJ
 NN
 NP
-,
 NP
 NNS
-:
 NP
 NP
 IN
@@ -22073,17 +20721,14 @@ VBD
 PP$
 JJ
 NN
-,
 NP
 POS
 NP
 NP
-,
 IN
 DT
 NN
 SENT
-''
 NP
 VBZ
 VBG
@@ -22095,8 +20740,6 @@ NNS
 IN
 NN
 NN
-,
-''
 VBD
 JJ
 NN
@@ -22123,14 +20766,11 @@ POS
 CD
 JJS
 NNS
-:
 JJ
 NNS
-:
 NP
 CC
 NP
-:
 WP
 VBP
 DT
@@ -22138,14 +20778,12 @@ JJ
 NN
 IN
 NNS
-,
 VBD
 PP$
 NNS
 VBP
 SENT
 NN
-:
 NP
 NNS
 VBD
@@ -22172,7 +20810,6 @@ SENT
 IN
 JJ
 NNS
-,
 NNS
 VBP
 RB
@@ -22200,7 +20837,6 @@ IN
 NP
 NP
 POS
-,
 WDT
 VBD
 RB
@@ -22212,10 +20848,8 @@ NN
 SENT
 NP
 POS
-,
 VBD
 VBN
-,
 VBZ
 VBN
 JJ
@@ -22235,7 +20869,6 @@ NNS
 SENT
 JJR
 NP
-,
 NP
 VBD
 DT
@@ -22257,7 +20890,6 @@ NN
 VBN
 NP
 CD
-,
 VBN
 IN
 JJ
@@ -22310,7 +20942,6 @@ IN
 CD
 NN
 SENT
-``
 EX
 VBZ
 DT
@@ -22349,12 +20980,9 @@ CD
 NNS
 DT
 NN
-,
-''
 VBD
 NP
 SENT
-``
 PP
 VBP
 EX
@@ -22364,11 +20992,8 @@ RB
 JJR
 NN
 NN
-,
-''
 PP
 VBD
-,
 VBG
 NNS
 VBD
@@ -22385,7 +21010,6 @@ IN
 DT
 JJ
 NN
-,
 NP
 NP
 VBD
@@ -22411,7 +21035,6 @@ JJ
 IN
 NP
 SENT
-:
 NP
 NP
 NN
@@ -22423,7 +21046,6 @@ NN
 NN
 NP
 NP
-,
 VBD
 IN
 NP
@@ -22435,16 +21057,13 @@ VB
 CD
 CD
 NNS
-(
 NN
 CD
-)
 IN
 DT
 NN
 JJ
 NN
-,
 VBG
 DT
 CD
@@ -22457,10 +21076,8 @@ DT
 CD
 CD
 NN
-(
 NN
 CD
-)
 NN
 NN
 JJ
@@ -22469,7 +21086,6 @@ IN
 PP$
 NP
 NP
-,
 VBG
 JJ
 NNS
@@ -22496,17 +21112,14 @@ DT
 NN
 NN
 VBN
-,
 JJ
 IN
 NNS
-,
 CD
 CD
 IN
 NN
 NNS
-,
 WDT
 PP
 VBZ
@@ -22535,9 +21148,7 @@ NN
 IN
 NN
 NP
-(
 NP
-)
 WDT
 VBZ
 RB
@@ -22590,7 +21201,6 @@ CC
 VBG
 NNS
 SENT
-``
 PP
 VBP
 RB
@@ -22626,8 +21236,6 @@ NP
 IN
 NP
 VBZ
-,
-``
 PP
 VBD
 SENT
@@ -22642,7 +21250,6 @@ IN
 CD
 NN
 SENT
-''
 TO
 VB
 DT
@@ -22651,7 +21258,6 @@ NN
 TO
 VB
 RB
-,
 DT
 NN
 VBZ
@@ -22661,12 +21267,9 @@ DT
 NN
 VBG
 NP
-,
-''
 VBD
 NP
 NP
-,
 DT
 NN
 IN
@@ -22726,16 +21329,13 @@ DT
 CD
 NN
 NNS
-,
 IN
 PP
 NP
 NP
-,
 NP
 CC
 NP
-,
 CD
 NNS
 CC
@@ -22759,14 +21359,12 @@ NP
 CC
 NP
 NP
-,
 VBN
 JJ
 NN
 SENT
 IN
 VBN
-,
 DT
 NN
 MD
@@ -22812,18 +21410,14 @@ WRB
 NP
 CC
 NP
-(
 NP
-:
 NP
-)
 VBD
 NN
 IN
 JJ
 NN
 NP
-,
 VBG
 PP
 DT
@@ -22860,7 +21454,6 @@ NP
 CC
 NP
 SENT
-``
 PP
 VBP
 RB
@@ -22877,8 +21470,6 @@ NN
 IN
 DT
 NN
-,
-''
 PP
 VBD
 SENT
@@ -22925,7 +21516,6 @@ WDT
 PP
 MD
 VB
-,
 NP
 VBD
 SENT
@@ -22942,7 +21532,6 @@ NN
 TO
 CD
 CD
-,
 IN
 PP$
 NP
@@ -22990,7 +21579,6 @@ CC
 DT
 NN
 NN
-,
 WDT
 VBZ
 JJ
@@ -23001,7 +21589,6 @@ CC
 NNS
 VBG
 NNS
-,
 VBD
 TO
 VB
@@ -23070,7 +21657,6 @@ CD
 NNS
 VBD
 VBN
-,
 VBG
 DT
 NN
@@ -23079,21 +21665,17 @@ IN
 DT
 NN
 SENT
-(
-NP
-NP
-)
 NP
 NP
 NP
-,
+NP
+NP
 NN
 IN
 NN
 NN
 NP
 NP
-,
 VBD
 DT
 NN
@@ -23112,7 +21694,6 @@ NN
 RBR
 JJ
 SENT
-``
 RB
 PP
 MD
@@ -23150,8 +21731,6 @@ IN
 VBG
 PP$
 NNS
-,
-''
 VBD
 NP
 IN
@@ -23185,14 +21764,12 @@ NP
 NP
 NP
 NP
-,
 VBN
 IN
 NP
 NP
 IN
 NP
-,
 VBD
 IN
 NP
@@ -23214,7 +21791,6 @@ NNS
 IN
 NNS
 SENT
-''
 IN
 NP
 PP
@@ -23238,9 +21814,7 @@ VB
 JJ
 JJ
 NN
-,
 RB
-,
 IN
 DT
 NP
@@ -23249,8 +21823,6 @@ NN
 IN
 DT
 NN
-,
-``
 JJ
 NN
 NP
@@ -23268,10 +21840,8 @@ IN
 CD
 CD
 NNS
-(
 NN
 CD
-)
 IN
 NP
 IN
@@ -23280,13 +21850,11 @@ NN
 VBN
 NP
 CD
-,
 JJ
 IN
 PP$
 CD
 NN
-,
 CC
 NNS
 IN
@@ -23328,10 +21896,8 @@ NP
 POS
 NP
 NP
-,
 NP
 NP
-,
 VBD
 DT
 NN
@@ -23355,7 +21921,6 @@ JJ
 NN
 IN
 CD
-,
 JJ
 NN
 NNS
@@ -23403,7 +21968,6 @@ POS
 NNS
 IN
 NN
-,
 WDT
 RB
 VBP
@@ -23414,7 +21978,6 @@ IN
 JJ
 NN
 NNS
-,
 VBP
 VBN
 TO
@@ -23427,11 +21990,9 @@ NN
 IN
 DT
 NN
-,
 VBD
 NP
 SENT
-``
 PP
 VBP
 PP
@@ -23445,10 +22006,8 @@ VBZ
 RB
 IN
 NN
-,
 IN
 JJ
-,
 CC
 NP
 VBZ
@@ -23469,10 +22028,8 @@ PP$
 NNS
 RB
 SENT
-''
 IN
 CD
-,
 NP
 POS
 NN
@@ -23493,10 +22050,8 @@ JJ
 IN
 IN
 CD
-,
 VBD
 NP
-,
 CC
 PP$
 JJ
@@ -23543,7 +22098,6 @@ VBG
 PP$
 NNS
 SENT
-``
 PP
 VBP
 RB
@@ -23570,7 +22124,6 @@ DT
 JJ
 NN
 SENT
-''
 CD
 NN
 VBG
@@ -23584,25 +22137,21 @@ NP
 WRB
 PP$
 NNS
-,
 WP
 VBP
 VBN
 VBN
 JJ
 NN
-,
 VBP
 VBG
 IN
 DT
 RB
 VBP
-,
 DT
 NN
 NN
-,
 DT
 JJ
 NN
@@ -23611,10 +22160,8 @@ DT
 NP
 NPS
 SENT
-(
 JJ
 NN
-)
 JJ
 NN
 CC
@@ -23639,10 +22186,8 @@ TO
 CD
 CD
 NNS
-(
 NN
 CD
-)
 SENT
 NP
 NP
@@ -23655,9 +22200,7 @@ JJ
 NN
 VBD
 VBN
-``
 RB
-''
 IN
 DT
 NN
@@ -23684,14 +22227,12 @@ TO
 CD
 CD
 NNS
-,
 IN
 DT
 NNS
 CC
 NNS
 RB
-,
 CC
 PP$
 NNS
@@ -23700,9 +22241,7 @@ NP
 NP
 CC
 NP
-(
 NP
-)
 VBD
 DT
 CD
@@ -23723,7 +22262,6 @@ JJ
 TO
 JJ
 RB
-,
 IN
 NNS
 CC
@@ -23778,7 +22316,6 @@ VBN
 TO
 JJ
 SENT
-``
 DT
 JJ
 NN
@@ -23808,8 +22345,6 @@ VB
 IN
 JJ
 NNS
-,
-''
 VBD
 CD
 NN
@@ -23822,7 +22357,6 @@ SENT
 IN
 DT
 NN
-,
 NN
 NN
 NN
@@ -23837,7 +22371,6 @@ DT
 NN
 IN
 JJ
-,
 JJ
 NN
 VBN
@@ -23850,7 +22383,6 @@ NNS
 NN
 NP
 SENT
-``
 DT
 NN
 VBZ
@@ -23858,13 +22390,11 @@ JJ
 IN
 PP
 VBZ
-,
 VBG
 WP
 PP
 VBP
 VBN
-,
 VBG
 PP$
 NNS
@@ -23876,8 +22406,6 @@ IN
 DT
 JJ
 NN
-,
-''
 NP
 VBD
 SENT
@@ -23886,7 +22414,6 @@ JJ
 NN
 IN
 JJ
-,
 JJ
 NN
 IN
@@ -23949,7 +22476,6 @@ TO
 CD
 NN
 SENT
-``
 PP
 VBP
 RB
@@ -23972,7 +22498,6 @@ NN
 IN
 NN
 SENT
-''
 NP
 VBD
 DT
@@ -23980,7 +22505,6 @@ JJ
 NN
 IN
 NP
-,
 NN
 IN
 NP
@@ -23991,7 +22515,6 @@ JJ
 NNS
 CC
 NNS
-,
 WDT
 VBD
 VBN
@@ -24027,7 +22550,6 @@ IN
 NP
 NN
 NN
-,
 NP
 NP
 CC
@@ -24052,7 +22574,6 @@ IN
 JJ
 JJ
 NN
-,
 VBD
 NP
 SENT
@@ -24100,7 +22621,6 @@ RB
 CD
 NN
 SENT
-``
 PP
 VBP
 PP
@@ -24136,8 +22656,6 @@ NN
 IN
 DT
 NN
-,
-''
 VBD
 NP
 SENT
@@ -24182,10 +22700,8 @@ NP
 NNS
 DT
 NN
-,
 VBD
 NP
-,
 IN
 VBG
 CD
@@ -24206,12 +22722,9 @@ IN
 NN
 NP
 POS
-,
 NP
-,
 CC
 NP
-:
 NP
 NN
 SENT
@@ -24249,7 +22762,6 @@ NNS
 IN
 DT
 NN
-,
 VBN
 IN
 JJ
@@ -24317,13 +22829,11 @@ VBD
 DT
 NN
 VBZ
-``
 VBG
 DT
 NN
 IN
 NNS
-''
 CC
 VBD
 TO
@@ -24342,13 +22852,10 @@ IN
 DT
 NN
 SENT
-(
 NP
 NP
-)
 NP
 NP
-,
 JJ
 NN
 IN
@@ -24357,7 +22864,6 @@ NN
 NN
 NP
 NP
-,
 WDT
 VBD
 IN
@@ -24365,7 +22871,6 @@ NN
 NP
 IN
 NP
-,
 VBD
 IN
 NP
@@ -24377,7 +22882,6 @@ VB
 NN
 IN
 NP
-,
 IN
 PP
 VBD
@@ -24393,7 +22897,6 @@ NP
 NP
 NN
 SENT
-''
 IN
 NP
 PP
@@ -24417,9 +22920,7 @@ VB
 JJ
 JJ
 NN
-,
 RB
-,
 IN
 DT
 NP
@@ -24428,13 +22929,10 @@ NN
 IN
 DT
 NN
-,
-''
 PP
 VBD
 SENT
 RBR
-,
 NP
 VBD
 NNS
@@ -24450,7 +22948,6 @@ NN
 VBN
 NP
 CD
-,
 JJ
 IN
 PP$
@@ -24473,10 +22970,8 @@ NP
 IN
 DT
 NP
-,
 NP
 NP
-,
 VBD
 DT
 NN
@@ -24499,7 +22994,6 @@ JJ
 NN
 IN
 CD
-,
 JJ
 NN
 NNS
@@ -24572,7 +23066,6 @@ CC
 NNS
 NN
 NP
-,
 VBD
 NN
 NN
@@ -24580,7 +23073,6 @@ NN
 NP
 NP
 SENT
-``
 PP
 MD
 VB
@@ -24616,19 +23108,14 @@ VBG
 DT
 NNS
 RB
-,
 VBG
 DT
 NNS
-,
 VBG
 NN
-,
-''
 VBD
 NP
 SENT
-``
 DT
 NN
 VBZ
@@ -24636,13 +23123,11 @@ JJ
 IN
 PP
 VBZ
-,
 VBG
 WP
 PP
 VBP
 VBN
-,
 VBG
 PP$
 NNS
@@ -24655,7 +23140,6 @@ DT
 JJ
 NN
 SENT
-''
 RBR
 DT
 NN
@@ -24678,7 +23162,6 @@ NN
 VBN
 NP
 CD
-,
 CD
 SENT
 NP
@@ -24706,7 +23189,6 @@ JJ
 NN
 IN
 JJ
-,
 JJ
 NN
 IN
@@ -24754,7 +23236,6 @@ NN
 VBN
 NP
 CD
-,
 CD
 NP
 VBD
@@ -24765,7 +23246,6 @@ NN
 TO
 CD
 CD
-,
 NNS
 VBD
 RB
@@ -24789,7 +23269,6 @@ IN
 CD
 NN
 SENT
-``
 PDT
 PP$
 NN
@@ -24842,8 +23321,6 @@ JJ
 NN
 IN
 NP
-,
-''
 VBD
 NP
 SENT
@@ -24859,7 +23336,6 @@ JJ
 CD
 NNS
 CC
-``
 EX
 VBZ
 DT
@@ -24873,20 +23349,15 @@ MD
 RB
 VB
 SENT
-''
 IN
 PP$
 NNS
 NN
-,
 NP
 NPS
 CC
 NP
-,
-(
 NP
-)
 NP
 VBZ
 TO
@@ -24904,11 +23375,9 @@ IN
 JJ
 JJ
 NN
-,
 VBD
 NP
 SENT
-``
 PP
 VBP
 PP
@@ -24944,8 +23413,6 @@ NN
 IN
 DT
 NN
-,
-''
 VBD
 NP
 SENT
@@ -25006,10 +23473,8 @@ PP$
 NNS
 DT
 NN
-,
 VBD
 NP
-,
 IN
 VBG
 CD
@@ -25030,12 +23495,10 @@ IN
 NN
 NP
 POS
-,
 NN
 NP
 CC
 NP
-:
 NP
 NN
 SENT
@@ -25065,7 +23528,6 @@ NN
 IN
 CD
 CD
-,
 NNS
 VBD
 RB
@@ -25150,7 +23612,6 @@ JJ
 NNS
 JJ
 NN
-,
 RB
 IN
 CD
@@ -25219,7 +23680,6 @@ CD
 NNS
 RB
 SENT
-``
 PP$
 JJ
 NN
@@ -25230,11 +23690,8 @@ DT
 NN
 IN
 NN
-,
-''
 PP
 VBD
-,
 VBG
 IN
 NP
@@ -25285,7 +23742,6 @@ PP$
 CD
 JJ
 NN
-,
 VBG
 PP$
 NN
@@ -25295,7 +23751,6 @@ RB
 IN
 CD
 NNS
-,
 VBD
 NP
 SENT
@@ -25329,13 +23784,11 @@ VBD
 DT
 NN
 VBZ
-``
 VBG
 DT
 NN
 IN
 NNS
-''
 CC
 VBD
 TO
@@ -25354,7 +23807,6 @@ IN
 DT
 NN
 SENT
-:
 NP
 NP
 NN
@@ -25395,7 +23847,6 @@ PP$
 JJ
 NN
 NN
-,
 NNS
 VBD
 SENT
@@ -25431,7 +23882,6 @@ IN
 VBG
 NP
 POS
-,
 RB
 IN
 CD
@@ -25519,7 +23969,6 @@ JJ
 NNS
 SENT
 RB
-,
 NN
 VBZ
 IN
@@ -25551,7 +24000,6 @@ IN
 CD
 CD
 NN
-,
 VBN
 IN
 DT
@@ -25614,7 +24062,6 @@ IN
 CD
 CD
 SENT
-``
 PP
 VBZ
 RB
@@ -25636,8 +24083,6 @@ DT
 JJ
 CD
 NNS
-,
-''
 VBD
 CD
 NN
@@ -25654,14 +24099,11 @@ VBZ
 NP
 NP
 NP
-,
 NP
 NP
-:
 VBN
 IN
 NP
-:
 CC
 DT
 VBN
@@ -25696,7 +24138,6 @@ DT
 NN
 IN
 NP
-,
 NP
 NP
 VBD
@@ -25748,7 +24189,6 @@ VBP
 VBG
 IN
 SENT
-``
 EX
 VBP
 DT
@@ -25779,12 +24219,9 @@ JJ
 IN
 DT
 NN
-,
-''
 VBD
 NP
 NP
-,
 NN
 IN
 NP
@@ -25802,7 +24239,6 @@ NP
 IN
 CD
 NN
-,
 RB
 IN
 PP$
@@ -25841,7 +24277,6 @@ IN
 DT
 JJ
 NN
-,
 VBN
 IN
 CD
@@ -25867,7 +24302,6 @@ NN
 VBG
 NP
 CD
-,
 CD
 IN
 CD
@@ -25877,7 +24311,6 @@ CD
 IN
 CD
 SENT
-:
 NP
 NP
 NN
@@ -25898,9 +24331,7 @@ POS
 NN
 IN
 NP
-(
 NP
-)
 TO
 DT
 NPS
@@ -25926,17 +24357,13 @@ VBD
 VBN
 VBN
 SENT
-''
 NP
 NP
-(
 NP
 NP
 NN
-:
 NP
 NP
-)
 VBZ
 IN
 DT
@@ -25961,14 +24388,11 @@ DT
 NP
 NN
 NN
-,
-''
 DT
 NP
 IN
 NP
 NNS
-:
 NP
 VBD
 IN
@@ -25987,10 +24411,8 @@ IN
 CD
 CD
 NNS
-(
 NN
 CD
-)
 IN
 NP
 CC
@@ -26009,7 +24431,6 @@ JJ
 NN
 NP
 NP
-,
 IN
 NN
 IN
@@ -26048,12 +24469,10 @@ VB
 IN
 NP
 CD
-,
 CD
 SENT
 IN
 VBN
-,
 DT
 NN
 MD
@@ -26064,7 +24483,6 @@ JJS
 NN
 IN
 RB
-,
 IN
 IN
 JJS
@@ -26144,7 +24562,6 @@ RP
 IN
 NNS
 VBN
-,
 VBN
 DT
 NN
@@ -26182,7 +24599,6 @@ IN
 NP
 CD
 SENT
-``
 PP
 MD
 RB
@@ -26213,8 +24629,6 @@ NN
 IN
 NNS
 VBN
-,
-''
 VBD
 NP
 NPS
@@ -26229,7 +24643,6 @@ NP
 NN
 NP
 NP
-,
 VBN
 IN
 VBG
@@ -26238,11 +24651,8 @@ NP
 CC
 NP
 POS
-(
 NP
-:
 NP
-)
 NN
 IN
 NP
@@ -26258,7 +24668,6 @@ IN
 DT
 NP
 NN
-,
 VBD
 VBG
 NN
@@ -26290,7 +24699,6 @@ DT
 IN
 NP
 SENT
-``
 RB
 EX
 VBZ
@@ -26315,12 +24723,9 @@ JJ
 NN
 IN
 NP
-:
 NP
 IN
 NP
-,
-''
 VBD
 NP
 NN
@@ -26341,13 +24746,11 @@ CD
 IN
 PP$
 NNS
-,
 PP
 RB
 VBZ
 IN
 CD
-,
 CC
 TO
 VB
@@ -26403,7 +24806,6 @@ RB
 SENT
 NP
 NP
-,
 NP
 CC
 NP
@@ -26415,7 +24817,6 @@ IN
 DT
 NNS
 NN
-,
 VBD
 DT
 NN
@@ -26425,7 +24826,6 @@ DT
 NP
 NN
 SENT
-``
 PP$
 JJ
 NN
@@ -26438,7 +24838,6 @@ VBZ
 VBN
 TO
 VB
-,
 IN
 JJS
 CD
@@ -26448,8 +24847,6 @@ JJ
 TO
 VB
 VBN
-,
-''
 PP
 VBD
 SENT
@@ -26469,7 +24866,6 @@ DT
 JJ
 NN
 SENT
-``
 PP
 VBP
 JJ
@@ -26493,8 +24889,6 @@ RB
 VB
 DT
 NN
-,
-''
 PP
 VBD
 SENT
@@ -26546,11 +24940,9 @@ JJ
 NN
 WRB
 NNS
-:
 NP
 VBD
 NP
-,
 VBG
 PP
 DT
@@ -26612,7 +25004,6 @@ NP
 NP
 CC
 NP
-,
 CD
 NNS
 CC
@@ -26622,10 +25013,8 @@ NN
 IN
 NNS
 SENT
-(
 JJ
 NN
-)
 DT
 JJ
 NN
@@ -26659,7 +25048,6 @@ IN
 DT
 JJ
 NN
-,
 VBD
 NNS
 IN
@@ -26667,14 +25055,12 @@ NP
 SENT
 NP
 NP
-,
 NN
 IN
 DT
 NP
 IN
 NP
-,
 MD
 VB
 JJ
@@ -26690,7 +25076,6 @@ JJ
 NN
 NN
 NNS
-,
 VBG
 DT
 NN
@@ -26712,7 +25097,6 @@ VBN
 IN
 NP
 CD
-,
 PP
 VBD
 SENT
@@ -26723,25 +25107,21 @@ NP
 POS
 NN
 NN
-,
 DT
 NPS
 CC
 NPS
 NP
-,
 TO
 VB
 DT
 NN
-:
 VBG
 NP
 VBZ
 TO
 JJ
 NNS
-:
 DT
 JJ
 NN
@@ -26755,7 +25135,6 @@ NNS
 IN
 NP
 SENT
-``
 RB
 EX
 VBZ
@@ -26780,18 +25159,12 @@ JJ
 NN
 IN
 NP
-:
 NP
-(
 NP
 NN
-:
 NP
-)
 IN
 NP
-,
-''
 VBD
 NP
 NN
@@ -26805,13 +25178,11 @@ NP
 NN
 NP
 NP
-,
 VBN
 IN
 VBG
 IN
 NN
-:
 NP
 POS
 NN
@@ -26829,7 +25200,6 @@ IN
 DT
 NP
 NN
-,
 VBD
 VBG
 NN
@@ -26860,7 +25230,6 @@ NP
 POS
 SENT
 RBR
-,
 NP
 POS
 NP
@@ -26868,7 +25237,6 @@ IN
 NP
 CC
 NP
-,
 VBD
 PP
 VBD
@@ -26896,7 +25264,6 @@ IN
 NP
 CD
 SENT
-``
 PP
 VBP
 NNS
@@ -26930,12 +25297,9 @@ VB
 IN
 DT
 NN
-,
-''
 VBD
 NP
 NP
-,
 NNS
 NN
 IN
@@ -26944,9 +25308,7 @@ NN
 IN
 NP
 NP
-(
 NP
-)
 SENT
 NP
 VBZ
@@ -26961,7 +25323,6 @@ NNS
 VBN
 IN
 NP
-:
 NP
 IN
 PP$
@@ -26985,7 +25346,6 @@ TO
 JJR
 NN
 NNS
-,
 VBD
 NP
 SENT
@@ -27001,7 +25361,6 @@ RP
 IN
 DT
 NN
-,
 VBG
 VBG
 NN
@@ -27012,7 +25371,6 @@ CC
 NN
 NN
 SENT
-``
 PP
 VBP
 JJ
@@ -27036,8 +25394,6 @@ RB
 VB
 DT
 NN
-,
-''
 VBD
 DT
 NP
@@ -27059,13 +25415,11 @@ CD
 IN
 PP$
 NNS
-,
 PP
 RB
 VBZ
 IN
 CD
-,
 CC
 TO
 VB
@@ -27121,7 +25475,6 @@ VB
 RB
 RB
 SENT
-``
 WRB
 JJ
 PP
@@ -27136,9 +25489,7 @@ VB
 IN
 WP
 PP
-(
 NP
-)
 VBP
 DT
 NP
@@ -27148,8 +25499,6 @@ TO
 VB
 RP
 IN
-,
-''
 VBD
 NP
 SENT
@@ -27170,7 +25519,6 @@ TO
 VB
 DT
 NN
-:
 IN
 JJ
 NNS
@@ -27186,7 +25534,6 @@ VB
 DT
 NN
 SENT
-''
 IN
 DT
 NP
@@ -27228,12 +25575,9 @@ IN
 DT
 NN
 NN
-,
-''
 VBD
 NP
 SENT
-:
 NP
 NP
 NN

@@ -11,6 +11,44 @@ $file = $argv[1];
 
 $frequency = getCorpusFrequency(ANALYZE.'/posfreq');
 
+//print_r($frequency);
+
+$tags = array_map("trim", file('tags'));
+
+$datas = array();
+foreach ($frequency as $author => $occurences)
+{
+	$datas[$author] = array();
+	foreach ($tags as $tag)
+		$datas[$author][$tag] = 0;
+
+	foreach ($occurences as $tag => $occ)
+	{
+		if (in_array($tag, $tags))
+			$datas[$author][$tag] = $occ;
+	}
+}
+
+$wordsStats = getWords('../data/C50train');
+
+
+$fp = fopen("frequency.csv", "w");
+
+$tags[] = 'WordPerLine';
+$tags[] = 'StdDeviation_WPL';
+array_unshift($tags, "AUTHOR");
+fputcsv($fp, $tags);
+foreach ($datas as $author => $occ)
+{
+	$line = array_merge($occ, $wordsStats[$author]);
+	$line = array_values($line);
+	array_unshift($line, $author);
+	fputcsv($fp, $line);
+}
+
+/*
+
+
 // Analyse du fichier soumis
 exec("cat $file | tree-tagger-english | cut -f 2 > ".TMP_FILE);
 $analyse = getFrequency(TMP_FILE);
@@ -30,7 +68,54 @@ foreach ($frequency as $author => $tags) {
 }
 
 asort($diff);
-print_r($diff);
+print_r($diff);*/
+
+function getWords($path) {
+	$dir = opendir($path) or die('Directory doenst exist');
+	$authors = array();
+
+	$handle = opendir($path);
+	while($author = readdir($handle))
+	{
+		if($author != '.' && $author != '..')
+		{
+			$tmp = array();
+			$sum = 0;
+			$authorHandle = opendir($path.'/'.$author);
+			while($file = readdir($authorHandle))
+			{
+				
+				if($file != '.' && $file != '..')
+				{
+					$words = file($path.'/'.$author.'/'.$file);
+					foreach ($words as $key => $value)
+					{
+						$count = str_word_count($value);
+						$tmp[] = $count;
+						$sum += $count;
+					}
+				}
+			}
+			closedir($authorHandle);
+
+			$avg = $sum/count($tmp);
+			$sommeEcartType = 0;
+			foreach ($tmp as $words)
+				$sommeEcartType += pow($words - $avg, 2);
+				
+			$sommeEcartType /= count($tmp);
+			$sommeEcartType = sqrt($sommeEcartType);
+				
+			$authors[$author] = array(
+				'avg' => $avg,
+				'sd' => $sommeEcartType
+			);
+			
+		}
+	}
+	
+	return $authors;
+}
 
 
 function getCorpusFrequency($path) {
@@ -69,9 +154,6 @@ function getFrequency($fileName) {
 		}
 		fclose($file);
 	}
-	
-	foreach ($freq as $tag => $occ)
-		$freq[$tag] = $occ/$nbWords;
 		
 	return $freq;
 }
