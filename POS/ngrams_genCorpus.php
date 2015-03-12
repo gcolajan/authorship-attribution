@@ -3,7 +3,7 @@
 require 'lib/ngrams.php';
 
 $path = '';
-$training = '';
+$n = '';
 $dest = '';
 if (count($argv) == 1)
 {
