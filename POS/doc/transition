@@ -1,0 +1,14 @@
+How to use "transition" tools?
+
+	1. Gen the POS list from the corpus of authors by using
+		POS_frequency.sh
+	2. Gen the Transition corpus
+		transition_genCorpus.php
+	3. Process your text file with the same treatment that are be doing with both before
+		transition_file.php
+	4. Use some proper tools to compare them
+		transition_matching.php
+
+How to read the transition corpus compilation?
+	Columns: 	origin tag
+	Line: 		tag read after the origin tag

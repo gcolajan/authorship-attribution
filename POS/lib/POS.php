@@ -2,7 +2,7 @@
 require 'constantes.php';
 
 function getShortAnalysis($textPath) {
-	exec("cat $textPath | tree-tagger-english | cut -f 2 > ".TMP_FILE);
+	genPOS($textPath, TMP_FILE);
 
 	$words = getTextWord($textPath);
 	$stats = getLinesStats($words);

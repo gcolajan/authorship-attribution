@@ -1,0 +1,10 @@
+How to use POS tools?
+
+	1. Gen the POS list from the corpus of authors by using
+		POS_frequency.sh
+	2. Gen the POS frenquency to obtain a CSV file with
+		POS_genCorpus.php
+	3. Call the POS_file that does the same treatment than both previous for ONE file
+		POS_file.php
+	4. Use some proper tools to compare them
+		POS_matching.php
