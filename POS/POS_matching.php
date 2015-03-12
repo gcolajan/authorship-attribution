@@ -11,7 +11,11 @@ $matchs = $argv[2];
 $corpus = prepareCSV($corpus);
 $matchs = prepareCSV($matchs);
 
-//print_r($matchs);
+$results = array();
+foreach ($matchs['lines'] as $textRef => $metrics)
+	$results[$textRef] = getCummulativeError($metrics['tags_freq'], $corpus);
+
+print_r(bestResponses($results, 3));
 
 echo "Done (corpus=".count($corpus['lines']).", matched=".count($matchs['lines']).")!\n";
 ?>

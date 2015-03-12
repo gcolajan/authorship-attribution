@@ -5,6 +5,33 @@ require 'constantes.php';
  * Analysis methods
  ***********************************/
 
+function bestResponses($result, $limit=1) {
+	$best = array();
+
+	foreach ($result as $textRef => $res)
+	{
+		asort($res);
+		$best[$textRef] = array_slice($res, 0, $limit);
+	}
+
+	return $best;
+}
+
+
+function getCummulativeError($oneFreqList, $corpus) {
+	$cummulativeError = array();
+	foreach ($corpus['lines'] as $author => $metrics)
+	{
+		$cummulativeError[$author] = 0.0;
+		$nbTags = count($metrics['tags_freq']);
+		for ($i = 0 ; $i < $nbTags ; ++$i)
+			$cummulativeError[$author] += abs($metrics['tags_freq'][$i] - $oneFreqList[$i]);
+	}
+
+	return $cummulativeError;
+}
+
+
 function prepareCSV($path) {
 	$first = true;
 	$handle = fopen($path, "r");
@@ -33,6 +60,7 @@ function prepareCSV($path) {
 
 	return $csv;
 }
+
 
 function mapFreq($occurences, $sum) {
 	foreach ($occurences as $k => $occ)
