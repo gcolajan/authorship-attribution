@@ -1,6 +1,49 @@
 <?php
 require 'constantes.php';
 
+/***********************************
+ * Analysis methods
+ ***********************************/
+
+function prepareCSV($path) {
+	$first = true;
+	$handle = fopen($path, "r");
+	$csv = array(
+		'header' => array(),
+		'lines' => array());
+	if ($handle !== FALSE)
+	{
+		while (($data = fgetcsv($handle, 1000, ",")) !== FALSE)
+		{
+			if ($first)
+			{
+				array_shift($data);
+				$csv['header'] = $data;
+				$first = false;
+			}
+			else
+				$csv['lines'][array_shift($data)] = array(
+					'wpl_sd' => array_pop($data),
+					'wpl_avg' => array_pop($data),
+					'tags_occ' => $data,
+					'tags_freq' => mapFreq($data, array_sum($data)));
+		}
+		fclose($handle);
+	}
+
+	return $csv;
+}
+
+function mapFreq($occurences, $sum) {
+	foreach ($occurences as $k => $occ)
+		$occurences[$k] = $occ/$sum;
+	return $occurences;
+}
+
+/***********************************
+ * Generation methods
+ ***********************************/
+
 function getShortAnalysis($textPath) {
 	genPOS($textPath, TMP_FILE);
 
