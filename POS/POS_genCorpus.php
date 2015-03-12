@@ -11,7 +11,7 @@ if (count($argv) == 1)
 	$training = DATA.'/C50train';
 	$dest = ANALYZE.'/frequences.csv';
 }
-else if (count($argv) == 3)
+else if (count($argv) == 4)
 {
 	$path = $argv[1];
 	$training = $argv[2];
