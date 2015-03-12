@@ -5,6 +5,31 @@ require 'constantes.php';
  * Analysis methods
  ***********************************/
 
+function filterAccuracy($nearestAuthors, $sd, $corpus, $limit) {
+	foreach ($nearestAuthors as $author => $distance)
+		$accuracy[$author] = $corpus['lines'][$author]['wpl_sd'];
+
+	asort($accuracy);
+	array_slice($accuracy, 0, $limit);
+	
+	$best = array();
+	foreach($accuracy as $author => $sd)
+		$best[$author] = array(
+			'avg' => $nearestAuthors[$author],
+			'sd' => $sd);
+
+	return $best;
+}
+
+function getNearest($average, $corpus) {
+	$nearest = array();
+	foreach ($corpus['lines'] as $author => $metrics)
+		$nearest[$author] = abs($metrics['wpl_avg'] - $average);
+	
+	asort($nearest);
+	return array_slice($nearest, 0, count($corpus['lines'])/2);
+}
+
 function bestResponses($result, $limit=1) {
 	$best = array();
 
