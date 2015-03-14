@@ -2,6 +2,7 @@
 \usepackage[utf8x]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[french]{babel}
+\usepackage[colorinlistoftodos]{todonotes}
 
 \author{Gautier \textsc{Colajanni}, Cédric \textsc{Jezequel},\\ Julien \textsc{Marcou}, Pierre \textsc{Poilane}, Paul \textsc{Rivière}, Kévin \textsc{Thek}}
 
@@ -12,6 +13,9 @@
 \maketitle
 
 \section{Introduction}
+Notre projet porte sur la classification automatisée de documents textuels en fonction de leur auteur. Nous allons expérimenter plusieurs techniques de classification et comparer leurs performances respectives.
+
+La première technique consiste en une sélection de critères de discrimination uniquement basée sur les fréquences des termes utilisés par les auteurs. La deuxième méthode va se baser sur la structure et la construction des phrases pour identifier l'auteur par son style. \todo{corrigez moi, Geutier et cie, si jamais c'est pas ça}.
 
 \section{Méthode 1 : Term-frequency criterion}
 Une première méthode consiste à classifier un document en fonction de la présence de certains mots dans ce texte. Il va s'agir ainsi de construire un classifieur en utilisant un ensemble d'apprentissage, et de trouver la classe qui correspond au mieux à un document faisant partie de l'ensemble de test.
