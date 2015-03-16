@@ -3,6 +3,7 @@
 \usepackage[T1]{fontenc}
 \usepackage[french]{babel}
 \usepackage[colorinlistoftodos]{todonotes}
+\usepackage{amsmath}
 
 \author{Gautier \textsc{Colajanni}, Cédric \textsc{Jezequel},\\ Julien \textsc{Marcou}, Pierre \textsc{Poilane}, Paul \textsc{Rivière}, Kévin \textsc{Thek}}
 
@@ -15,7 +16,7 @@
 \section{Introduction}
 Notre projet porte sur la classification automatisée de documents textuels en fonction de leur auteur. Nous allons expérimenter plusieurs techniques de classification et comparer leurs performances respectives.
 
-La première technique consiste en une sélection de critères de discrimination uniquement basée sur les fréquences des termes utilisés par les auteurs. La deuxième méthode va se baser sur la structure et la construction des phrases pour identifier l'auteur par son style. \todo{corrigez moi, Geutier et cie, si jamais c'est pas ça}.
+La première technique consiste en une sélection de critères de discrimination uniquement basée sur les fréquences des termes utilisés par les auteurs. La deuxième méthode va se baser sur la structure et la construction des phrases pour identifier l'auteur par son style. \todo{corrigez moi, Gautier et cie, si jamais c'est pas ça}
 
 \section{Méthode 1 : Term-frequency criterion}
 Une première méthode consiste à classifier un document en fonction de la présence de certains mots dans ce texte. Il va s'agir ainsi de construire un classifieur en utilisant un ensemble d'apprentissage, et de trouver la classe qui correspond au mieux à un document faisant partie de l'ensemble de test.
@@ -23,12 +24,28 @@ Une première méthode consiste à classifier un document en fonction de la pré
 \subsection{Création de la matrice de classification}
 Le but ici est de discriminer les auteurs en générant des critères de comparaison. À partir de l'ensemble d'apprentissage, nous allons extraire les mots les plus pertinents pour chaque auteur. Nous allons pour cela utiliser un critère de fréquence de terme rapportée à l'ensemble du corpus (c'est-à-dire pour tous les documents de tous les auteurs).
 
-La métrique utilisée est $tf \times idf$, avec : \[tf = \frac{lol}{yolo}\]
+Tout d'abord, nous avons utilisé une liste de \textit{stopwords} pour retirer les mots trop communs des articles. Pour alléger le traitement, nous avons également opté pour éliminer tous les mots de 2 lettres ou moins. 
 
+La métrique utilisée est \[ tfc_{ij} = tf_{ij} \times idf\] avec $tf_{ij}$ est la fréquence d'apparition d'un terme $t_{ij}$ dans l'ensemble du corpus de l'auteur $j$.\todo{à vérifier} $idf$ est la fréquence inverse du document et s'exprime ainsi : \[idf = \log \frac{|\Omega|}{df(t_{i})} \] avec $|\Omega|$ le nombre de documents dans le corpus et $df(t_{i})$ le nombre de documents dans lequel apparait le terme $t_{i}$.
+
+Après génération de cette métrique, vu le grand nombre de termes restants, nous avons décidé d'appliquer un filtre pour ne garder que les plus significatifs. Après plusieurs tests manuels, la valeur de seuil $T = $ \todo{à reporter} a été décidée, car procurant un nombre réduit mais néanmoins intéressant de termes.
+
+Au final nous sommes arrivés à une matrice probabilistique contenant les métriques que nous avons calculés durant cette phase et qui nous servira pour la partie suivante. Cette matrice se présente ainsi :
+
+\[M=\bordermatrix{
+&A_{1}&\cdots&A_{j}&\cdots&A_{n}\cr
+t_{1}& tfc_{11} & \cdots & tfc_{1j} & \cdots & tfc_{1n} \cr
+\vdots&\vdots&\ddots&\vdots&\ddots&\vdots\cr
+t_{i}& tfc_{i1} & \cdots & tfc_{ij} & \cdots & tfc_{in} \cr
+\vdots&\vdots&\ddots&\vdots&\ddots&\vdots\cr
+t_{m}& tfc_{m1} & \cdots & tfc_{mj} & \cdots & tfc_{mn} \cr
+}\]
 \subsection{Classification d'un document}
 
 \section{Méthode 2 : Part-of-Speech analysis}
 
 \section{Comparaison de performance}
+
+\section{Conclusion}
 
 \end{document}
