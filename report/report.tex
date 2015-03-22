@@ -29,6 +29,18 @@ La métrique utilisée est $tf \times idf$, avec : \[tf = \frac{lol}{yolo}\]
 
 \section{Méthode 2 : Part-of-Speech analysis}
 
+Afin de parvenir à réaliser une analyse sur un corpus complet, il nous a paru pertinent de nous appuyer sur la nature des mots et leur agencement plutôt que sur leur signification. Pour parvenir à exploiter les corpus de manière satisfaisante, nous avons opté par l'emploi de tag (Part-of-Speech) fourni par l'outil Tree Tagger\footnote{http://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/}.
+
+Nous avons mis en place plusieurs sources d'informations que nous pensions, au premier abord, pertinente pour identifier des auteurs. Ces sources s’appuient sur la fréquence d'apparition des tags, sur l'étude des transitions (quel tag est suivi de quel autre tag) ainsi que sur les n-grams que nous détaillerons ensuite.
+
+\subsection{Normalisation des textes}
+
+\subsection{Classification par étude de fréquence}
+
+\subsection{Étude des transitions}
+
+\subsection{Déploiement de la méthode des n-grams}
+
 \section{Comparaison de performance}
 
 \end{document}
