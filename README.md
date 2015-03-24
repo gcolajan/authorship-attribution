@@ -5,4 +5,4 @@ Autorship Attribution
 
 ## Analyse de fréquence des mots
 
-    php ./PHP/v1.php
+    php ./PHP/word-frenquencies.php

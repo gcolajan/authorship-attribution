@@ -1,0 +1,14 @@
+author;term;termCount;totalTerms;articleCount;totalArticles;termPercent;inverseDocumentFrequency;criterion
+SimonCowell;british;3;300;1;1;1;0;0
+SimonCowell;commercial;5;300;1;1;1.667;0;0
+SimonCowell;union;4;300;1;1;1.333;0;0
+SimonCowell;insurance;4;300;1;1;1.333;0;0
+SimonCowell;customer;3;300;1;1;1;0;0
+SimonCowell;million;6;300;1;1;2;0;0
+SimonCowell;pounds;5;300;1;1;1.667;0;0
+SimonCowell;claims;3;300;1;1;1;0;0
+SimonCowell;costs;3;300;1;1;1;0;0
+SimonCowell;company;3;300;1;1;1;0;0
+SimonCowell;said;6;300;1;1;2;0;0
+SimonCowell;market;5;300;1;1;1.667;0;0
+SimonCowell;new;3;300;1;1;1;0;0

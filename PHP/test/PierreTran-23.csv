@@ -1,0 +1,13 @@
+author;term;termCount;totalTerms;articleCount;totalArticles;termPercent;inverseDocumentFrequency;criterion
+PierreTran;european;3;303;1;1;0.99;0;0
+PierreTran;aircraft;6;303;1;1;1.98;0;0
+PierreTran;airbus;6;303;1;1;1.98;0;0
+PierreTran;deal;6;303;1;1;1.98;0;0
+PierreTran;delta;5;303;1;1;1.65;0;0
+PierreTran;buy;3;303;1;1;0.99;0;0
+PierreTran;boeing;9;303;1;1;2.97;0;0
+PierreTran;said;7;303;1;1;2.31;0;0
+PierreTran;billion;5;303;1;1;1.65;0;0
+PierreTran;airlines;3;303;1;1;0.99;0;0
+PierreTran;competition;3;303;1;1;0.99;0;0
+PierreTran;planes;3;303;1;1;0.99;0;0
