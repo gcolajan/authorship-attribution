@@ -5,6 +5,44 @@ require 'constantes.php';
 define('GLUE', '!');
 
 
+/***********************************
+ * Analysis methods
+ ***********************************/
+
+function getConcordance($cmp, $src) {
+
+	$nbConcord = 0;
+	$srcGrams = array_keys($src);
+	foreach ($cmp as $n => $freq)
+		if (in_array($n, $srcGrams))
+			$nbConcord++;
+
+	return round($nbConcord/floatval(count($cmp)), 4);
+}
+
+function retrieveNgrams($path) {
+	$first = true;
+	$handle = fopen($path, "r");
+	$csv = array();
+	if ($handle !== FALSE)
+	{
+		while (($data = fgetcsv($handle, 1000, ",")) !== FALSE)
+		{
+			if ($first)
+				$first = false;
+			else
+				$csv[array_shift($data)] = array_shift($data);
+		}
+		fclose($handle);
+	}
+
+	return $csv;
+}
+
+/***********************************
+ * Generation methods
+ ***********************************/
+
 // We get frequencies of ngrams who as represented more than 1
 function getIntelligentFrequency($occurences, $represented=1, $lowestRepresentation=0.01, $precision=5) {
 	$sum = array_sum($occurences);

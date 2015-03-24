@@ -4,24 +4,27 @@ require 'lib/ngrams.php';
 
 $path = '';
 $n = '';
+$limit = '';
 $dest = '';
 if (count($argv) == 1)
 {
 	$path = ANALYZE.'/posfreq';
 	$n = 2;
+	$limit = 0.001;
 }
-else if (count($argv) == 3)
+else if (count($argv) == 4)
 {
 	$path = $argv[1];
 	$n = $argv[2];
+	$limit = $argv[3];
 }
 else
-	exit("USAGE: ".$argv[0]." <POS_Path> <N>\n");
+	exit("USAGE: ".$argv[0]." <POS_Path> <N> <limit=0.005>\n");
 
 // Vérification et annonce
 $dir = opendir($path) or die('Directory doenst exist');
 echo "Source path used: ".$path."\n";
-echo "Size of the n-gram: ".$n."\n";
+echo "Size of the n-gram: ".$n." (".$limit.")\n";
 echo "\n";
 echo "Proceeding can take long...\n";
 
@@ -43,7 +46,7 @@ foreach ($files as $author => $path)
 // Calculating the number of occurences to process frequencies for each ngram
 $freq = array();
 foreach ($ngrams as $author => $ngram)
-	$freq[$author] = getIntelligentFrequency(getOccurences($ngram), 1, 0.01, 5);
+	$freq[$author] = getIntelligentFrequency(getOccurences($ngram), 1, 0.005, 5);
 
 // Generating the CSV file
 foreach ($freq as $author => $ngrams)
