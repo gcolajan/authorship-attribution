@@ -1,0 +1,16 @@
+author;term;termCount;totalTerms;articleCount;totalArticles;termPercent;inverseDocumentFrequency;criterion
+BradDorfman;retailers;6;302;1;1;1.987;0;0
+BradDorfman;expected;4;302;1;1;1.325;0;0
+BradDorfman;sales;14;302;1;1;4.636;0;0
+BradDorfman;gains;4;302;1;1;1.325;0;0
+BradDorfman;february;6;302;1;1;1.987;0;0
+BradDorfman;warm;3;302;1;1;0.993;0;0
+BradDorfman;weather;3;302;1;1;0.993;0;0
+BradDorfman;month;3;302;1;1;0.993;0;0
+BradDorfman;analysts;8;302;1;1;2.649;0;0
+BradDorfman;said;10;302;1;1;3.311;0;0
+BradDorfman;percent;8;302;1;1;2.649;0;0
+BradDorfman;stores;4;302;1;1;1.325;0;0
+BradDorfman;store;3;302;1;1;0.993;0;0
+BradDorfman;report;4;302;1;1;1.325;0;0
+BradDorfman;retailer;3;302;1;1;0.993;0;0

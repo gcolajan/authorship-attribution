@@ -19,6 +19,8 @@ Notre projet porte sur la classification automatisée de documents textuels en f
 
 La première technique consiste en une sélection de critères de discrimination uniquement basée sur les fréquences des termes utilisés par les auteurs. La deuxième méthode va s'orienter sur la nature des mots employé et la construction des phrases pour identifier l'auteur par son style.
 
+\todo{Qui et Quoi ?}
+
 \section{Détails techniques}
 
 Notre projet portant sur un nombre d'heures limités et souhaitant obtenir des résultats rapidement sans avoir à capitaliser des connaissances sur un langage particulier nous avons fait le choix de développer au maximum en PHP. Ce choix ce justifie par le fait que ce langage est accessible en ligne de commande, est assez performant lorsqu'il s'agit de traiter avec du texte et que la majorité de l'équipe a déjà travailler avec ce qui permettait d'être familier avec ces structures de données et son fonctionnement.
@@ -96,6 +98,9 @@ Afin de parvenir à réaliser une analyse sur un corpus complet, il nous a paru 
 
 Nous avons mis en place plusieurs sources d'informations que nous pensions, au premier abord, pertinente pour identifier des auteurs. Ces sources s’appuient sur la fréquence d'apparition des tags, sur l'étude des transitions (quel tag est suivi de quel autre tag) ainsi que sur les n-grams que nous détaillerons ensuite.
 
+\todo{Ajouter exemple de transformation d'une phrase en tag}
+
+
 \subsection{Normalisation des textes}
 
 La normalisation des textes se fait d'une manière très simple et efficace grâce à un script bash créant un fichier contenant la liste des tags par ordre d'apparition et ce pour chaque auteur. C'est cette source de donnée qui est utilisée pour les outils suivants. 
@@ -108,6 +113,8 @@ Souhaitant réaliser une identification des textes du corpus proposé, nos effor
 
 Cette première méthode consistait à simplement compter la fréquence d'apparition des tags reportés et ce, de manière globale, pour chaque auteur. Cette analyse a l'avantage de se faire rapidement mais ne donne malheureusement pas de résultat probant. Néanmoins, cette phase nous a permis de prendre en main les données qui étaient à notre disposition et d'essayer de comprendre ce qui pouvait être discriminant dans un texte ou non.
 
+\todo{Gautier:Faire la comparaison avec TOUT le corpus}
+
 \todo{citer méthodologie de test et résultats obtenus}
 
 \subsubsection{Longueur des paragraphes}
@@ -119,11 +126,13 @@ Par l'étude de cette métrique, nous pensions avoir décelé un patron intéres
 \begin{figure}[hbtp]
 \centering
 \includegraphics[width=11cm]{fig/WPL.png}
-\caption{légende}
+\caption{Mots par paragraphe}
 \label{WPL}
 \end{figure}
 
 À ce stade, nous avons décidé de laisser de côté ces analyses trop simples. En effet, ces analyses se concentrant uniquement sur un élément particulier, les résultats ne peuvent être que dilués dans l'ensemble des données.
+
+\todo{Changer : montrer que ce n'est pas discriminant}
 
 \subsection{Étude des transitions}
 
@@ -131,7 +140,7 @@ Afin de parvenir à identifier les auteurs de nos textes, nous avons pensé qu'i
 
 Par l'étude de la transition, nous avons souhaité construire assez simplement une matrice normalisée représentant tous les tags proposés par Tree Tagger et nous permettant de savoir si le tag X est suivi du tag Y et ce, à quel fréquence (par rapport au corpus de référence dans son intégralité).
 
-\todo{étude de la matrice}
+\todo{étude de la matrice avec eigenvalues}
 
 \subsection{Déploiement de la méthode des n-grams}
 
