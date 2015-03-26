@@ -1,9 +1,11 @@
-\documentclass[a4paper]{article}
+\documentclass[a4paper,12pt]{report}
 \usepackage[utf8x]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[french]{babel}
 \usepackage[colorinlistoftodos]{todonotes}
 \usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{pgfplots}
 
 \author{Gautier \textsc{Colajanni}, Cédric \textsc{Jezequel},\\ Julien \textsc{Marcou}, Pierre \textsc{Poilane}, Paul \textsc{Rivière}, Kévin \textsc{Thek}}
 
@@ -13,7 +15,7 @@
 
 \maketitle
 
-\section{Introduction}
+\section*{Introduction}
 Notre projet porte sur la classification automatisée de documents textuels en fonction de leur auteur. Nous allons expérimenter plusieurs techniques de classification et comparer leurs performances respectives.
 
 La première technique consiste en une sélection de critères de discrimination uniquement basée sur les fréquences des termes utilisés par les auteurs. La deuxième méthode va s'orienter sur la nature des mots employé et la construction des phrases pour identifier l'auteur par son style.
@@ -27,14 +29,14 @@ Notre projet portant sur un nombre d'heures limités et souhaitant obtenir des r
 L'organisation autour des sources s'est fait naturellement à l'aide du gestionnaire de version git maintenant maîtrisé par une majorité d'étudiant ayant compris l'intérêt d'un tel outil au sein de projets de toute taille.
 
 \section{Méthode 1 : Term-frequency criterion}
-Une première méthode consiste à classifier un document en fonction de la présence de certains mots dans ce texte. Il va s'agir ainsi de construire un classifieur en utilisant un ensemble d'apprentissage, et de trouver la classe qui correspond au mieux à un document faisant partie de l'ensemble de test.
+Une première méthode consiste à classifier un document en fonction de la présence de certains mots dans ce texte. Il va s'agir ainsi de construire un classifieur en utilisant un ensemble d'apprentissage, et de trouver la classe qui correspond au mieux à un document faisant partie de l'ensemble de test. Il s'agit donc de la partie Apprentissage de notre problème.
 
 \subsection{Création de la matrice de classification}
 Le but ici est de discriminer les auteurs en générant des critères de comparaison. À partir de l'ensemble d'apprentissage, nous allons extraire les mots les plus pertinents pour chaque auteur. Nous allons pour cela utiliser un critère de fréquence de terme rapportée à l'ensemble du corpus (c'est-à-dire pour tous les documents de tous les auteurs).
 
 Tout d'abord, nous avons utilisé une liste de \textit{stopwords} pour retirer les mots trop communs des articles. Pour alléger le traitement, nous avons également opté pour éliminer tous les mots de 2 lettres ou moins. 
 
-La métrique utilisée est \[ tfc_{ij} = tf_{ij} \times idf\] avec $tf_{ij}$ est la fréquence d'apparition d'un terme $t_{ij}$ dans l'ensemble du corpus de l'auteur $j$.\todo{à vérifier} $idf$ est la fréquence inverse du document et s'exprime ainsi : \[idf = \log \frac{|\Omega|}{df(t_{i})} \] avec $|\Omega|$ le nombre de documents dans le corpus et $df(t_{i})$ le nombre de documents dans lequel apparait le terme $t_{i}$.
+La métrique utilisée est \[ tfc_{ij} = tf_{ij} \times idf\] avec $tf_{ij}$ est la fréquence d'apparition d'un terme $t_{ij}$ dans l'ensemble du corpus de l'auteur $j$.\todo{à vérifier} La variable $idf$ est la fréquence inverse du document et s'exprime ainsi : \[idf = \log \frac{|\Omega|}{df(t_{i})} \] avec $|\Omega|$ le nombre de documents dans le corpus et $df(t_{i})$ le nombre de documents dans lequel apparait le terme $t_{i}$.
 
 Après génération de cette métrique, vu le grand nombre de termes restants, nous avons décidé d'appliquer un filtre pour ne garder que les plus significatifs. Après plusieurs tests manuels, la valeur de seuil $T = $ \todo{à reporter} a été décidée, car procurant un nombre réduit mais néanmoins intéressant de termes.
 
@@ -49,6 +51,29 @@ t_{i}& tfc_{i1} & \cdots & tfc_{ij} & \cdots & tfc_{in} \cr
 t_{m}& tfc_{m1} & \cdots & tfc_{mj} & \cdots & tfc_{mn} \cr
 }\]
 \subsection{Classification d'un document}
+La classification d'un texte provenant de l'ensemble de test va nécessiter deux principales étapes. 
+
+Pour pouvoir exploiter les résultats de la partie précédente (avec la matrice de classification), nous allons appliquer le même algorithme de recherche de mots pertinents au texte à classifier. Les constantes réglées lors de l'apprentissage ne changent bien sûr pas, pour pouvoir comparer des problèmes qui sont sur le même plan. À l'issue de ce processus, nous sommes en mesure de décrire le texte à classifier avec un certain nombre de mots pertinents que nous pouvons représenter dans un vecteur : 
+\[
+\vec{d}= \bordermatrix{
+& \cr
+t_{1} & tfc_{d,1} \cr
+\vdots & \vdots \cr
+t_{i} & tfc_{d,i} \cr
+\vdots & \vdots \cr
+t_{k} & tfc_{d,k} \cr
+}
+\]
+avec $tfc_{d,i}$ la valeur de $tf_{id} \times idf\ $ pour le terme $i$ du texte représenté par le vecteur $\vec{d}$.
+
+Notons que le nombre de mots pertinents (\textit{ie} le nombre $k$) peut être différents selon les textes à classifier. Il ne doit pas forcément être égal au nombre de mots pertinents trouvés pour son auteur lors de la phase d'apprentissage.
+
+Une fois ces termes trouvés, il faut chercher à quel auteur cette sélection de mots se rapproche le plus. Pour cela, nous allons calculer une métrique à même de représenter cette proximité. En nous inspirant du cours, une solution de type Bayésien naïf nous a semblé une bonne opportunité. Ainsi pour tous les mots retenus et représentés dans le vecteur $\vec{d}$, nous allons chercher les termes correspondants de la matrice $M$ et les multiplier \todo{vérifier pour le *10} pour obtenir la métrique. Nous reproduisons ce calcul pour chaque auteur (\textit{ie} pour chaque colonne de la matrice $M$) et nous attribuons le texte à l'auteur qui a permis de générer la métrique la plus grande.  
+
+Même si théoriquement cette partie semble ardue à mettre en place techniquement, notre représentation des données textuelles analysées sous la forme de fichiers CSV nous a permis de parser efficacement les documents et de calculer la métrique plutôt efficacement. 
+
+\subsection{Résultats}
+Avec les valeurs des constantes réglées dans la partie d'apprentissage, nous sommes arrivés à un résultat plutôt moyen. En effet, sur les textes de l'ensemble de test, seulement 47\% des textes sont bien classés et 6 ne sont pas classés. \todo{à compléter selon les résultats}
 
 \section{Méthode 2 : Part-of-Speech analysis}
 
@@ -117,7 +142,7 @@ Néanmoins, jusqu'à présent, seule cette méthode a réussi à nous montrer de
 \begin{itemize}
 \item{Pour un 2-gramms : nous obtenons environ 26\% de réussite.}
 \item{Pour un 3-gramms : nous descendons à une valeur de 21\% de réussite.}
-\item{Pour un 4-gramms : nous chutons à moins de 14\% de réussite
+\item{Pour un 4-gramms : nous chutons à moins de 14\% de réussite}
 \end{itemize}
 
 Nous avons également tester des n-gramms prenant en compte plus de mots, mais ces derniers se sont révélés assez peu discriminant et donc inintéressant.
@@ -129,6 +154,18 @@ Nous avons également tester des n-gramms prenant en compte plus de mots, mais c
 Que ce soit la première méthode ou la seconde, nos résultats nous paraissent assez décevants. En effet, il nous est impossible d'identifier ne serait-ce que 50\% des textes convenablement. Néanmoins, voici un tableau récapitulant les performances obtenues sur les différents stades de deux méthodes développées.
 
 \todo{Insérer un tableau comparatif}
+
+%\begin{center}
+%\begin{tikzpicture}[scale=1]
+%\begin{axis} [ybar=1,xtick={1,2,3,4,5},nodes near coords, xticklabels={Sophie,Ginette,Robert,Roland,Marcel}]
+%\addplot coordinates{(1,21)(2,2)(3,12)(4,5)(5,7.5)}; 
+%\addplot coordinates{(1,5)(2,6)(3,9)(4,3)(5,10)};
+%\addplot coordinates{(1,8)(2,2)(3,7)(4,5)(5,10)};
+%\legend{Bien classés,Mal classés,Pas classés}
+%\end{axis}
+%\end{tikzpicture}
+%\end{center}
+
 
 \section{Conclusion}
 
