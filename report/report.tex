@@ -104,6 +104,12 @@ Par l'étude de la transition, nous avons souhaité construire assez simplement 
 
 L'étude des transitions nous ayant posé quelques problèmes pour trouver une manière élégante de comparer des matrices de transitions, nous nous sommes penchés sur une méthode un peu plus générique et nous offrant peut-être un peu plus de souplesse quant à sa configuration. Toujours dans l'idée d'identifier nos auteurs par leur façon de tourner leurs phrases, cette méthode nous permet de choisir la longueur de nos «~grams~» et d'en ressortir un résultat assez simplement.
 
+Cette méthode nous permet de tirer partis de l'ordre dans lequel sont écris les mots utilisés par nos auteurs. Après avoir passé l'ensemble de notre corpus de test sous forme de tag, avec le même outil que précédement (Tree Tagger), nous analysons les différents enchainements de tags repérés dans nos fichiers. Pour un 2-grams, nous nous occuperons seulement des enchainement de 2 tags, pour un 3-grams, des enchainements de 3 tags, etc ...
+
+Pour se faire, nous prenons un à un chacun des enchainements que nous rencontrons, comptabilisons son nombre d'occurrence dans l'ensemble des articles d'un auteur, puis compilons ces résultats. L'ensemble de ces calculs et mises en formes sont réalisés à l'aide de script pearl, simplifiant la lecture et l'écriture au sein de fichiers .txt et .csv.
+
+Suite à cette première analyse, un fichier .csv récapitulatif des fréquences d'apparition de ces suite est généré. Ce dernier, classé par auteurs, est ensuite comparé à notre fichier à classifier : est alors réalisé une comparaison point à point de l'ensemble des combinaisons liées à un auteur, calculons son taux de "matching" et sortons l'auteur ayant le plus fort taux d'affiliation et donc, le plus probable pour ce texte. 
+
 Cette méthode est tout de fois assez lourde puisqu'elle requiert une bonne dizaine de minute pour s'exécuter intégralement bien que déjà placée totalement en mémoire (sur un système de fichier tmpfs). Néanmoins, jusqu'à présent, seulement cette méthode a réussi à nous montrer des résultats. À nos yeux bien décevants, mais tout de même réjouissants car les premiers à approcher les 25\% de réussite.
 
 \todo{expliquer plus en détail le cheminement des données et comment les données sont traitées}
