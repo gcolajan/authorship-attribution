@@ -4,7 +4,6 @@
 \usepackage[french]{babel}
 \usepackage[colorinlistoftodos]{todonotes}
 \usepackage{amsmath}
-\usepackage{fancyvrb}
 
 \author{Gautier \textsc{Colajanni}, Cédric \textsc{Jezequel},\\ Julien \textsc{Marcou}, Pierre \textsc{Poilane}, Paul \textsc{Rivière}, Kévin \textsc{Thek}}
 
@@ -35,7 +34,7 @@ Le but ici est de discriminer les auteurs en générant des critères de compara
 
 Tout d'abord, nous avons utilisé une liste de \textit{stopwords} pour retirer les mots trop communs des articles. Pour alléger le traitement, nous avons également opté pour éliminer tous les mots de 2 lettres ou moins. 
 
-La métrique utilisée est \[ tfc_{ij} = tf_{ij} \times idf\] avec $tf_{ij}$ est la fréquence d'apparition d'un terme $t_{ij}$ dans l'ensemble du corpus de l'auteur $j$\todo{à vérifier} . Le terme $idf$ est la fréquence inverse du document et s'exprime ainsi : \[idf = \log \frac{|\Omega|}{df(t_{i})} \] avec $|\Omega|$ le nombre de documents dans le corpus et $df(t_{i})$ le nombre de documents dans lequel apparait le terme $t_{i}$.
+La métrique utilisée est \[ tfc_{ij} = tf_{ij} \times idf\] avec $tf_{ij}$ est la fréquence d'apparition d'un terme $t_{ij}$ dans l'ensemble du corpus de l'auteur $j$.\todo{à vérifier} $idf$ est la fréquence inverse du document et s'exprime ainsi : \[idf = \log \frac{|\Omega|}{df(t_{i})} \] avec $|\Omega|$ le nombre de documents dans le corpus et $df(t_{i})$ le nombre de documents dans lequel apparait le terme $t_{i}$.
 
 Après génération de cette métrique, vu le grand nombre de termes restants, nous avons décidé d'appliquer un filtre pour ne garder que les plus significatifs. Après plusieurs tests manuels, la valeur de seuil $T = $ \todo{à reporter} a été décidée, car procurant un nombre réduit mais néanmoins intéressant de termes.
 
@@ -49,48 +48,7 @@ t_{i}& tfc_{i1} & \cdots & tfc_{ij} & \cdots & tfc_{in} \cr
 \vdots&\vdots&\ddots&\vdots&\ddots&\vdots\cr
 t_{m}& tfc_{m1} & \cdots & tfc_{mj} & \cdots & tfc_{mn} \cr
 }\]
-
-Cette matrice est représentée dans notre script par un fichier CSV en sortie de PHP. Celui-ci contient pour chaque auteur et chaque mot différentes informations valuées, comme le nombre d'articles par auteur, le nombre d'occurences du mot dans l'article, etc.
-\begin{Verbatim}[frame=lines,labelposition=topline]
-author;term;termCount;totalTerms;articleCount;totalArticles;
-	termPercent;inverseDocumentFrequency;criterion
-AaronPressman;internet;201;18783;29;50;1.07;2.421;2.591
-AaronPressman;new;91;18783;39;50;0.484;0.527;0.255
-AaronPressman;technology;15;18783;9;50;0.08;2.144;0.171
-AaronPressman;cyberspace;13;18783;10;50;0.069;4.934;0.341
-AaronPressman;old;13;18783;9;50;0.069;2.271;0.157
-AaronPressman;national;22;18783;12;50;0.117;1.793;0.21
-\end{Verbatim}
-
-Nous allons plutôt utiliser une version allégée de ce fichier, contenant que le critère défini plus haut :
-
-\begin{Verbatim}[frame=lines,labelposition=topline]
-author;term;criterion
-AaronPressman;internet;2.5911467519874
-AaronPressman;online;0.91960766607817
-AaronPressman;congress;1.3105998426562
-AaronPressman;credit;0.98624590047772
-AaronPressman;banks;1.395250413317
-AaronPressman;cftc;1.0282305781403
-AaronPressman;encryption;1.7073354972177
-AaronPressman;fed;1.0079334627052
-AlanCrosby;czech;1.8445341779023
-AlanCrosby;prague;1.153789351922
-\end{Verbatim}
-
 \subsection{Classification d'un document}
-Pour classifier un document tiré de l'ensemble de test, nous allons appliquer le traitement suivant :
-\begin{enumerate}
-\item Création de la représentation du document à classifier
-\item Calcul de la métrique pour trouver la classe du document (\textit{ie} son auteur).
-\end{enumerate}
-
-\subsubsection{Représentation d'un document}
-Le but de la classification est de comparer la matrice générée dans la partie précédente avec le document à classer. Nous allons donc utiliser les mêmes méthodes de création de métriques pour pouvoir comparer. En passant le texte à notre algorithme décrit ci-dessus, nous allons obtenir les mots les plus significatifs de ce texte. Les valeurs des paramètres ne changent pas par rapport au calcul de la matrice de comparaison. Le fichier CSV généré contient les valeurs des $tfc_{i}$, mais nous n'allons pas les utiliser. 
-
-
-\subsubsection{Calcul de la métrique}
-
 
 \section{Méthode 2 : Part-of-Speech analysis}
 
