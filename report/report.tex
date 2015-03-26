@@ -106,13 +106,23 @@ L'étude des transitions nous ayant posé quelques problèmes pour trouver une m
 
 Cette méthode nous permet de tirer partis de l'ordre dans lequel sont écris les mots utilisés par nos auteurs. Après avoir passé l'ensemble de notre corpus de test sous forme de tag, avec le même outil que précédement (Tree Tagger), nous analysons les différents enchainements de tags repérés dans nos fichiers. Pour un 2-grams, nous nous occuperons seulement des enchainement de 2 tags, pour un 3-grams, des enchainements de 3 tags, etc ...
 
-Pour se faire, nous prenons un à un chacun des enchainements que nous rencontrons, comptabilisons son nombre d'occurrence dans l'ensemble des articles d'un auteur, puis compilons ces résultats. L'ensemble de ces calculs et mises en formes sont réalisés à l'aide de script pearl, simplifiant la lecture et l'écriture au sein de fichiers .txt et .csv.
+Pour se faire, nous prenons un à un chacun des enchainements que nous rencontrons, comptabilisons son nombre d'occurrence dans l'ensemble des articles d'un auteur, puis compilons ces résultats. Nous prenons également en compte que l'apparition d'un unique enchainement dans l'ensemble du corpus n'est pas assez discriminant pour notre recherche : Il sera alors supprimé de notre comptabilisation. L'ensemble de ces calculs et mises en formes sont réalisés à l'aide de script pearl, simplifiant la lecture et l'écriture au sein de fichiers .txt et .csv.
 
-Suite à cette première analyse, un fichier .csv récapitulatif des fréquences d'apparition de ces suite est généré. Ce dernier, classé par auteurs, est ensuite comparé à notre fichier à classifier : est alors réalisé une comparaison point à point de l'ensemble des combinaisons liées à un auteur, calculons son taux de "matching" et sortons l'auteur ayant le plus fort taux d'affiliation et donc, le plus probable pour ce texte. 
+Suite à cette première analyse, un fichier .csv récapitulatif des fréquences d'apparition de ces suite est généré. Ce dernier, classé par auteurs, est ensuite comparé à notre fichier à classifier mis sous forme de tag et pré-analyser : est alors réalisé une comparaison point à point de l'ensemble des combinaisons liées à un auteur. Nous calculons son taux de "matching" et sortons l'auteur ayant le plus fort taux d'affiliation et donc, le plus probable pour ce texte. 
 
-Cette méthode est tout de fois assez lourde puisqu'elle requiert une bonne dizaine de minute pour s'exécuter intégralement bien que déjà placée totalement en mémoire (sur un système de fichier tmpfs). Néanmoins, jusqu'à présent, seulement cette méthode a réussi à nous montrer des résultats. À nos yeux bien décevants, mais tout de même réjouissants car les premiers à approcher les 25\% de réussite.
+Cette méthode est tout de fois assez lourde puisqu'elle requiert une bonne dizaine de minute pour s'exécuter intégralement bien que déjà placée totalement en mémoire (sur un système de fichier tmpfs). 
 
-\todo{expliquer plus en détail le cheminement des données et comment les données sont traitées}
+Néanmoins, jusqu'à présent, seule cette méthode a réussi à nous montrer des résultats concret bien que décevant d'un point de vue qualitatif. Nous obtenons une variation de l'efficacité de cette méthode en fonction du nombre de mots pris en compte dans nos enchainements :
+
+\begin{itemize}
+\item{Pour un 2-gramms : nous obtenons environ 26\% de réussite.}
+\item{Pour un 3-gramms : nous descendons à une valeur de 21\% de réussite.}
+\item{Pour un 4-gramms : nous chutons à moins de 14\% de réussite
+\end{itemize}
+
+Nous avons également tester des n-gramms prenant en compte plus de mots, mais ces derniers se sont révélés assez peu discriminant et donc inintéressant.
+
+
 
 \section{Comparaison de performance}
 
