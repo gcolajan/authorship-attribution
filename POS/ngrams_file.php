@@ -27,8 +27,12 @@ $time_start = microtime(true);
 // Génération des POS
 genPOS($path, TMP_FILE);
 
-// Getting the frequency representation of the N grams.
-$ngrams = getIntelligentFrequency(getOccurences(getNgrams(TMP_FILE, $n)), 1, $limit, 5);
+// Getting the frequency representation of the N grams
+$occurences = getOccurences(getNgrams(TMP_FILE, $n));
+$ngrams = getIntelligentFrequency($occurences, 1, $limit, 5);
+if (count($ngrams) == 0) // Fallback dans le cas où tous les ngrams ont une occurence de 1
+	$ngrams =  getIntelligentFrequency($occurences, 0, $limit, 5);
+
 unlink(TMP_FILE);
 
 // On créer le fichier résultat

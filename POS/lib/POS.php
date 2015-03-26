@@ -10,7 +10,7 @@ function filterAccuracy($nearestAuthors, $sd, $corpus, $limit) {
 		$accuracy[$author] = $corpus['lines'][$author]['wpl_sd'];
 
 	asort($accuracy);
-	array_slice($accuracy, 0, $limit);
+	$accuracy = array_slice($accuracy, 0, $limit);
 	
 	$best = array();
 	foreach($accuracy as $author => $sd)

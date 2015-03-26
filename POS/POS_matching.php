@@ -16,14 +16,23 @@ $results = array();
 foreach ($matchs['lines'] as $textRef => $metrics)
 	$results[$textRef] = getCummulativeError($metrics['tags_freq'], $corpus);
 
-print_r(bestResponses($results, 3));
+$freqResults = array_pop(bestResponses($results, 10));
 
-// Having some results with WPL metric (half of author : nearest and after, taking 10 lowest SD)
+// Having some results with WPL metric (half of author : nearest and after, taking 5 lowest SD)
 $wpl = array();
 foreach ($matchs['lines'] as $textRef => $metrics)
 	$wpl[$textRef] = filterAccuracy(getNearest($metrics['wpl_avg'], $corpus), $metrics['wpl_sd'], $corpus, 10);
 
-print_r($wpl);
+$wpl = array_pop($wpl);
 
-echo "Done (corpus=".count($corpus['lines']).", matched=".count($matchs['lines']).")!\n";
+$commonAuthor = array_keys(array_intersect_key($freqResults, $wpl));
+
+echo implode(',', $commonAuthor);
+
+for ($i = count($commonAuthor) ; $i < 10 ; $i++)
+	echo ',';
+
+echo "\n";
+
+//echo "Done (corpus=".count($corpus['lines']).", matched=".count($matchs['lines']).")!\n";
 ?>
