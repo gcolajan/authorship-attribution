@@ -191,9 +191,9 @@ TAG_{m}& occ_{m1} & \cdots & occ_{mj} & \cdots & occ_{mn} \cr
 
 Cette matrice n'apporte rien seule, notre idée ici était de mettre en place une analyse moins individuelle des schémas. Nous voulions être capable de nous abstraire un peu de nos tags pour nous consacrer plus sur le \textit{dessin} qui était créé par cette matrice. À ce stade, nous avons cherché quels étaient les outils que nous pouvions mettre en place pour parvenir à une telle analyse. Nous avons ainsi regardé différents algorithmes tels que ceux en rapport avec les matrices stochastiques, les algorithmes en rapport avec la théorie des graphes, etc. Une façon de procéder a retenu notre attention.
 
-Cependant, ce qui a retenu notre attention ici sont deux expériences apportées par un membre de l'équipe dans l'étude de similitudes pour reconnaître des visages (eigenfaces\footcite{http://fr.wikipedia.org/wiki/Eigenface}) et une expérience similaire pour un tri de données spatialisées utilisant des matrices de covariance et des valeurs propres. Partant alors en quête d'une solution avec ces outils, nous avons tenté de mettre en place une méthode de comparaison matricielle en employant les vecteurs caractéristiques extrait de nos matrices.
+Cependant, ce qui a retenu notre attention ici sont deux expériences apportées par un membre de l'équipe dans l'étude de similitudes pour reconnaître des visages (eigenfaces\footnote{http://fr.wikipedia.org/wiki/Eigenface}) et une expérience similaire pour un tri de données spatialisées utilisant des matrices de covariance et des valeurs propres. Partant alors en quête d'une solution avec ces outils, nous avons tenté de mettre en place une méthode de comparaison matricielle en employant les vecteurs caractéristiques extrait de nos matrices.
 
-Malheureusement, nous avons dû abandonné cette approche commençant à manquer de temps et sentant que nos connaissances auraient besoin d'être approfondies pour obtenir les prémices d'un résultat. Néanmoins, cette approche nous semble intéressante dans le sens où elle permet de s'abstraire des données originales et de plus se concentrer sur la forme du message. Nous avons réalisé ce début de prototype en Python en exploitant la bibliothèque \textit{numpy} et les algorithme fournis dans le package LAPACK\footcite{http://www.netlib.org/lapack/}.
+Malheureusement, nous avons dû abandonné cette approche commençant à manquer de temps et sentant que nos connaissances auraient besoin d'être approfondies pour obtenir les prémices d'un résultat. Néanmoins, cette approche nous semble intéressante dans le sens où elle permet de s'abstraire des données originales et de plus se concentrer sur la forme du message. Nous avons réalisé ce début de prototype en Python en exploitant la bibliothèque \textit{numpy} et les algorithme fournis dans le package LAPACK\footnote{http://www.netlib.org/lapack/}.
 
 \subsection{Déploiement de la méthode des N-grams}
 
@@ -224,7 +224,7 @@ Nous avons également tester des n-gramms prenant en compte plus de mots, mais c
 Que ce soit la première méthode ou la seconde, nos résultats nous paraissent assez décevants. En effet, il nous est impossible d'identifier ne serait-ce que 50\% des textes convenablement. Néanmoins, voici un tableau récapitulant les performances obtenues sur les différents stades de deux méthodes développées.
 
 \todo{Critiquer l'approche que l'on a eu, montrer les faiblesses}
-\topo{Méth2: difficulter de différencier le style du langage (anglais)}
+\todo{Méth2: difficulter de différencier le style du langage (anglais)}
 
 \todo{Insérer un tableau comparatif}
 
