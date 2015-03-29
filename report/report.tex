@@ -86,7 +86,7 @@ Le but ici est de discriminer les auteurs en générant des critères de compara
 
 Tout d'abord, nous avons utilisé une liste de \textit{stopwords} pour retirer les mots trop communs des articles. Pour alléger le traitement, nous avons également opté pour éliminer tous les mots de 2 lettres ou moins. 
 
-La métrique utilisée est \[ tfc_{ij} = tf_{ij} \times idf\] avec $tf_{ij}$ est la fréquence d'apparition d'un terme $t_{ij}$ dans l'ensemble du corpus de l'auteur $j$.\todo{à vérifier} La variable $idf$ est la fréquence inverse du document et s'exprime ainsi : \[idf = \log \frac{|\Omega|}{df(t_{i})} \] avec $|\Omega|$ le nombre de documents dans le corpus et $df(t_{i})$ le nombre de documents dans lequel apparait le terme $t_{i}$.
+La métrique utilisée est \[ tfc_{ij} = tf_{ij} \times idf\] avec $tf_{ij}$ est la fréquence d'apparition d'un terme $t_{ij}$ dans l'ensemble du corpus de l'auteur $j$.\todo{à vérifier} La variable $idf$ est la fréquence inverse du document et s'exprime ainsi : \[idf = \log \frac{|\Omega|}{df(t_{i})} \] avec $|\Omega|$ le nombre de documents dans le corpus et $df(t_{i})$ le nombre de documents dans lequel apparaît le terme $t_{i}$.
 
 Après génération de cette métrique, vu le grand nombre de termes restants, nous avons décidé d'appliquer un filtre pour ne garder que les plus significatifs. Après plusieurs tests manuels, la valeur de seuil $T = $ \todo{à reporter} a été décidée, car procurant un nombre réduit mais néanmoins intéressant de termes.
 
@@ -137,7 +137,32 @@ Afin de parvenir à réaliser une analyse sur un corpus complet, il nous a paru 
 
 Nous avons mis en place plusieurs sources d'informations que nous pensions, au premier abord, pertinente pour identifier des auteurs. Ces sources s’appuient sur la fréquence d'apparition des tags, sur l'étude des transitions (quel tag est suivi de quel autre tag) ainsi que sur les n-grams que nous détaillerons ensuite.
 
-\todo{Ajouter exemple de transformation d'une phrase en tag}
+Voici un exemple de transformation d'une phrase en tags : 
+
+\begin{table}[hbtp]
+	\centering
+		\begin{tabular}{|*{3}{c|}}
+			\hline
+			\textbf{mots} & \textbf{Tags} & \textbf{lemmes}\\
+			\hline
+			The & DT & the \\
+			\hline
+			TreeTagger & NP  & TreeTagger \\
+			\hline
+			is & VBZ  & be \\
+			\hline
+			easy & JJ & easy \\
+			\hline
+			 to & TO & to \\
+			\hline
+			use  & VB  & use \\
+			\hline
+			. & SENT & . \\
+			\hline
+		\end{tabular}
+	\caption{Exemple de transformation d'une phrase en tags}
+	\label{fig:TableauTag}
+\end{table}
 
 
 \subsection{Normalisation des textes}
@@ -152,7 +177,30 @@ Souhaitant réaliser une identification des textes du corpus proposé, nos effor
 
 Cette première méthode consistait à simplement compter la fréquence d'apparition des tags reportés et ce, de manière globale, pour chaque auteur. Cette analyse a l'avantage de se faire rapidement mais ne donne malheureusement pas de résultat probant. Néanmoins, cette phase nous a permis de prendre en main les données qui étaient à notre disposition et d'essayer de comprendre ce qui pouvait être discriminant dans un texte ou non.
 
-\todo{citer méthodologie de test et résultats obtenus}
+Afin de tester les résultats obtenus à travers cette première classification, un fichier .csv résumant chaque auteurs en fonction de la fréquence des tags utilisés est généré. Puis afin de tester cette descriptions des auteurs, une comparaison est effectuée entre ce fichier descriptif et chaque articles de chaque auteurs. En fonction de la correspondance entre les différentes fréquences des tags, Un classement est effectué en prenant les 6 auteurs les plus probable pour chaque article. 
+
+Comme nous les montre les figures ci-dessous, décrivant le  classement des 3 auteurs les plus probables sur l'ensemble des 50 articles écrit par William Kazer, les résultats ne sont pas à la hauteur. On peut observer sur la \textsc{figure \ref{auteur1}} que d'après notre fichier descriptif, ce serait Tan Eelyn l'auteur le plus probable pour 14 des 50 articles, suivis par Scott Hills pour 5 des 50 articles. On peut donc directement voir les limites d'utilisations de cette étude de fréquence des mots avec le jeu de données fournis. 
+
+\begin{figure}[hbtp]
+\centering
+\includegraphics[width=11cm]{fig/Auteur1.png}
+\caption{Nombre d'article écrits pour les auteurs classés numéro 1}
+\label{auteur1}
+\end{figure}
+
+\begin{figure}[hbtp]
+\centering
+\includegraphics[width=11cm]{fig/Auteur2.png}
+\caption{Nombre d'article écrits pour les auteurs classés numéro 2}
+\label{auteur2}
+\end{figure}
+
+\begin{figure}[hbtp]
+\centering
+\includegraphics[width=11cm]{fig/Auteur3.png}
+\caption{Nombre d'article écrits pour les auteurs classés numéro 3}
+\label{auteur3}
+\end{figure}
 
 \subsubsection{Longueur des paragraphes}
 
@@ -167,11 +215,7 @@ Par l'étude de cette métrique, nous pensions avoir décelé un patron intéres
 \label{WPL}
 \end{figure}
 
-À ce stade, nous avons décidé de laisser de côté ces analyses trop simples. En effet, ces analyses se concentrant uniquement sur un élément particulier, les résultats ne peuvent être que dilués dans l'ensemble des données.
-
-\todo{Changer : montrer que ce n'est pas discriminant}
-
-
+À ce stade, nous avons décidé de laisser de côté ces analyses trop simples. En effet, ces analyses se concentrant uniquement sur un élément particulier, les résultats ne peuvent être que dilués dans l'ensemble des données si ces analyses sont utilisées une à une. Néanmoins l'utilisation de ces analyses de fréquences devrait pouvoir être utilisées en compléments des autres analyses décrites ci-dessous. En effet, il n'est pas rare de devoir appliquer un ensemble de méthodes d'analyse sur un jeu de données afin de pouvoir en ressortir des résultats satisfaisants.
 
 
 \subsection{Étude des transitions}
