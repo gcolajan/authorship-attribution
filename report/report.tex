@@ -1,11 +1,49 @@
 \documentclass[a4paper,12pt]{report}
+
+%chargement des extensions requises au bon fonctionnement de l'extension et des documents
 \usepackage[utf8x]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[french]{babel}
+\usepackage{graphicx}
+\usepackage{lipsum}
+\usepackage[a4paper]{geometry}
+\usepackage{wallpaper}
+\usepackage{libertine}
+\usepackage{csquotes}
+\usepackage{vmargin}
+\usepackage{hyperref}
 \usepackage[colorinlistoftodos]{todonotes}
+\usepackage{titlesec}
+\usepackage{array}
 \usepackage{amsmath}
 \usepackage{tikz}
 \usepackage{pgfplots}
+\usepackage[final]{pdfpages}
+
+%Gestion des marges
+\newgeometry{left=30mm,right=30mm,top=30mm,bottom=30mm}
+
+% Suppressions des veuves et orphelines
+\widowpenalty=10000
+\clubpenalty=10000
+
+% Suppressions de l'espace avant les chapitres
+\titleformat{\chapter}[display]
+{\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
+\titlespacing*{\chapter}{0pt}{-20pt}{30pt}
+
+%Type de colonne pour tableau
+\newcolumntype{C}[1]{>{\centering\arraybackslash}m{#1}}
+
+% Définition de l'affichage des sections (I.1 sans redondance)
+\setcounter{secnumdepth}{2}
+\renewcommand   \thesection         {\Roman{section}}
+\renewcommand   \thesubsection      {\thesection.\arabic{subsection}}
+
+% Each new section starts on a new page
+\newcommand{\sectionbreak}{\clearpage}
+
+
 
 \author{Gautier \textsc{Colajanni}, Cédric \textsc{Jezequel},\\ Julien \textsc{Marcou}, Pierre \textsc{Poilane}, Paul \textsc{Rivière}, Kévin \textsc{Thek}}
 
@@ -13,22 +51,35 @@
 
 \begin{document}
 
-\maketitle
+\includepdf{./garde.pdf}
+
+% Insertion d'une page blanche
+\newpage \thispagestyle{empty}
+\null
+\newpage 
+
+% Sommaire
+\renewcommand\contentsname{Sommaire}
+\tableofcontents
+
 
 \section*{Introduction}
+\addcontentsline{toc}{section}{Introduction}
+
 Notre projet porte sur la classification automatisée de documents textuels en fonction de leur auteur. Nous allons expérimenter plusieurs techniques de classification et comparer leurs performances respectives.
 
 La première technique consiste en une sélection de critères de discrimination uniquement basée sur les fréquences des termes utilisés par les auteurs. La deuxième méthode va s'orienter sur la nature des mots employé et la construction des phrases pour identifier l'auteur par son style.
 
 \todo{Qui et Quoi ?}
 
-\section{Détails techniques}
+\subsection*{Détails techniques}
 
 Notre projet portant sur un nombre d'heures limités et souhaitant obtenir des résultats rapidement sans avoir à capitaliser des connaissances sur un langage particulier nous avons fait le choix de développer au maximum en PHP. Ce choix ce justifie par le fait que ce langage est accessible en ligne de commande, est assez performant lorsqu'il s'agit de traiter avec du texte et que la majorité de l'équipe a déjà travailler avec ce qui permettait d'être familier avec ces structures de données et son fonctionnement.
 
 L'organisation autour des sources s'est fait naturellement à l'aide du gestionnaire de version git maintenant maîtrisé par une majorité d'étudiant ayant compris l'intérêt d'un tel outil au sein de projets de toute taille.
 
-\section{Méthode 1 : Term-frequency criterion}
+
+\section{Première méthode : Term-frequency criterion}
 Une première méthode consiste à classifier un document en fonction de la présence de certains mots dans ce texte. Il va s'agir ainsi de construire un classifieur en utilisant un ensemble d'apprentissage, et de trouver la classe qui correspond au mieux à un document faisant partie de l'ensemble de test. Il s'agit donc de la partie Apprentissage de notre problème.
 
 \subsection{Création de la matrice de classification}
@@ -75,7 +126,13 @@ Même si théoriquement cette partie semble ardue à mettre en place techniqueme
 \subsection{Résultats}
 Avec les valeurs des constantes réglées dans la partie d'apprentissage, nous sommes arrivés à un résultat plutôt moyen. En effet, sur les textes de l'ensemble de test, seulement 47\% des textes sont bien classés et 6 ne sont pas classés. \todo{à compléter selon les résultats}
 
-\section{Méthode 2 : Part-of-Speech analysis}
+
+
+
+
+
+
+\section{Seconde approche : Part-of-Speech analysis}
 
 Afin de parvenir à réaliser une analyse sur un corpus complet, il nous a paru pertinent de nous appuyer sur la nature des mots et leur agencement plutôt que sur leur signification. Pour parvenir à exploiter les corpus de manière satisfaisante, nous avons opté par l'emploi de tag (Part-of-Speech) fourni par l'outil Tree Tagger\footnote{http://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/}.
 
@@ -167,7 +224,8 @@ Que ce soit la première méthode ou la seconde, nos résultats nous paraissent 
 %\end{center}
 
 
-\section{Conclusion}
+\section*{Conclusion}
+\addcontentsline{toc}{section}{Conclusion}
 
 \todo{Identification de nos erreurs, bilan technique et péda}
 
