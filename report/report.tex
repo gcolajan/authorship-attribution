@@ -66,17 +66,16 @@
 \section*{Introduction}
 \addcontentsline{toc}{section}{Introduction}
 
-Notre projet porte sur la classification automatisée de documents textuels en fonction de leur auteur. Nous allons expérimenter plusieurs techniques de classification et comparer leurs performances respectives.
+Étudiants à l'INSA Rennes, notre projet consiste à développer une chaîne logicielle permettant de mettre en œuvre des algorithmes de classification automatisée. Cette classification automatisée a pour sujet des documents textuels issue de la presse en langue anglaise. Par l'intermédiaire de nos implémentations, nous souhaitons réussir à deviner l'auteur d'un texte en ayant préalablement analysé son corpus.
 
-La première technique consiste en une sélection de critères de discrimination uniquement basée sur les fréquences des termes utilisés par les auteurs. La deuxième méthode va s'orienter sur la nature des mots employé et la construction des phrases pour identifier l'auteur par son style.
+Ce rapport traite des expérimentations que nous avons effectué sur diverses techniques de classification et nous permet de dresser un tableau des performances de chaque algorithme. Nous n'avons pas la prétention de parvenir à un classifieur optimal mais souhaitons parvenir à une solution fonctionnelle afin de sentir les difficultés et aspects de ces méthodes.
 
-\todo{Qui et Quoi ?}
+Nous avons divisé notre groupe en deux afin de réaliser deux analyses nous semblant différentes. La première technique consiste en une sélection de critères de discrimination uniquement basée sur les fréquences des termes utilisés par les auteurs. La deuxième méthode va s'orienter sur la nature des mots employé et la construction des phrases pour identifier l'auteur par son style. Ces deux sous-projets sont ensuite comparés afin de montrer les difficultés rencontrées et les performances que nous avons été capables d'atteindre.
 
 \subsection*{Détails techniques}
 
-Notre projet portant sur un nombre d'heures limités et souhaitant obtenir des résultats rapidement sans avoir à capitaliser des connaissances sur un langage particulier nous avons fait le choix de développer au maximum en PHP. Ce choix ce justifie par le fait que ce langage est accessible en ligne de commande, est assez performant lorsqu'il s'agit de traiter avec du texte et que la majorité de l'équipe a déjà travailler avec ce qui permettait d'être familier avec ces structures de données et son fonctionnement.
-
-L'organisation autour des sources s'est fait naturellement à l'aide du gestionnaire de version git maintenant maîtrisé par une majorité d'étudiant ayant compris l'intérêt d'un tel outil au sein de projets de toute taille.
+Notre projet portant s'effectuant en un temps restreint et souhaitant obtenir des résultats rapidement sans avoir à capitaliser des connaissances sur un langage particulier nous avons fait le choix de développer au maximum en PHP. Ce choix ce justifie par le fait que ce langage est accessible en ligne de commande, est assez performant lorsqu'il s'agit de traiter avec du texte et que l'ensemble de l'équipe a déjà eu à traiter avec ce langage. 
+L'organisation autour des sources s'est fait naturellement à l'aide du gestionnaire de version \textit{git} maintenant maîtrisé de tous.
 
 
 \section{Première méthode : Term-frequency criterion}
@@ -153,8 +152,6 @@ Souhaitant réaliser une identification des textes du corpus proposé, nos effor
 
 Cette première méthode consistait à simplement compter la fréquence d'apparition des tags reportés et ce, de manière globale, pour chaque auteur. Cette analyse a l'avantage de se faire rapidement mais ne donne malheureusement pas de résultat probant. Néanmoins, cette phase nous a permis de prendre en main les données qui étaient à notre disposition et d'essayer de comprendre ce qui pouvait être discriminant dans un texte ou non.
 
-\todo{Gautier:Faire la comparaison avec TOUT le corpus}
-
 \todo{citer méthodologie de test et résultats obtenus}
 
 \subsubsection{Longueur des paragraphes}
@@ -174,32 +171,48 @@ Par l'étude de cette métrique, nous pensions avoir décelé un patron intéres
 
 \todo{Changer : montrer que ce n'est pas discriminant}
 
+
+
+
 \subsection{Étude des transitions}
 
-Afin de parvenir à identifier les auteurs de nos textes, nous avons pensé qu'il serait plus judicieux de nous intéresser aux schémas apportés par les transitions. En effet, un auteur utilisant beaucoup de qualificatifs ou ayant une manière personnelle d'exprimer les choses pourra potentiellement être identifié par ce biais là. C'est à ce moment là que nous nous sommes réellement posé la question de la pertinence de nos précédentes métriques. En effet, nos métriques précédentes ne sont-elles pas intrinsèques au langage ?
+Afin de parvenir à identifier les auteurs de nos textes, nous avons pensé qu'il serait plus judicieux de nous intéresser aux schémas apportés par les transitions. En effet, un auteur utilisant beaucoup de qualificatifs ou ayant une manière plus particulière d'exprimer les choses pourra potentiellement être identifié par ce biais là. C'est à ce moment là que nous nous sommes réellement posé la question de la pertinence de nos précédentes métriques. En effet, nos métriques précédentes ne sont-elles pas intrinsèques au langage ?
 
-Par l'étude de la transition, nous avons souhaité construire assez simplement une matrice normalisée représentant tous les tags proposés par Tree Tagger et nous permettant de savoir si le tag X est suivi du tag Y et ce, à quel fréquence (par rapport au corpus de référence dans son intégralité).
+Par l'étude de la transition, nous avons souhaité construire assez simplement une matrice représentant tous les tags proposés par Tree Tagger et nous permettant de savoir si le tag X est suivi du tag Y.
 
-\todo{étude de la matrice avec eigenvalues}
+\[M=\bordermatrix{
+&TAG_{1}&\cdots&TAG_{j}&\cdots&TAG_{n}\cr
+TAG_{1}& occ_{11} & \cdots & occ_{1j} & \cdots & occ_{1n} \cr
+\vdots&\vdots&\ddots&\vdots&\ddots&\vdots\cr
+TAG_{i}& occ_{i1} & \cdots & occ_{ij} & \cdots & occ_{in} \cr
+\vdots&\vdots&\ddots&\vdots&\ddots&\vdots\cr
+TAG_{m}& occ_{m1} & \cdots & occ_{mj} & \cdots & occ_{mn} \cr
+}\]
 
-\subsection{Déploiement de la méthode des n-grams}
+Cette matrice n'apporte rien seule, notre idée ici était de mettre en place une analyse moins individuelle des schémas. Nous voulions être capable de nous abstraire un peu de nos tags pour nous consacrer plus sur le \textit{dessin} qui était créé par cette matrice. À ce stade, nous avons cherché quels étaient les outils que nous pouvions mettre en place pour parvenir à une telle analyse. Nous avons ainsi regardé différents algorithmes tels que ceux en rapport avec les matrices stochastiques, les algorithmes en rapport avec la théorie des graphes, etc. Une façon de procéder a retenu notre attention.
+
+Cependant, ce qui a retenu notre attention ici sont deux expériences apportées par un membre de l'équipe dans l'étude de similitudes pour reconnaître des visages (eigenfaces\footcite{http://fr.wikipedia.org/wiki/Eigenface}) et une expérience similaire pour un tri de données spatialisées utilisant des matrices de covariance et des valeurs propres. Partant alors en quête d'une solution avec ces outils, nous avons tenté de mettre en place une méthode de comparaison matricielle en employant les vecteurs caractéristiques extrait de nos matrices.
+
+Malheureusement, nous avons dû abandonné cette approche commençant à manquer de temps et sentant que nos connaissances auraient besoin d'être approfondies pour obtenir les prémices d'un résultat. Néanmoins, cette approche nous semble intéressante dans le sens où elle permet de s'abstraire des données originales et de plus se concentrer sur la forme du message. Nous avons réalisé ce début de prototype en Python en exploitant la bibliothèque \textit{numpy} et les algorithme fournis dans le package LAPACK\footcite{http://www.netlib.org/lapack/}.
+
+\subsection{Déploiement de la méthode des N-grams}
 
 L'étude des transitions nous ayant posé quelques problèmes pour trouver une manière élégante de comparer des matrices de transitions, nous nous sommes penchés sur une méthode un peu plus générique et nous offrant peut-être un peu plus de souplesse quant à sa configuration. Toujours dans l'idée d'identifier nos auteurs par leur façon de tourner leurs phrases, cette méthode nous permet de choisir la longueur de nos «~grams~» et d'en ressortir un résultat assez simplement.
 
-Cette méthode nous permet de tirer partis de l'ordre dans lequel sont écris les mots utilisés par nos auteurs. Après avoir passé l'ensemble de notre corpus de test sous forme de tag, avec le même outil que précédement (Tree Tagger), nous analysons les différents enchainements de tags repérés dans nos fichiers. Pour un 2-grams, nous nous occuperons seulement des enchainement de 2 tags, pour un 3-grams, des enchainements de 3 tags, etc ...
+Cette méthode nous permet de tirer partis de l'ordre dans lequel sont écris les mots utilisés par nos auteurs. Après avoir passé l'ensemble de notre corpus de test sous forme de tag, avec le même outil que précédemment (Tree Tagger), nous analysons les différents enchaînements de tags repérés dans nos fichiers. Pour un 2-grams, nous nous occuperons seulement des enchaînement de 2 tags, pour un 3-grams, des enchaînements de 3 tags, etc ...
 
-Pour se faire, nous prenons un à un chacun des enchainements que nous rencontrons, comptabilisons son nombre d'occurrence dans l'ensemble des articles d'un auteur, puis compilons ces résultats. Nous prenons également en compte que l'apparition d'un unique enchainement dans l'ensemble du corpus n'est pas assez discriminant pour notre recherche : Il sera alors supprimé de notre comptabilisation. L'ensemble de ces calculs et mises en formes sont réalisés à l'aide de script pearl, simplifiant la lecture et l'écriture au sein de fichiers .txt et .csv.
+Pour se faire, nous prenons un à un chacun des enchaînements que nous rencontrons, comptabilisons son nombre d'occurrence dans l'ensemble des articles d'un auteur, puis compilons ces résultats. Nous prenons également en compte que l'apparition d'un unique enchaînement dans l'ensemble du corpus n'est pas assez discriminant pour notre recherche : Il sera alors supprimé de notre comptabilisation. L'ensemble de ces calculs et mises en formes sont réalisés à l'aide de script perl, simplifiant la lecture et l'écriture au sein de fichiers .txt et .csv.
 
 Suite à cette première analyse, un fichier .csv récapitulatif des fréquences d'apparition de ces suite est généré. Ce dernier, classé par auteurs, est ensuite comparé à notre fichier à classifier mis sous forme de tag et pré-analyser : est alors réalisé une comparaison point à point de l'ensemble des combinaisons liées à un auteur. Nous calculons son taux de "matching" et sortons l'auteur ayant le plus fort taux d'affiliation et donc, le plus probable pour ce texte. 
 
 Cette méthode est tout de fois assez lourde puisqu'elle requiert une bonne dizaine de minute pour s'exécuter intégralement bien que déjà placée totalement en mémoire (sur un système de fichier tmpfs). 
 
-Néanmoins, jusqu'à présent, seule cette méthode a réussi à nous montrer des résultats concret bien que décevant d'un point de vue qualitatif. Nous obtenons une variation de l'efficacité de cette méthode en fonction du nombre de mots pris en compte dans nos enchainements :
+Néanmoins, jusqu'à présent, seule cette méthode a réussi à nous montrer des résultats concret bien que décevant d'un point de vue qualitatif. Nous obtenons une variation de l'efficacité de cette méthode en fonction du nombre de mots pris en compte dans nos enchaînements :
 
 \begin{itemize}
-\item{Pour un 2-gramms : nous obtenons environ 26\% de réussite.}
-\item{Pour un 3-gramms : nous descendons à une valeur de 21\% de réussite.}
-\item{Pour un 4-gramms : nous chutons à moins de 14\% de réussite}
+\item{Pour un 2-grams : nous obtenons environ 26\% de réussite.}
+\item{Pour un 3-grams : nous descendons à une valeur de 21\% de réussite.}
+\item{Pour un 4-grams : nous chutons à moins de 14\% de réussite}
 \end{itemize}
 
 Nous avons également tester des n-gramms prenant en compte plus de mots, mais ces derniers se sont révélés assez peu discriminant et donc inintéressant.
@@ -209,6 +222,9 @@ Nous avons également tester des n-gramms prenant en compte plus de mots, mais c
 \section{Comparaison de performance}
 
 Que ce soit la première méthode ou la seconde, nos résultats nous paraissent assez décevants. En effet, il nous est impossible d'identifier ne serait-ce que 50\% des textes convenablement. Néanmoins, voici un tableau récapitulant les performances obtenues sur les différents stades de deux méthodes développées.
+
+\todo{Critiquer l'approche que l'on a eu, montrer les faiblesses}
+\topo{Méth2: difficulter de différencier le style du langage (anglais)}
 
 \todo{Insérer un tableau comparatif}
 
