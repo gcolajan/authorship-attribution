@@ -162,7 +162,7 @@ Par l'étude de cette métrique, nous pensions avoir décelé un patron intéres
 				
 \begin{figure}[hbtp]
 \centering
-\includegraphics[width=11cm]{fig/WPL.png}
+\includegraphics[width=15cm]{fig/WPL.png}
 \caption{Mots par paragraphe}
 \label{WPL}
 \end{figure}
@@ -243,6 +243,14 @@ Que ce soit la première méthode ou la seconde, nos résultats nous paraissent 
 \section*{Conclusion}
 \addcontentsline{toc}{section}{Conclusion}
 
-\todo{Identification de nos erreurs, bilan technique et péda}
+Ce mini-projet aura été très intéressant. Grâce à ce sujet, nous avons été capable d'implémenter, avec plus ou moins de réussite, des algorithmes assez variés dans l'optique d'identifier les auteurs de textes.
+
+Pour parvenir à nos fins, nous avons eu deux approches différentes. La première consistant à analyser la thématique d'un texte en s'appuyant sur la fréquence d'apparition des mots et le seconde méthode exploitant la structure grammaticale des phrases dans le but de comparer le style d'écriture des auteurs. Par le biais de ses deux développement séparés, nous avons pu obtenir des résultats différents et commencer à comprendre quelles étaient les éléments discriminants et comment exploiter les méthodes statistiques auxquelles nous avons été initiés en cours.
+
+Ce projet nous apporte aussi un précieux bagage sur la compréhension de ce domaine. Souvent abordé par les journalistes et rappelé dès que l'on souhaite informatiser des processus reconnaissance, l'acquisition de connaissance est un aspect très intéressant en informatique. Par les problèmes que nous avons soulevé pendant ce projet, nous avons pu comprendre un peu mieux les moyens nécessaires à la mise en production de ce types de systèmes.
+
+D'un point de vue technique, nous avons pu constater que ce type de traitement pouvait être très gourmand. Dans notre cas, et surtout dans la seconde approche, l'analyse du corpus de test suivi de la découverte des auteurs du corpus d'entraînement pouvait prendre jusqu'à un quart d'heure bien qu'exécuté sur une machine récente. Bien qu'il soit possible de paralléliser ces procédures, on se rend compte que ces traitement peuvent être très gourmand, tant en espace disque si l'on souhaite observer un corpus suffisamment représentatif qu'en temps de calcul suivant les algorithmes que l'on souhaite appliquer.
+
+Enfin, ce projet aura été une fois de plus l'occasion de travailler en groupe. Néanmoins, cette fois-ci, le temps imparti étant très réduit, nous avons du nous adapter afin de répartir au mieux la tâches et faire en sorte que tout le monde puisse apporter ses compétences sur un domaine que nous connaissions très peu. Bien que plus de temps aurait été appréciable pour approfondir certains aspects, nous avons réussi à réaliser ce projet grâce à une organisation mettant en avant deux groupes de travail sur les deux approches différenciées en début de projet et une communication efficace et régulière.
 
 \end{document}
