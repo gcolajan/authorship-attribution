@@ -20,6 +20,7 @@
 \usepackage{pgfplots}
 \usepackage[final]{pdfpages}
 
+
 %Gestion des marges
 \newgeometry{left=30mm,right=30mm,top=30mm,bottom=30mm}
 
@@ -74,7 +75,7 @@ Nous avons divisé notre groupe en deux afin de réaliser deux analyses nous sem
 
 \subsection*{Détails techniques}
 
-Notre projet portant s'effectuant en un temps restreint et souhaitant obtenir des résultats rapidement sans avoir à capitaliser des connaissances sur un langage particulier nous avons fait le choix de développer au maximum en PHP. Ce choix ce justifie par le fait que ce langage est accessible en ligne de commande, est assez performant lorsqu'il s'agit de traiter avec du texte et que l'ensemble de l'équipe a déjà eu à traiter avec ce langage. 
+Notre projet portant s'effectuant en un temps restreint et souhaitant obtenir des résultats rapidement sans avoir à capitaliser des connaissances sur un langage particulier nous avons fait le choix de développer au maximum en PHP. Ce choix se justifie par le fait que ce langage est accessible en ligne de commande, est assez performant lorsqu'il s'agit de traiter avec du texte et que l'ensemble de l'équipe a déjà eu à traiter avec ce langage. 
 L'organisation autour des sources s'est fait naturellement à l'aide du gestionnaire de version \textit{git} maintenant maîtrisé de tous.
 
 
@@ -210,7 +211,7 @@ Par l'étude de cette métrique, nous pensions avoir décelé un patron intéres
 				
 \begin{figure}[hbtp]
 \centering
-\includegraphics[width=11cm]{fig/WPL.png}
+\includegraphics[width=15cm]{fig/WPL.png}
 \caption{Mots par paragraphe}
 \label{WPL}
 \end{figure}
@@ -235,9 +236,9 @@ TAG_{m}& occ_{m1} & \cdots & occ_{mj} & \cdots & occ_{mn} \cr
 
 Cette matrice n'apporte rien seule, notre idée ici était de mettre en place une analyse moins individuelle des schémas. Nous voulions être capable de nous abstraire un peu de nos tags pour nous consacrer plus sur le \textit{dessin} qui était créé par cette matrice. À ce stade, nous avons cherché quels étaient les outils que nous pouvions mettre en place pour parvenir à une telle analyse. Nous avons ainsi regardé différents algorithmes tels que ceux en rapport avec les matrices stochastiques, les algorithmes en rapport avec la théorie des graphes, etc. Une façon de procéder a retenu notre attention.
 
-Cependant, ce qui a retenu notre attention ici sont deux expériences apportées par un membre de l'équipe dans l'étude de similitudes pour reconnaître des visages (eigenfaces\footcite{http://fr.wikipedia.org/wiki/Eigenface}) et une expérience similaire pour un tri de données spatialisées utilisant des matrices de covariance et des valeurs propres. Partant alors en quête d'une solution avec ces outils, nous avons tenté de mettre en place une méthode de comparaison matricielle en employant les vecteurs caractéristiques extrait de nos matrices.
+Cependant, ce qui a retenu notre attention ici sont deux expériences apportées par un membre de l'équipe dans l'étude de similitudes pour reconnaître des visages (eigenfaces\footnote{http://fr.wikipedia.org/wiki/Eigenface}) et une expérience similaire pour un tri de données spatialisées utilisant des matrices de covariance et des valeurs propres. Partant alors en quête d'une solution avec ces outils, nous avons tenté de mettre en place une méthode de comparaison matricielle en employant les vecteurs caractéristiques extrait de nos matrices.
 
-Malheureusement, nous avons dû abandonné cette approche commençant à manquer de temps et sentant que nos connaissances auraient besoin d'être approfondies pour obtenir les prémices d'un résultat. Néanmoins, cette approche nous semble intéressante dans le sens où elle permet de s'abstraire des données originales et de plus se concentrer sur la forme du message. Nous avons réalisé ce début de prototype en Python en exploitant la bibliothèque \textit{numpy} et les algorithme fournis dans le package LAPACK\footcite{http://www.netlib.org/lapack/}.
+Malheureusement, nous avons dû abandonné cette approche commençant à manquer de temps et sentant que nos connaissances auraient besoin d'être approfondies pour obtenir les prémices d'un résultat. Néanmoins, cette approche nous semble intéressante dans le sens où elle permet de s'abstraire des données originales et de plus se concentrer sur la forme du message. Nous avons réalisé ce début de prototype en Python en exploitant la bibliothèque \textit{numpy} et les algorithme fournis dans le package LAPACK\footnote{http://www.netlib.org/lapack/}.
 
 \subsection{Déploiement de la méthode des N-grams}
 
@@ -268,9 +269,25 @@ Nous avons également tester des n-gramms prenant en compte plus de mots, mais c
 Que ce soit la première méthode ou la seconde, nos résultats nous paraissent assez décevants. En effet, il nous est impossible d'identifier ne serait-ce que 50\% des textes convenablement. Néanmoins, voici un tableau récapitulant les performances obtenues sur les différents stades de deux méthodes développées.
 
 \todo{Critiquer l'approche que l'on a eu, montrer les faiblesses}
-\topo{Méth2: difficulter de différencier le style du langage (anglais)}
+\todo{Méth2: difficulter de différencier le style du langage (anglais)}
 
 \todo{Insérer un tableau comparatif}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|c|}
+\hline 
+ & \textbf{Term-frequency criterion} & • \\ 
+\hline 
+\textbf{Bien classé} & • & • \\ 
+\hline 
+\textbf{Mauvais classé} & • & • \\ 
+\hline 
+\textbf{Pas classé} & • & • \\ 
+\hline 
+\end{tabular} 
+\caption{Résumé des performances des algorithmes}
+\end{table}
 
 %\begin{center}
 %\begin{tikzpicture}[scale=1]
@@ -283,10 +300,20 @@ Que ce soit la première méthode ou la seconde, nos résultats nous paraissent 
 %\end{tikzpicture}
 %\end{center}
 
+En ce qui concerne la première méthode, ne s'agissant que d'un travail sur les mots les plus fréquents, il parait évident que cela ne va pas permettre d'obtenir un classement parfait, vu que nous sommes loins de prendre en compte toutes les finesses et les styles des auteurs. Cependant, il nous semblait que cela suffirait pour plus de situations. Nous sommes donc assez déçus du niveau de performance obtenu. D'autre part, nous avons trouvé la métrique utilisée dans la classification pas forcément appropriée, ce qui peut expliquer un taux de mauvais classés aussi important.
+
 
 \section*{Conclusion}
 \addcontentsline{toc}{section}{Conclusion}
 
-\todo{Identification de nos erreurs, bilan technique et péda}
+Ce mini-projet aura été très intéressant. Grâce à ce sujet, nous avons été capable d'implémenter, avec plus ou moins de réussite, des algorithmes assez variés dans l'optique d'identifier les auteurs de textes.
+
+Pour parvenir à nos fins, nous avons eu deux approches différentes. La première consistant à analyser la thématique d'un texte en s'appuyant sur la fréquence d'apparition des mots et le seconde méthode exploitant la structure grammaticale des phrases dans le but de comparer le style d'écriture des auteurs. Par le biais de ses deux développement séparés, nous avons pu obtenir des résultats différents et commencer à comprendre quelles étaient les éléments discriminants et comment exploiter les méthodes statistiques auxquelles nous avons été initiés en cours.
+
+Ce projet nous apporte aussi un précieux bagage sur la compréhension de ce domaine. Souvent abordé par les journalistes et rappelé dès que l'on souhaite informatiser des processus reconnaissance, l'acquisition de connaissance est un aspect très intéressant en informatique. Par les problèmes que nous avons soulevé pendant ce projet, nous avons pu comprendre un peu mieux les moyens nécessaires à la mise en production de ce types de systèmes.
+
+D'un point de vue technique, nous avons pu constater que ce type de traitement pouvait être très gourmand. Dans notre cas, et surtout dans la seconde approche, l'analyse du corpus de test suivi de la découverte des auteurs du corpus d'entraînement pouvait prendre jusqu'à un quart d'heure bien qu'exécuté sur une machine récente. Bien qu'il soit possible de paralléliser ces procédures, on se rend compte que ces traitement peuvent être très gourmand, tant en espace disque si l'on souhaite observer un corpus suffisamment représentatif qu'en temps de calcul suivant les algorithmes que l'on souhaite appliquer.
+
+Enfin, ce projet aura été une fois de plus l'occasion de travailler en groupe. Néanmoins, cette fois-ci, le temps imparti étant très réduit, nous avons du nous adapter afin de répartir au mieux la tâches et faire en sorte que tout le monde puisse apporter ses compétences sur un domaine que nous connaissions très peu. Bien que plus de temps aurait été appréciable pour approfondir certains aspects, nous avons réussi à réaliser ce projet grâce à une organisation mettant en avant deux groupes de travail sur les deux approches différenciées en début de projet et une communication efficace et régulière.
 
 \end{document}
