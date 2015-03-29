@@ -20,6 +20,7 @@
 \usepackage{pgfplots}
 \usepackage[final]{pdfpages}
 
+
 %Gestion des marges
 \newgeometry{left=30mm,right=30mm,top=30mm,bottom=30mm}
 
@@ -74,7 +75,7 @@ Nous avons divisé notre groupe en deux afin de réaliser deux analyses nous sem
 
 \subsection*{Détails techniques}
 
-Notre projet portant s'effectuant en un temps restreint et souhaitant obtenir des résultats rapidement sans avoir à capitaliser des connaissances sur un langage particulier nous avons fait le choix de développer au maximum en PHP. Ce choix ce justifie par le fait que ce langage est accessible en ligne de commande, est assez performant lorsqu'il s'agit de traiter avec du texte et que l'ensemble de l'équipe a déjà eu à traiter avec ce langage. 
+Notre projet portant s'effectuant en un temps restreint et souhaitant obtenir des résultats rapidement sans avoir à capitaliser des connaissances sur un langage particulier nous avons fait le choix de développer au maximum en PHP. Ce choix se justifie par le fait que ce langage est accessible en ligne de commande, est assez performant lorsqu'il s'agit de traiter avec du texte et que l'ensemble de l'équipe a déjà eu à traiter avec ce langage. 
 L'organisation autour des sources s'est fait naturellement à l'aide du gestionnaire de version \textit{git} maintenant maîtrisé de tous.
 
 
@@ -224,9 +225,25 @@ Nous avons également tester des n-gramms prenant en compte plus de mots, mais c
 Que ce soit la première méthode ou la seconde, nos résultats nous paraissent assez décevants. En effet, il nous est impossible d'identifier ne serait-ce que 50\% des textes convenablement. Néanmoins, voici un tableau récapitulant les performances obtenues sur les différents stades de deux méthodes développées.
 
 \todo{Critiquer l'approche que l'on a eu, montrer les faiblesses}
-\topo{Méth2: difficulter de différencier le style du langage (anglais)}
+\todo{Méth2: difficulter de différencier le style du langage (anglais)}
 
 \todo{Insérer un tableau comparatif}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|c|}
+\hline 
+ & \textbf{Term-frequency criterion} & • \\ 
+\hline 
+\textbf{Bien classé} & • & • \\ 
+\hline 
+\textbf{Mauvais classé} & • & • \\ 
+\hline 
+\textbf{Pas classé} & • & • \\ 
+\hline 
+\end{tabular} 
+\caption{Résumé des performances des algorithmes}
+\end{table}
 
 %\begin{center}
 %\begin{tikzpicture}[scale=1]
@@ -239,10 +256,15 @@ Que ce soit la première méthode ou la seconde, nos résultats nous paraissent 
 %\end{tikzpicture}
 %\end{center}
 
+En ce qui concerne la première méthode, ne s'agissant que d'un travail sur les mots les plus fréquents, il parait évident que cela ne va pas permettre d'obtenir un classement parfait, vu que nous sommes loins de prendre en compte toutes les finesses et les styles des auteurs. Cependant, il nous semblait que cela suffirait pour plus de situations. Nous sommes donc assez déçus du niveau de performance obtenu. D'autre part, nous avons trouvé la métrique utilisée dans la classification pas forcément appropriée, ce qui peut expliquer un taux de mauvais classés aussi important.
+
 
 \section*{Conclusion}
 \addcontentsline{toc}{section}{Conclusion}
 
 \todo{Identification de nos erreurs, bilan technique et péda}
+Ce projet nous a permis déjà de nous rendre compte du travail nécessaire à la réalisation d'algorithmes de classification, en particulier de la partie mathématique. Nous avons donc obtenu une certaine sensibilisation aux techniques utilisées au lieu d'être de simples consommateurs d'algorithmes comme nous l'avons été durant certains TPs en début de semestre. 
+
+Nous pensons également que nos piètres résultats en terme d'efficacité sont sûrement dus à des erreurs ou des approximations mathématiques. \todo{à compléter}
 
 \end{document}
