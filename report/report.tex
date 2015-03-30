@@ -70,27 +70,27 @@
 
 Étudiants à l'INSA Rennes, notre projet consiste à développer une chaîne logicielle permettant de mettre en œuvre des algorithmes de classification automatisée. Cette classification automatisée a pour sujet des documents textuels issue de la presse en langue anglaise. Par l'intermédiaire de nos implémentations, nous souhaitons réussir à deviner l'auteur d'un texte en ayant préalablement analysé son corpus.
 
-Ce rapport traite des expérimentations que nous avons effectué sur diverses techniques de classification et nous permet de dresser un tableau des performances de chaque algorithme. Nous n'avons pas la prétention de parvenir à un classifieur optimal mais souhaitons parvenir à une solution fonctionnelle afin de sentir les difficultés et aspects de ces méthodes.
+Ce rapport traite des expérimentations que nous avons effectués sur diverses techniques de classification et nous permet de dresser un tableau des performances de chaque algorithme. Nous n'avons pas la prétention de parvenir à un classifieur optimal mais souhaitons parvenir à une solution fonctionnelle afin de sentir les difficultés et aspects de ces méthodes.
 
-Nous avons divisé notre groupe en deux afin de réaliser deux analyses nous semblant différentes. La première technique consiste en une sélection de critères de discrimination uniquement basée sur les fréquences des termes utilisés par les auteurs. La deuxième méthode va s'orienter sur la nature des mots employé et la construction des phrases pour identifier l'auteur par son style. Ces deux sous-projets sont ensuite comparés afin de montrer les difficultés rencontrées et les performances que nous avons été capables d'atteindre.
+Nous avons divisé notre groupe en deux afin de réaliser deux analyses nous semblant différentes. La première technique consiste en une sélection de critères de discrimination uniquement basés sur les fréquences des termes utilisés par les auteurs. La deuxième méthode va s'orienter sur la nature des mots employés et la construction des phrases pour identifier l'auteur par son style. Ces deux sous-projets sont ensuite comparés afin de montrer les difficultés rencontrées et les performances que nous avons été capables d'atteindre.
 
 \subsection*{Détails techniques}
 
-Notre projet portant s'effectuant en un temps restreint et souhaitant obtenir des résultats rapidement sans avoir à capitaliser des connaissances sur un langage particulier nous avons fait le choix de développer au maximum en PHP. Ce choix se justifie par le fait que ce langage est accessible en ligne de commande, est assez performant lorsqu'il s'agit de traiter avec du texte et que l'ensemble de l'équipe a déjà eu à traiter avec ce langage. 
+Notre projet s'effectuant en un temps restreint et souhaitant obtenir des résultats rapidement sans avoir à capitaliser des connaissances sur un langage particulier, nous avons fait le choix de développer au maximum en PHP. Ce choix se justifie par le fait que ce langage est accessible en ligne de commande, est assez performant lorsqu'il s'agit de traiter avec du texte et que l'ensemble de l'équipe a déjà eu à traiter avec ce langage. 
 L'organisation autour des sources s'est fait naturellement à l'aide du gestionnaire de version \textit{git} maintenant maîtrisé de tous.
 
 
 \section{Première méthode : Term-frequency criterion}
-Une première méthode consiste à classifier un document en fonction de la présence de certains mots dans ce texte. Il va s'agir ainsi de construire un classifieur en utilisant un ensemble d'apprentissage, et de trouver la classe qui correspond au mieux à un document faisant partie de l'ensemble de test. Il s'agit donc de la partie Apprentissage de notre problème.
+Une première méthode consiste à classifier un document en fonction de la présence de certains mots dans ce texte. Il va s'agir ainsi de construire un classifieur en utilisant un ensemble d'apprentissage, et de trouver la classe qui correspond au mieux à un document faisant partie de l'ensemble de test.
 
 \subsection{Création de la matrice de classification}
-Le but ici est de discriminer les auteurs en générant des critères de comparaison. À partir de l'ensemble d'apprentissage, nous allons extraire les mots les plus pertinents pour chaque auteur. Nous allons pour cela utiliser un critère de fréquence de terme rapporté à l'ensemble du corpus (c'est-à-dire pour tous les documents de tous les auteurs).
+Le but ici est de discriminer les auteurs en générant des critères de comparaison. À partir de l'ensemble d'apprentissage, nous allons extraire les mots les plus pertinents pour chaque auteur. Nous allons pour cela utiliser un critère de fréquence de terme rapporté à l'ensemble du corpus (c'est-à-dire pour tous les documents de tous les auteurs). Il s'agit donc de la partie Apprentissage de notre problème.
 
 Tout d'abord, nous avons utilisé une liste de \textit{stopwords} pour retirer les mots trop communs des articles. Pour alléger le traitement, nous avons également opté pour éliminer tous les mots de 2 lettres ou moins. 
 
 La métrique utilisée est \[ tfc_{ij} = tf_{ij} \times idf\] avec $tf_{ij}$ la fréquence d'apparition d'un terme $t_{ij}$ dans l'ensemble du corpus de l'auteur $j$. \todo{à vérifier} La variable $idf$ est la fréquence inverse du document et s'exprime ainsi : \[idf = \log \frac{|\Omega|}{df(t_{i})} \] avec $|\Omega|$ le nombre de documents dans le corpus et $df(t_{i})$ le nombre de documents dans lequel apparaît le terme $t_{i}$.
 
-Après génération de cette métrique, vu le grand nombre de termes restants, nous avons décidé d'appliquer un filtre pour ne garder que les plus significatifs. Après plusieurs tests manuels, la valeur de seuil $T = $ \todo{à reporter} a été décidée, car procurant un nombre réduit mais néanmoins intéressant de termes.
+Après génération de cette métrique, vu le grand nombre de termes restants, nous avons décidé d'appliquer un filtre pour ne garder que les plus significatifs. Après plusieurs tests manuels, la valeur de seuil $T = 0.4 $ a été décidée, car procurant un nombre réduit mais néanmoins intéressant de termes.
 
 Au final nous sommes arrivés à une matrice probabilistique contenant les métriques calculées durant cette phase et qui nous servira pour la partie suivante. Cette matrice se présente ainsi :
 
@@ -103,7 +103,7 @@ t_{i}& tfc_{i1} & \cdots & tfc_{ij} & \cdots & tfc_{in} \cr
 t_{m}& tfc_{m1} & \cdots & tfc_{mj} & \cdots & tfc_{mn} \cr
 }\]
 \subsection{Classification d'un document}
-La classification d'un texte provenant de l'ensemble de test va nécessiter deux principales étapes. 
+La classification d'un texte provenant de l'ensemble de test va nécessiter deux grandes étapes. 
 
 Pour pouvoir exploiter les résultats de la partie précédente (avec la matrice de classification), nous allons appliquer le même algorithme de recherche de mots pertinents au texte à classifier. Les constantes réglées lors de l'apprentissage ne changent bien sûr pas, pour pouvoir comparer des problèmes qui sont sur le même plan. À l'issue de ce processus, nous sommes en mesure de décrire le texte à classifier avec un certain nombre de mots pertinents que nous pouvons représenter dans un vecteur : 
 \[
@@ -118,11 +118,11 @@ t_{k} & tfc_{d,k} \cr
 \]
 avec $tfc_{d,i}$ la valeur de $tf_{id} \times idf\ $ pour le terme $i$ du texte représenté par le vecteur $\vec{d}$.
 
-Notons que le nombre de mots pertinents (\textit{ie} le nombre $k$) peut être différents selon les textes à classifier. Il ne doit pas forcément être égal au nombre de mots pertinents trouvés pour son auteur lors de la phase d'apprentissage.
+Notons que le nombre de mots pertinents (\textit{ie} le nombre $k$) peut être différent selon les textes à classifier. Il n'est pas forcément égal au nombre de mots pertinents trouvés pour son auteur lors de la phase d'apprentissage.
 
-Une fois ces termes trouvés, il faut chercher à quel auteur cette sélection de mots se rapproche le plus. Pour cela, nous allons calculer une métrique à même de représenter cette proximité. En nous inspirant du cours, une solution de type Bayésien naïf nous a semblé une bonne opportunité. Ainsi pour tous les mots retenus et représentés dans le vecteur $\vec{d}$, nous allons chercher les termes correspondants de la matrice $M$ et les multiplier \todo{vérifier pour le *10} pour obtenir la métrique. Nous reproduisons ce calcul pour chaque auteur (\textit{ie} pour chaque colonne de la matrice $M$) et nous attribuons le texte à l'auteur qui a permis de générer la métrique la plus grande.  
+Une fois ces termes trouvés, il faut chercher à quel auteur cette sélection de mots se rapproche le plus. Pour cela, nous allons calculer une métrique à même de représenter cette proximité. En nous inspirant du cours, une solution de type Bayésien naïf nous a semblé une bonne opportunité. Ainsi pour tous les mots retenus et représentés dans le vecteur $\vec{d}$, nous allons chercher les termes correspondants de la matrice $M$ et les multiplier (en les ayant chacun prélablement multipliés par 10) pour obtenir la métrique. Nous reproduisons ce calcul pour chaque auteur (\textit{ie} pour chaque colonne de la matrice $M$) et nous attribuons le texte à l'auteur qui a permis de générer la métrique la plus grande.  
 
-Même si théoriquement cette partie semble ardue à mettre en place techniquement, notre représentation des données textuelles analysées sous la forme de fichiers CSV nous a permis de parser facilement les documents et de calculer la métrique plutôt efficacement. 
+Même si théoriquement cette partie semble ardue à mettre en place techniquement, notre représentation des données textuelles analysées sous la forme de fichiers CSV nous a permis de "parcourir" facilement les documents et de calculer la métrique plutôt efficacement. 
 
 \subsection{Résultats}
 Avec les valeurs des constantes réglées dans la partie d'apprentissage, nous sommes arrivés à un résultat plutôt moyen. En effet, sur les textes de l'ensemble de test, seulement 47\% des textes sont bien classés et 6 ne sont pas classés. \todo{à compléter selon les résultats}
