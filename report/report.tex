@@ -19,6 +19,7 @@
 \usepackage{tikz}
 \usepackage{pgfplots}
 \usepackage[final]{pdfpages}
+\usepackage{float}
 
 
 %Gestion des marges
@@ -83,15 +84,15 @@ L'organisation autour des sources s'est fait naturellement à l'aide du gestionn
 Une première méthode consiste à classifier un document en fonction de la présence de certains mots dans ce texte. Il va s'agir ainsi de construire un classifieur en utilisant un ensemble d'apprentissage, et de trouver la classe qui correspond au mieux à un document faisant partie de l'ensemble de test. Il s'agit donc de la partie Apprentissage de notre problème.
 
 \subsection{Création de la matrice de classification}
-Le but ici est de discriminer les auteurs en générant des critères de comparaison. À partir de l'ensemble d'apprentissage, nous allons extraire les mots les plus pertinents pour chaque auteur. Nous allons pour cela utiliser un critère de fréquence de terme rapportée à l'ensemble du corpus (c'est-à-dire pour tous les documents de tous les auteurs).
+Le but ici est de discriminer les auteurs en générant des critères de comparaison. À partir de l'ensemble d'apprentissage, nous allons extraire les mots les plus pertinents pour chaque auteur. Nous allons pour cela utiliser un critère de fréquence de terme rapporté à l'ensemble du corpus (c'est-à-dire pour tous les documents de tous les auteurs).
 
 Tout d'abord, nous avons utilisé une liste de \textit{stopwords} pour retirer les mots trop communs des articles. Pour alléger le traitement, nous avons également opté pour éliminer tous les mots de 2 lettres ou moins. 
 
-La métrique utilisée est \[ tfc_{ij} = tf_{ij} \times idf\] avec $tf_{ij}$ est la fréquence d'apparition d'un terme $t_{ij}$ dans l'ensemble du corpus de l'auteur $j$.\todo{à vérifier} La variable $idf$ est la fréquence inverse du document et s'exprime ainsi : \[idf = \log \frac{|\Omega|}{df(t_{i})} \] avec $|\Omega|$ le nombre de documents dans le corpus et $df(t_{i})$ le nombre de documents dans lequel apparaît le terme $t_{i}$.
+La métrique utilisée est \[ tfc_{ij} = tf_{ij} \times idf\] avec $tf_{ij}$ la fréquence d'apparition d'un terme $t_{ij}$ dans l'ensemble du corpus de l'auteur $j$. \todo{à vérifier} La variable $idf$ est la fréquence inverse du document et s'exprime ainsi : \[idf = \log \frac{|\Omega|}{df(t_{i})} \] avec $|\Omega|$ le nombre de documents dans le corpus et $df(t_{i})$ le nombre de documents dans lequel apparaît le terme $t_{i}$.
 
 Après génération de cette métrique, vu le grand nombre de termes restants, nous avons décidé d'appliquer un filtre pour ne garder que les plus significatifs. Après plusieurs tests manuels, la valeur de seuil $T = $ \todo{à reporter} a été décidée, car procurant un nombre réduit mais néanmoins intéressant de termes.
 
-Au final nous sommes arrivés à une matrice probabilistique contenant les métriques que nous avons calculés durant cette phase et qui nous servira pour la partie suivante. Cette matrice se présente ainsi :
+Au final nous sommes arrivés à une matrice probabilistique contenant les métriques calculées durant cette phase et qui nous servira pour la partie suivante. Cette matrice se présente ainsi :
 
 \[M=\bordermatrix{
 &A_{1}&\cdots&A_{j}&\cdots&A_{n}\cr
@@ -121,7 +122,7 @@ Notons que le nombre de mots pertinents (\textit{ie} le nombre $k$) peut être d
 
 Une fois ces termes trouvés, il faut chercher à quel auteur cette sélection de mots se rapproche le plus. Pour cela, nous allons calculer une métrique à même de représenter cette proximité. En nous inspirant du cours, une solution de type Bayésien naïf nous a semblé une bonne opportunité. Ainsi pour tous les mots retenus et représentés dans le vecteur $\vec{d}$, nous allons chercher les termes correspondants de la matrice $M$ et les multiplier \todo{vérifier pour le *10} pour obtenir la métrique. Nous reproduisons ce calcul pour chaque auteur (\textit{ie} pour chaque colonne de la matrice $M$) et nous attribuons le texte à l'auteur qui a permis de générer la métrique la plus grande.  
 
-Même si théoriquement cette partie semble ardue à mettre en place techniquement, notre représentation des données textuelles analysées sous la forme de fichiers CSV nous a permis de parser efficacement les documents et de calculer la métrique plutôt efficacement. 
+Même si théoriquement cette partie semble ardue à mettre en place techniquement, notre représentation des données textuelles analysées sous la forme de fichiers CSV nous a permis de parser facilement les documents et de calculer la métrique plutôt efficacement. 
 
 \subsection{Résultats}
 Avec les valeurs des constantes réglées dans la partie d'apprentissage, nous sommes arrivés à un résultat plutôt moyen. En effet, sur les textes de l'ensemble de test, seulement 47\% des textes sont bien classés et 6 ne sont pas classés. \todo{à compléter selon les résultats}
@@ -136,7 +137,7 @@ Avec les valeurs des constantes réglées dans la partie d'apprentissage, nous s
 
 Afin de parvenir à réaliser une analyse sur un corpus complet, il nous a paru pertinent de nous appuyer sur la nature des mots et leur agencement plutôt que sur leur signification. Pour parvenir à exploiter les corpus de manière satisfaisante, nous avons opté par l'emploi de tag (Part-of-Speech) fourni par l'outil Tree Tagger\footnote{http://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/}.
 
-Nous avons mis en place plusieurs sources d'informations que nous pensions, au premier abord, pertinente pour identifier des auteurs. Ces sources s’appuient sur la fréquence d'apparition des tags, sur l'étude des transitions (quel tag est suivi de quel autre tag) ainsi que sur les n-grams que nous détaillerons ensuite.
+Nous avons mis en place plusieurs sources d'informations que nous pensions, au premier abord, pertinentes pour identifier des auteurs. Ces sources s’appuient sur la fréquence d'apparition des tags, sur l'étude des transitions (quel tag est suivi de quel autre tag) ainsi que sur les n-grams que nous détaillerons ensuite.
 
 Voici un exemple de transformation d'une phrase en tags : 
 
@@ -178,36 +179,14 @@ Souhaitant réaliser une identification des textes du corpus proposé, nos effor
 
 Cette première méthode consistait à simplement compter la fréquence d'apparition des tags reportés et ce, de manière globale, pour chaque auteur. Cette analyse a l'avantage de se faire rapidement mais ne donne malheureusement pas de résultat probant. Néanmoins, cette phase nous a permis de prendre en main les données qui étaient à notre disposition et d'essayer de comprendre ce qui pouvait être discriminant dans un texte ou non.
 
-Afin de tester les résultats obtenus à travers cette première classification, un fichier .csv résumant chaque auteurs en fonction de la fréquence des tags utilisés est généré. Puis afin de tester cette descriptions des auteurs, une comparaison est effectuée entre ce fichier descriptif et chaque articles de chaque auteurs. En fonction de la correspondance entre les différentes fréquences des tags, Un classement est effectué en prenant les 6 auteurs les plus probable pour chaque article. 
+Afin de tester les résultats obtenus à travers cette première classification, nous avons généré un fichier CSV résumant chaque auteur en fonction de la fréquence des tags utilisé. Puis afin de tester cette descriptions des auteurs, une comparaison est effectuée entre ce fichier descriptif et tous les articles du corpus de test. En fonction de la correspondance entre les différentes fréquences des tags, un classement est effectué que nous reprenons ensuite avec la métrique suivante afin de faire ressortir les auteurs les plus probables pour chaque article.
 
-Comme nous les montre les figures ci-dessous, décrivant le  classement des 3 auteurs les plus probables sur l'ensemble des 50 articles écrit par William Kazer, les résultats ne sont pas à la hauteur. On peut observer sur la \textsc{figure \ref{auteur1}} que d'après notre fichier descriptif, ce serait Tan Eelyn l'auteur le plus probable pour 14 des 50 articles, suivis par Scott Hills pour 5 des 50 articles. On peut donc directement voir les limites d'utilisations de cette étude de fréquence des mots avec le jeu de données fournis. 
-
-\begin{figure}[hbtp]
-\centering
-\includegraphics[width=11cm]{fig/Auteur1.png}
-\caption{Nombre d'article écrits pour les auteurs classés numéro 1}
-\label{auteur1}
-\end{figure}
-
-\begin{figure}[hbtp]
-\centering
-\includegraphics[width=11cm]{fig/Auteur2.png}
-\caption{Nombre d'article écrits pour les auteurs classés numéro 2}
-\label{auteur2}
-\end{figure}
-
-\begin{figure}[hbtp]
-\centering
-\includegraphics[width=11cm]{fig/Auteur3.png}
-\caption{Nombre d'article écrits pour les auteurs classés numéro 3}
-\label{auteur3}
-\end{figure}
 
 \subsubsection{Longueur des paragraphes}
 
-Partant de ce premier échec à identifier les textes par la fréquence d'apparition des tags, nous avons pensé qu'il pouvait être intéressant d’agréger cette source d'information trop vague à d'autres métriques afin d'obtenir une réponse plus précise. Nous avons donc ajouté deux éléments : le nombre de mot par ligne en moyenne et l'écart-type pour cette même mesure et ce pour chaque auteur.
+Ayant compris que notre première métrique n'était pas très cohérente à elle seule, nous avons voulu identifier les textes en agrégeant cette source d'information trop vague à d'autres métriques afin d'obtenir une réponse plus précise. Nous avons donc ajouté deux éléments : le nombre de mot par ligne en moyenne et l'écart-type pour cette même mesure et ce pour chaque auteur.
 
-Par l'étude de cette métrique, nous pensions avoir décelé un patron intéressant pour l'étude de textes. Mais au final, cette métrique s'est révélée être très décevante tant elle était constante d'un auteur à un autre. On peut voir sur la \textsc{figure \ref{WPL}} qu'il n'y a pas de différence réellement exploitable.
+Par l'étude de cette métrique, nous pensions avoir décelé un patron intéressant pour l'étude de textes. Mais au final, cette métrique seule s'est révélée être très décevante tant elle était constante d'un auteur à un autre. On peut voir sur la \textsc{figure \ref{WPL}} qu'il n'y a pas de différence réellement exploitable.
 				
 \begin{figure}[hbtp]
 \centering
@@ -216,7 +195,35 @@ Par l'étude de cette métrique, nous pensions avoir décelé un patron intéres
 \label{WPL}
 \end{figure}
 
-À ce stade, nous avons décidé de laisser de côté ces analyses trop simples. En effet, ces analyses se concentrant uniquement sur un élément particulier, les résultats ne peuvent être que dilués dans l'ensemble des données si ces analyses sont utilisées une à une. Néanmoins l'utilisation de ces analyses de fréquences devrait pouvoir être utilisées en compléments des autres analyses décrites ci-dessous. En effet, il n'est pas rare de devoir appliquer un ensemble de méthodes d'analyse sur un jeu de données afin de pouvoir en ressortir des résultats satisfaisants.
+Nos deux métriques existantes, nous avons alors procédé à une analyse combinée de ces deux métriques.
+
+\subsubsection{Exploitation des données}
+
+Comme nous les montre les figures ci-dessous, décrivant le classement des 3 auteurs les plus probables sur l'ensemble des 50 articles écrit par William Kazer, les résultats ne sont pas à la hauteur. On peut observer sur la \textsc{figure \ref{auteur1}} que d'après notre fichier descriptif, ce serait Tan Eelyn l'auteur le plus probable pour 14 des 50 articles, suivis par Scott Hills pour 5 des 50 articles. On peut donc directement voir les limites d'utilisations de cette étude de fréquence des mots avec le jeu de données fournis. 
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=11cm]{fig/Auteur1.png}
+\caption{Nombre d'article écrits pour les auteurs classés numéro 1}
+\label{auteur1}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=11cm]{fig/Auteur2.png}
+\caption{Nombre d'article écrits pour les auteurs classés numéro 2}
+\label{auteur2}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=11cm]{fig/Auteur3.png}
+\caption{Nombre d'article écrits pour les auteurs classés numéro 3}
+\label{auteur3}
+\end{figure}
+
+
+À ce stade, nous avons décidé de laisser de côté ces analyses trop simples. En effet, ces analyses se concentrant uniquement sur un élément particulier, les résultats ne peuvent être que dilués dans l'ensemble des données si ces analyses sont utilisées une à une. Néanmoins l'utilisation de ces analyses de fréquences devrait pouvoir servir de compléments aux méthodes décrites ci-dessous. En effet, il n'est pas rare de devoir appliquer un ensemble de méthodes d'analyse sur un jeu de données afin de pouvoir en ressortir des résultats satisfaisants.
 
 
 \subsection{Étude des transitions}
@@ -244,20 +251,20 @@ Malheureusement, nous avons dû abandonné cette approche commençant à manquer
 
 L'étude des transitions nous ayant posé quelques problèmes pour trouver une manière élégante de comparer des matrices de transitions, nous nous sommes penchés sur une méthode un peu plus générique et nous offrant peut-être un peu plus de souplesse quant à sa configuration. Toujours dans l'idée d'identifier nos auteurs par leur façon de tourner leurs phrases, cette méthode nous permet de choisir la longueur de nos «~grams~» et d'en ressortir un résultat assez simplement.
 
-Cette méthode nous permet de tirer partis de l'ordre dans lequel sont écris les mots utilisés par nos auteurs. Après avoir passé l'ensemble de notre corpus de test sous forme de tag, avec le même outil que précédemment (Tree Tagger), nous analysons les différents enchaînements de tags repérés dans nos fichiers. Pour un 2-grams, nous nous occuperons seulement des enchaînement de 2 tags, pour un 3-grams, des enchaînements de 3 tags, etc ...
+Cette méthode nous permet de tirer parti de l'ordre dans lequel sont écrits les mots utilisés par nos auteurs. Après avoir passé l'ensemble de notre corpus de test sous forme de tag, avec le même outil que précédemment (Tree Tagger), nous analysons les différents enchaînements de tags repérés dans nos fichiers. Pour un 2-grams, nous nous occuperons seulement des enchaînement de 2 tags, pour un 3-grams, des enchaînements de 3 tags, etc.
 
-Pour se faire, nous prenons un à un chacun des enchaînements que nous rencontrons, comptabilisons son nombre d'occurrence dans l'ensemble des articles d'un auteur, puis compilons ces résultats. Nous prenons également en compte que l'apparition d'un unique enchaînement dans l'ensemble du corpus n'est pas assez discriminant pour notre recherche : Il sera alors supprimé de notre comptabilisation. L'ensemble de ces calculs et mises en formes sont réalisés à l'aide de script perl, simplifiant la lecture et l'écriture au sein de fichiers .txt et .csv.
+Pour se faire, nous prenons un à un chacun des enchaînements que nous rencontrons, comptabilisons son nombre d'occurrence dans l'ensemble des articles d'un auteur, puis compilons ces résultats. Nous prenons également en compte que l'apparition d'un unique enchaînement dans l'ensemble du corpus n'est pas assez discriminant pour notre recherche : il est alors supprimé de notre comptabilisation. L'ensemble de ces calculs et mises en formes sont réalisés à l'aide de plusieurs scripts PHP, simplifiant la lecture et l'écriture au sein des fichiers textes sources et de nos fichiers CSV.
 
-Suite à cette première analyse, un fichier .csv récapitulatif des fréquences d'apparition de ces suite est généré. Ce dernier, classé par auteurs, est ensuite comparé à notre fichier à classifier mis sous forme de tag et pré-analyser : est alors réalisé une comparaison point à point de l'ensemble des combinaisons liées à un auteur. Nous calculons son taux de "matching" et sortons l'auteur ayant le plus fort taux d'affiliation et donc, le plus probable pour ce texte. 
+Suite à cette première analyse, un fichier CSV récapitulatif des fréquences d'apparition de ces suite est généré. Ce dernier, classé par auteurs, est ensuite comparé à notre fichier à classifier mis sous forme de tag et pré-analysé ; est alors réalisé une comparaison point à point de l'ensemble des combinaisons liées à un auteur. Nous calculons son taux de \textit{matching} et sortons une portion des auteurs ayant le plus fort taux d'affiliation et donc, les plus probables pour ce texte. 
 
 Cette méthode est tout de fois assez lourde puisqu'elle requiert une bonne dizaine de minute pour s'exécuter intégralement bien que déjà placée totalement en mémoire (sur un système de fichier tmpfs). 
 
-Néanmoins, jusqu'à présent, seule cette méthode a réussi à nous montrer des résultats concret bien que décevant d'un point de vue qualitatif. Nous obtenons une variation de l'efficacité de cette méthode en fonction du nombre de mots pris en compte dans nos enchaînements :
+Néanmoins, jusqu'à présent, seule cette méthode a réussi à nous montrer des résultats concrets bien que décevant d'un point de vue qualitatif, sachant que nous considérons comme positif si le classifieur trouve la bonne réponse dans ses 5 meilleurs matching. Nous obtenons une variation de l'efficacité de cette méthode en fonction du nombre de mots pris en compte dans nos enchaînements :
 
 \begin{itemize}
-\item{Pour un 2-grams : nous obtenons environ 26\% de réussite.}
-\item{Pour un 3-grams : nous descendons à une valeur de 21\% de réussite.}
-\item{Pour un 4-grams : nous chutons à moins de 14\% de réussite}
+\item{2-grams : environ 26\% de réussite ;}
+\item{3-grams : 21\% de réussite ;}
+\item{4-grams : moins de 14\% de réussite.}
 \end{itemize}
 
 Nous avons également tester des n-gramms prenant en compte plus de mots, mais ces derniers se sont révélés assez peu discriminant et donc inintéressant.
@@ -310,10 +317,10 @@ Ce mini-projet aura été très intéressant. Grâce à ce sujet, nous avons ét
 
 Pour parvenir à nos fins, nous avons eu deux approches différentes. La première consistant à analyser la thématique d'un texte en s'appuyant sur la fréquence d'apparition des mots et le seconde méthode exploitant la structure grammaticale des phrases dans le but de comparer le style d'écriture des auteurs. Par le biais de ses deux développement séparés, nous avons pu obtenir des résultats différents et commencer à comprendre quelles étaient les éléments discriminants et comment exploiter les méthodes statistiques auxquelles nous avons été initiés en cours.
 
-Ce projet nous apporte aussi un précieux bagage sur la compréhension de ce domaine. Souvent abordé par les journalistes et rappelé dès que l'on souhaite informatiser des processus reconnaissance, l'acquisition de connaissance est un aspect très intéressant en informatique. Par les problèmes que nous avons soulevé pendant ce projet, nous avons pu comprendre un peu mieux les moyens nécessaires à la mise en production de ce types de systèmes.
+Ce projet nous apporte aussi un précieux bagage sur la compréhension de ce domaine. Souvent abordé par les journalistes et rappelé dès que l'on souhaite informatiser des processus reconnaissance, l'acquisition de connaissance est un aspect très intéressant en informatique. Par les problèmes que nous avons soulevé pendant ce projet, nous avons pu comprendre un peu mieux les moyens nécessaires à la mise en production de ces systèmes.
 
-D'un point de vue technique, nous avons pu constater que ce type de traitement pouvait être très gourmand. Dans notre cas, et surtout dans la seconde approche, l'analyse du corpus de test suivi de la découverte des auteurs du corpus d'entraînement pouvait prendre jusqu'à un quart d'heure bien qu'exécuté sur une machine récente. Bien qu'il soit possible de paralléliser ces procédures, on se rend compte que ces traitement peuvent être très gourmand, tant en espace disque si l'on souhaite observer un corpus suffisamment représentatif qu'en temps de calcul suivant les algorithmes que l'on souhaite appliquer.
+D'un point de vue technique, nous avons pu constater que ce type de traitement pouvait être très gourmand. Dans notre cas, et surtout dans la seconde approche, l'analyse du corpus de test suivi de la découverte des auteurs du corpus d'entraînement pouvait prendre jusqu'à un quart d'heure bien qu'exécuté sur une machine récente. Même s'il est possible de paralléliser ces procédures, on se rend compte que ces traitements peuvent être très gourmands, tant en espace disque -- si l'on souhaite observer un corpus suffisamment représentatif -- qu'en temps de calcul suivant les algorithmes que l'on souhaite appliquer.
 
-Enfin, ce projet aura été une fois de plus l'occasion de travailler en groupe. Néanmoins, cette fois-ci, le temps imparti étant très réduit, nous avons du nous adapter afin de répartir au mieux la tâches et faire en sorte que tout le monde puisse apporter ses compétences sur un domaine que nous connaissions très peu. Bien que plus de temps aurait été appréciable pour approfondir certains aspects, nous avons réussi à réaliser ce projet grâce à une organisation mettant en avant deux groupes de travail sur les deux approches différenciées en début de projet et une communication efficace et régulière.
+Enfin, ce projet aura été une fois de plus l'occasion de travailler en groupe. Néanmoins, cette fois-ci, le temps imparti étant très réduit, nous avons du nous adapter afin de répartir au mieux les tâches et faire en sorte que tout le monde puisse apporter ses compétences sur un domaine que nous connaissions très peu. Bien que plus de temps aurait été appréciable pour approfondir certains aspects, nous avons réussi à réaliser ce projet grâce à une organisation mettant en avant deux groupes de travail sur les deux approches différenciées en début de projet et une communication efficace et régulière.
 
 \end{document}
