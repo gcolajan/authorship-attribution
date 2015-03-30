@@ -275,26 +275,36 @@ Nous avons également tester des n-gramms prenant en compte plus de mots, mais c
 
 Que ce soit la première méthode ou la seconde, nos résultats nous paraissent assez décevants. En effet, il nous est impossible d'identifier ne serait-ce que 50\% des textes convenablement. Néanmoins, voici un tableau récapitulant les performances obtenues sur les différents stades de deux méthodes développées.
 
-\todo{Critiquer l'approche que l'on a eu, montrer les faiblesses}
-\todo{Méth2: difficulter de différencier le style du langage (anglais)}
-
-\todo{Insérer un tableau comparatif}
-
 \begin{table}[H]
 \centering
-\begin{tabular}{|c|c|c|}
+\begin{tabular}{|c|c|}
+\hline \textbf{Algorithme} & \textbf{Performance} \\ 
 \hline 
- & \textbf{Term-frequency criterion} & • \\ 
+\textbf{Term-frequency criterion : Paramètres} & x \%  \\ 
 \hline 
-\textbf{Bien classé} & • & • \\ 
+\textbf{PoS : frequency + WPL} & 14 \% \\ 
 \hline 
-\textbf{Mauvais classé} & • & • \\ 
+\textbf{PoS : étude transition} & N/A \\ 
 \hline 
-\textbf{Pas classé} & • & • \\ 
+\textbf{PoS : 2-grams} & 26 \% \\ 
+\hline 
+\textbf{PoS : 3-grams} & 21 \% \\ 
+\hline 
+\textbf{PoS : 4-grams} & 14 \% \\ 
 \hline 
 \end{tabular} 
 \caption{Résumé des performances des algorithmes}
 \end{table}
+
+Les performances observées se retrouvent être assez faibles et ne permettent clairement pas d'utiliser nos algorithmes de manière autonome. Nous pensons que nous avons fait quelques erreurs notamment en séparant trop nos approches et en oubliant qu'il est souvent intéressant d'avoir des approches croisées ou, à minima, mettre en place des méthodes permettant d'exploiter plusieurs analyses en même temps. La division en groupe de travail et notre vision trop partielle du sujet ne nous a pas permis de prendre le recul nécessaire pour parvenir à des résultats intéressants.
+
+De plus, la majorité de nos méthodes mettent en œuvre des moyens simples, exploitant, certes, des outils existants (\textit{stopwords} et \textit{tagger}), mais trouvant peut-être rapidement leurs faiblesses du fait de notre faible connaissances en métriques mathématiques à appliquer sur ce type d'analyses.
+
+En ce qui concerne la première méthode, ne s'agissant que d'un travail sur les mots les plus fréquents, il parait évident que cela ne va pas permettre d'obtenir un classement parfait, vu que nous sommes loin de prendre en compte toutes les finesses et les styles des auteurs. Cependant, il nous semblait que cela suffirait pour plus de situations. Nous sommes donc assez déçus du niveau de performance obtenu. D'autre part, nous avons trouvé la métrique utilisée dans la classification pas forcément appropriée, ce qui peut expliquer un taux de mauvais classés aussi important.
+
+Par l'approche développée dans la seconde méthode, on constate que la linguistique nous a échappé et qu'il aurait été, à notre sens, très intéressant d'avoir des notions de linguistique plus vastes afin d'être capable d'étudier les éléments qui permettent de caractériser le style d'un auteur. En effet, nos algorithmes sont peut-être un peu trop simplistes pour réussir à s'occuper réellement du style et se contentent de mettre en valeur la langue employée.
+
+Plus globalement, nous pensons qu'il aurait été intéressant de s'imprégner de méthodes de reconnaissance d'auteurs existantes avant de s'immerger dans des méthodes nous paraissant évidentes mais n'étant pas nécessairement discriminantes pour réussir à classer convenablement des textes.
 
 %\begin{center}
 %\begin{tikzpicture}[scale=1]
@@ -307,7 +317,6 @@ Que ce soit la première méthode ou la seconde, nos résultats nous paraissent 
 %\end{tikzpicture}
 %\end{center}
 
-En ce qui concerne la première méthode, ne s'agissant que d'un travail sur les mots les plus fréquents, il parait évident que cela ne va pas permettre d'obtenir un classement parfait, vu que nous sommes loins de prendre en compte toutes les finesses et les styles des auteurs. Cependant, il nous semblait que cela suffirait pour plus de situations. Nous sommes donc assez déçus du niveau de performance obtenu. D'autre part, nous avons trouvé la métrique utilisée dans la classification pas forcément appropriée, ce qui peut expliquer un taux de mauvais classés aussi important.
 
 
 \section*{Conclusion}
