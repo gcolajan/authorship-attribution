@@ -6,6 +6,7 @@ define('TESTING', 'TESTING');
 define('CLASSIFY', 'CLASSIFY');
 define('CURRENT_MODE', CLASSIFY);
 
+$startTime = microtime(TRUE);
 $currentDirectory = dirname(__FILE__);
 $rootDirectory = dirname($currentDirectory);
 $ds = DIRECTORY_SEPARATOR;
@@ -350,7 +351,7 @@ function run($authorToTest = 'AaronPressman', $fileToTest = 0) {
 
 
 if(CURRENT_MODE == TESTING || CURRENT_MODE == CLASSIFY) {
-	// On fait un fichier test pour chaque text de chaque auteur
+	// On fait un fichier test pour chaque texte de chaque auteur
 	$authors = glob($trainingDirectory.$ds.'*', GLOB_ONLYDIR);
 	foreach($authors as $author) {
 		$authorName = basename($author);
@@ -360,14 +361,26 @@ if(CURRENT_MODE == TESTING || CURRENT_MODE == CLASSIFY) {
 		}
 	}
 
+	// On affiche le résultat
 	if(CURRENT_MODE == CLASSIFY) {
-		echo $testingSuccessCount.'/'.$testingCount.PHP_EOL;
+		$testingFailedCount = ($testingCount - $testingSuccessCount - $testingNotFountCount);
+		$percentSuccess = ($testingSuccessCount / $testingCount) * 100;
+		echo $testingCount.' tested texts'.PHP_EOL;
+		echo $testingSuccessCount.' well classified ('.round($percentSuccess, 2).'%)'.PHP_EOL;
+		echo $testingFailedCount.' misclassified'.PHP_EOL;
 		echo $testingNotFountCount.' not classified'.PHP_EOL;
 	}
 }
+// TRAINING
 else {
 	run();
 }
+
+$endTime = microtime(TRUE);
+
+// Temps d'exécution du script
+$scriptDuration = $endTime - $startTime;
+echo 'Time: '.round($scriptDuration, 2).'sec'.PHP_EOL;
 
 
 
