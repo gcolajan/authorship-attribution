@@ -145,7 +145,7 @@ Voici un exemple de transformation d'une phrase en tags :
 	\centering
 		\begin{tabular}{|*{3}{c|}}
 			\hline
-			\textbf{mots} & \textbf{Tags} & \textbf{lemmes}\\
+			\textbf{Mots} & \textbf{Tags} & \textbf{Lemmes}\\
 			\hline
 			The & DT & the \\
 			\hline
@@ -257,7 +257,7 @@ Pour se faire, nous prenons un à un chacun des enchaînements que nous rencontr
 
 Suite à cette première analyse, un fichier CSV récapitulatif des fréquences d'apparition de ces suite est généré. Ce dernier, classé par auteurs, est ensuite comparé à notre fichier à classifier mis sous forme de tag et pré-analysé ; est alors réalisé une comparaison point à point de l'ensemble des combinaisons liées à un auteur. Nous calculons son taux de \textit{matching} et sortons une portion des auteurs ayant le plus fort taux d'affiliation et donc, les plus probables pour ce texte. 
 
-Cette méthode est tout de fois assez lourde puisqu'elle requiert une bonne dizaine de minute pour s'exécuter intégralement bien que déjà placée totalement en mémoire (sur un système de fichier tmpfs). 
+Cette méthode est toutefois assez lourde puisqu'elle requiert une bonne dizaine de minute pour s'exécuter intégralement bien que déjà placée totalement en mémoire (sur un système de fichier tmpfs). 
 
 Néanmoins, jusqu'à présent, seule cette méthode a réussi à nous montrer des résultats concrets bien que décevant d'un point de vue qualitatif, sachant que nous considérons comme positif si le classifieur trouve la bonne réponse dans ses 5 meilleurs matching. Nous obtenons une variation de l'efficacité de cette méthode en fonction du nombre de mots pris en compte dans nos enchaînements :
 
@@ -324,7 +324,7 @@ Plus globalement, nous pensons qu'il aurait été intéressant de s'imprégner d
 
 Ce mini-projet aura été très intéressant. Grâce à ce sujet, nous avons été capable d'implémenter, avec plus ou moins de réussite, des algorithmes assez variés dans l'optique d'identifier les auteurs de textes.
 
-Pour parvenir à nos fins, nous avons eu deux approches différentes. La première consistant à analyser la thématique d'un texte en s'appuyant sur la fréquence d'apparition des mots et le seconde méthode exploitant la structure grammaticale des phrases dans le but de comparer le style d'écriture des auteurs. Par le biais de ses deux développement séparés, nous avons pu obtenir des résultats différents et commencer à comprendre quelles étaient les éléments discriminants et comment exploiter les méthodes statistiques auxquelles nous avons été initiés en cours.
+Pour parvenir à nos fins, nous avons eu deux approches différentes. La première consistant à analyser la thématique d'un texte en s'appuyant sur la fréquence d'apparition des mots et le seconde méthode exploitant la structure grammaticale des phrases dans le but de comparer le style d'écriture des auteurs. Par le biais de ces deux développement séparés, nous avons pu obtenir des résultats différents et commencer à comprendre quelles étaient les éléments discriminants et comment exploiter les méthodes statistiques auxquelles nous avons été initiés en cours.
 
 Ce projet nous apporte aussi un précieux bagage sur la compréhension de ce domaine. Souvent abordé par les journalistes et rappelé dès que l'on souhaite informatiser des processus de reconnaissance, l'acquisition de connaissance est un aspect très intéressant en informatique. Par les problèmes que nous avons soulevé pendant ce projet, nous avons pu comprendre un peu mieux les moyens nécessaires à la mise en production de ces systèmes.
 
