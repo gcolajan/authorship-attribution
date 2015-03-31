@@ -150,7 +150,7 @@ function run($authorToTest = 'AaronPressman', $fileToTest = 0) {
 		}
 		fputcsv($frenquencyCsv, ['author', 'term', 'termCount', 'totalTerms', 'articleCount', 'totalArticles', 'termPercent', 'inverseDocumentFrequency', 'criterion'], $csvDelemiter);
 
-		// On garde les meilleurs terme de chaque auteur en fonction du critère
+		// On garde les meilleurs termes de chaque auteur en fonction du critère
 		$bestCriterionTerms = [];
 
 		foreach($globalFrequencyDictionary as $author => $words) {
@@ -163,7 +163,7 @@ function run($authorToTest = 'AaronPressman', $fileToTest = 0) {
 				$wordCount = $globalFrequencyDictionary[$author][$word]; // Nombre de fois que le mot est compté pour l'auteur courant
 				$totalWords = $wordsCountByAuthors[$author]; // Nombre de mots total de l'auteur courant
 				$articleCount = $articleFrequencyDictionary[$author][$word]; // Nombre d'articles dans lesquels le mot apparait pour l'auteur courant
-				$articlesCountAllAuthors = $articleFrequencyDictionaryAllAuthors[$word]; // Nombre d'articles dans lesquals le mot apparait pour tous les auteurs
+				$articlesCountAllAuthors = $articleFrequencyDictionaryAllAuthors[$word]; // Nombre d'articles dans lesquels le mot apparait pour tous les auteurs
 				$totalArticles = $articlesCountByAuthors[$author]; // Nombre d'articles total de l'auteur courant
 				$totalArticlesAllAuthors = $articleCollectionCount; // Nombre d'articles total de tous les auteurs
 
