@@ -6,7 +6,7 @@
 
 - Ouvrir un terminal
 - Vérifier que PHP est bien installé `php -v` (version PHP 5.4 minimum)
-- Ce placer dans le dossier `/PHP`
+- Se placer dans le dossier `/PHP`
 - Exécuter la commande `php word-frequencies.php`
 
 ### Les différents modes
