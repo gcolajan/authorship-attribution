@@ -1,0 +1,21 @@
+./POS_frequency.sh
+cat ../analyze/posfreq/AlanCrosby
+
+
+
+./POS_genCorpus.php
+cat ../analyze/frequency.csv
+
+./POS_file.php ../data/C50test/AlanCrosby/226494newsML.txt nomTest ../analyze/testCrosby.csv
+
+./POS_matching.php ../analyze/frequency.csv ../analyze/testCrosby.csv
+
+
+
+./ngrams_genCorpus.php
+cat ../analyze/ngrams/AlanCrosby.csv
+
+./ngrams_file.php ../data/C50test/AlanCrosby/226494newsML.txt ngramsTest 2 0.001 ../analyze/resNgrams.csv
+cat ../analyze/resNgrams.csv
+
+./ngrams_matching.php ../analyze/ngrams ../analyze/resNgrams.csv
